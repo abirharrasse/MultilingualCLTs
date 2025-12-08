@@ -1,0 +1,34 @@
+universe = vanilla
+
+executable = /lustre/home/fdraye/projects/featflow/example/generate_activations/run_activations.sh
+initialdir = /lustre/home/fdraye/projects/featflow/example/generate_activations
+
+# Pass the job process ID and percentage to the script
+arguments = $(Process) $(percentage)
+
+# Create separate output files for each job organized by percentage
+output = logs/$(percentage)/results_$(Process).txt
+error  = logs/$(percentage)/error_$(Process).txt
+log    = logs/$(percentage)/job_$(Process).log
+
+request_cpus = 40
+request_memory = 1200GB
+request_gpus = 1
+
+requirements = (CUDACapability == 8.0)
+
+# Submit jobs for each percentage
+percentage = 20
+queue 8
+
+# Submit jobs for each percentage
+percentage = 50
+queue 8
+
+# Submit jobs for each percentage
+percentage = 70
+queue 8
+
+# Submit jobs for each percentage
+percentage = 90
+queue 8

@@ -1,0 +1,16 @@
+universe = vanilla
+
+executable = /lustre/home/fdraye/projects/featflow/example/tiny_stories/run_on_tiny_stories.sh
+initialdir = /lustre/home/fdraye/projects/featflow/example/tiny_stories
+
+output = logs/results.txt
+error  = logs/error.txt
+log    = logs/job.log
+
+request_cpus = 40
+request_memory = 400GB
+request_gpus = 7
+
+requirements = (CUDACapability == 9.0)
+
+queue

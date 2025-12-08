@@ -1,0 +1,1614 @@
+000 (16219878.000.000) 2025-05-28 10:19:09 Job submitted from host: <10.15.2.1:9618?PrivAddr=%3c172.22.0.101:9618%3fsock%3dschedd_2825_4b22%3e&PrivNet=internal.cluster.is.localnet&addrs=10.15.2.1-9618&alias=sched.cluster.is.localnet&noUDP&sock=schedd_2825_4b22>
+...
+001 (16219878.000.000) 2025-05-28 10:19:11 Job executing on host: <172.22.2.150:9618?addrs=172.22.2.150-9618&alias=g150.internal.cluster.is.localnet&noUDP&sock=startd_5036_db08>
+...
+006 (16219878.000.000) 2025-05-28 10:19:20 Image size of job updated: 3704728
+	295  -  MemoryUsage of job (MB)
+	301468  -  ResidentSetSize of job (KB)
+...
+006 (16219878.000.000) 2025-05-28 10:19:36 Image size of job updated: 10961280
+	295  -  MemoryUsage of job (MB)
+	301468  -  ResidentSetSize of job (KB)
+...
+005 (16219878.000.000) 2025-05-28 10:19:37 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:13, Sys 0 00:00:05  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:13, Sys 0 00:00:05  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated Assigned
+	   Cpus                 :                 4         4 
+	   Disk (KB)            :        1        1   2892100 
+	   Gpus (Average)       :                 1         1 "GPU-1709bd02"
+	   Memory (MB)          :      295   102400    102400 
+
+	Job terminated of its own accord at 2025-05-28T08:19:36Z with exit-code 0.
+...
+000 (16219879.000.000) 2025-05-28 10:22:51 Job submitted from host: <10.15.2.1:9618?PrivAddr=%3c172.22.0.101:9618%3fsock%3dschedd_2825_4b22%3e&PrivNet=internal.cluster.is.localnet&addrs=10.15.2.1-9618&alias=sched.cluster.is.localnet&noUDP&sock=schedd_2825_4b22>
+...
+001 (16219879.000.000) 2025-05-28 10:22:53 Job executing on host: <172.22.2.106:9618?addrs=172.22.2.106-9618&alias=g106.internal.cluster.is.localnet&noUDP&sock=startd_5058_f21d>
+...
+006 (16219879.000.000) 2025-05-28 10:23:01 Image size of job updated: 3662316
+	248  -  MemoryUsage of job (MB)
+	253704  -  ResidentSetSize of job (KB)
+...
+006 (16219879.000.000) 2025-05-28 10:23:31 Image size of job updated: 24228320
+	248  -  MemoryUsage of job (MB)
+	253704  -  ResidentSetSize of job (KB)
+...
+005 (16219879.000.000) 2025-05-28 10:23:32 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:14, Sys 0 00:00:06  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:14, Sys 0 00:00:06  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated Assigned
+	   Cpus                 :                 4         4 
+	   Disk (KB)            :        1        1   2892100 
+	   Gpus (Average)       :                 1         1 "GPU-019808a4"
+	   Memory (MB)          :      248   102400    102400 
+
+	Job terminated of its own accord at 2025-05-28T08:23:31Z with exit-code 0.
+...
+000 (16219885.000.000) 2025-05-28 10:36:03 Job submitted from host: <10.15.2.1:9618?PrivAddr=%3c172.22.0.101:9618%3fsock%3dschedd_2825_4b22%3e&PrivNet=internal.cluster.is.localnet&addrs=10.15.2.1-9618&alias=sched.cluster.is.localnet&noUDP&sock=schedd_2825_4b22>
+...
+001 (16219885.000.000) 2025-05-28 10:36:04 Job executing on host: <172.22.2.164:9618?addrs=172.22.2.164-9618&alias=g164.internal.cluster.is.localnet&noUDP&sock=startd_5028_5e46>
+...
+006 (16219885.000.000) 2025-05-28 10:36:13 Image size of job updated: 3354532
+	246  -  MemoryUsage of job (MB)
+	251648  -  ResidentSetSize of job (KB)
+...
+006 (16219885.000.000) 2025-05-28 10:36:45 Image size of job updated: 9718820
+	246  -  MemoryUsage of job (MB)
+	251676  -  ResidentSetSize of job (KB)
+...
+005 (16219885.000.000) 2025-05-28 10:36:46 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:15, Sys 0 00:00:06  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:15, Sys 0 00:00:06  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated Assigned
+	   Cpus                 :                 4         4 
+	   Disk (KB)            :        1        1   2892100 
+	   Gpus (Average)       :                 1         1 "GPU-75975a43"
+	   Memory (MB)          :      246   102400    102400 
+
+	Job terminated of its own accord at 2025-05-28T08:36:45Z with exit-code 0.
+...
+000 (16219890.000.000) 2025-05-28 10:39:38 Job submitted from host: <10.15.2.1:9618?PrivAddr=%3c172.22.0.101:9618%3fsock%3dschedd_2825_4b22%3e&PrivNet=internal.cluster.is.localnet&addrs=10.15.2.1-9618&alias=sched.cluster.is.localnet&noUDP&sock=schedd_2825_4b22>
+...
+001 (16219890.000.000) 2025-05-28 10:39:57 Job executing on host: <172.22.2.164:9618?addrs=172.22.2.164-9618&alias=g164.internal.cluster.is.localnet&noUDP&sock=startd_5028_5e46>
+...
+006 (16219890.000.000) 2025-05-28 10:40:05 Image size of job updated: 3642840
+	305  -  MemoryUsage of job (MB)
+	312240  -  ResidentSetSize of job (KB)
+...
+006 (16219890.000.000) 2025-05-28 10:40:22 Image size of job updated: 4278312
+	305  -  MemoryUsage of job (MB)
+	312260  -  ResidentSetSize of job (KB)
+...
+005 (16219890.000.000) 2025-05-28 10:40:23 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:13, Sys 0 00:00:04  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:13, Sys 0 00:00:04  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated Assigned
+	   Cpus                 :                 4         4 
+	   Disk (KB)            :        1        1   2892100 
+	   Gpus (Average)       :                 1         1 "GPU-75975a43"
+	   Memory (MB)          :      305   102400    102400 
+
+	Job terminated of its own accord at 2025-05-28T08:40:22Z with exit-code 0.
+...
+000 (16219895.000.000) 2025-05-28 10:42:51 Job submitted from host: <10.15.2.1:9618?PrivAddr=%3c172.22.0.101:9618%3fsock%3dschedd_2825_4b22%3e&PrivNet=internal.cluster.is.localnet&addrs=10.15.2.1-9618&alias=sched.cluster.is.localnet&noUDP&sock=schedd_2825_4b22>
+...
+001 (16219895.000.000) 2025-05-28 10:42:53 Job executing on host: <172.22.2.164:9618?addrs=172.22.2.164-9618&alias=g164.internal.cluster.is.localnet&noUDP&sock=startd_5028_5e46>
+...
+006 (16219895.000.000) 2025-05-28 10:43:01 Image size of job updated: 3710520
+	312  -  MemoryUsage of job (MB)
+	319228  -  ResidentSetSize of job (KB)
+...
+006 (16219895.000.000) 2025-05-28 10:43:18 Image size of job updated: 10957196
+	312  -  MemoryUsage of job (MB)
+	319244  -  ResidentSetSize of job (KB)
+...
+005 (16219895.000.000) 2025-05-28 10:43:19 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:13, Sys 0 00:00:04  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:13, Sys 0 00:00:04  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated Assigned
+	   Cpus                 :                 4         4 
+	   Disk (KB)            :        1        1   2892100 
+	   Gpus (Average)       :                 1         1 "GPU-75975a43"
+	   Memory (MB)          :      312   102400    102400 
+
+	Job terminated of its own accord at 2025-05-28T08:43:18Z with exit-code 0.
+...
+000 (16219899.000.000) 2025-05-28 10:51:17 Job submitted from host: <10.15.2.1:9618?PrivAddr=%3c172.22.0.101:9618%3fsock%3dschedd_2825_4b22%3e&PrivNet=internal.cluster.is.localnet&addrs=10.15.2.1-9618&alias=sched.cluster.is.localnet&noUDP&sock=schedd_2825_4b22>
+...
+001 (16219899.000.000) 2025-05-28 10:51:19 Job executing on host: <172.22.2.106:9618?addrs=172.22.2.106-9618&alias=g106.internal.cluster.is.localnet&noUDP&sock=startd_5058_f21d>
+...
+006 (16219899.000.000) 2025-05-28 10:51:27 Image size of job updated: 3628076
+	284  -  MemoryUsage of job (MB)
+	290508  -  ResidentSetSize of job (KB)
+...
+006 (16219899.000.000) 2025-05-28 10:51:45 Image size of job updated: 24225268
+	284  -  MemoryUsage of job (MB)
+	290512  -  ResidentSetSize of job (KB)
+...
+005 (16219899.000.000) 2025-05-28 10:51:46 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:14, Sys 0 00:00:05  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:14, Sys 0 00:00:05  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated Assigned
+	   Cpus                 :                 4         4 
+	   Disk (KB)            :        1        1   2892100 
+	   Gpus (Average)       :                 1         1 "GPU-019808a4"
+	   Memory (MB)          :      284   102400    102400 
+
+	Job terminated of its own accord at 2025-05-28T08:51:45Z with exit-code 0.
+...
+000 (16219902.000.000) 2025-05-28 10:56:13 Job submitted from host: <10.15.2.1:9618?PrivAddr=%3c172.22.0.101:9618%3fsock%3dschedd_2825_4b22%3e&PrivNet=internal.cluster.is.localnet&addrs=10.15.2.1-9618&alias=sched.cluster.is.localnet&noUDP&sock=schedd_2825_4b22>
+...
+001 (16219902.000.000) 2025-05-28 10:56:15 Job executing on host: <172.22.2.159:9618?addrs=172.22.2.159-9618&alias=g159.internal.cluster.is.localnet&noUDP&sock=startd_5083_17fc>
+...
+006 (16219902.000.000) 2025-05-28 10:56:23 Image size of job updated: 3426560
+	246  -  MemoryUsage of job (MB)
+	251504  -  ResidentSetSize of job (KB)
+...
+006 (16219902.000.000) 2025-05-28 10:56:54 Image size of job updated: 9769516
+	246  -  MemoryUsage of job (MB)
+	251568  -  ResidentSetSize of job (KB)
+...
+005 (16219902.000.000) 2025-05-28 10:56:55 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:15, Sys 0 00:00:06  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:15, Sys 0 00:00:06  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated Assigned
+	   Cpus                 :                 4         4 
+	   Disk (KB)            :        1        1   2892100 
+	   Gpus (Average)       :                 1         1 "GPU-6fca2066"
+	   Memory (MB)          :      246   102400    102400 
+
+	Job terminated of its own accord at 2025-05-28T08:56:54Z with exit-code 0.
+...
+000 (16219906.000.000) 2025-05-28 10:59:33 Job submitted from host: <10.15.2.1:9618?PrivAddr=%3c172.22.0.101:9618%3fsock%3dschedd_2825_4b22%3e&PrivNet=internal.cluster.is.localnet&addrs=10.15.2.1-9618&alias=sched.cluster.is.localnet&noUDP&sock=schedd_2825_4b22>
+...
+001 (16219906.000.000) 2025-05-28 10:59:36 Job executing on host: <172.22.2.112:9618?addrs=172.22.2.112-9618&alias=g112.internal.cluster.is.localnet&noUDP&sock=startd_5107_8e41>
+...
+006 (16219906.000.000) 2025-05-28 10:59:44 Image size of job updated: 439508
+	254  -  MemoryUsage of job (MB)
+	259560  -  ResidentSetSize of job (KB)
+...
+006 (16219906.000.000) 2025-05-28 11:00:13 Image size of job updated: 9771892
+	254  -  MemoryUsage of job (MB)
+	259656  -  ResidentSetSize of job (KB)
+...
+005 (16219906.000.000) 2025-05-28 11:00:14 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:15, Sys 0 00:00:06  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:15, Sys 0 00:00:06  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated Assigned
+	   Cpus                 :                 4         4 
+	   Disk (KB)            :        1        1   2892100 
+	   Gpus (Average)       :                 1         1 "GPU-beb09e83"
+	   Memory (MB)          :      254   102400    102400 
+
+	Job terminated of its own accord at 2025-05-28T09:00:13Z with exit-code 0.
+...
+000 (16219907.000.000) 2025-05-28 11:01:03 Job submitted from host: <10.15.2.1:9618?PrivAddr=%3c172.22.0.101:9618%3fsock%3dschedd_2825_4b22%3e&PrivNet=internal.cluster.is.localnet&addrs=10.15.2.1-9618&alias=sched.cluster.is.localnet&noUDP&sock=schedd_2825_4b22>
+...
+001 (16219907.000.000) 2025-05-28 11:01:07 Job executing on host: <172.22.2.112:9618?addrs=172.22.2.112-9618&alias=g112.internal.cluster.is.localnet&noUDP&sock=startd_5107_8e41>
+...
+006 (16219907.000.000) 2025-05-28 11:01:15 Image size of job updated: 301452
+	295  -  MemoryUsage of job (MB)
+	301452  -  ResidentSetSize of job (KB)
+...
+006 (16219907.000.000) 2025-05-28 11:01:32 Image size of job updated: 4216116
+	295  -  MemoryUsage of job (MB)
+	301452  -  ResidentSetSize of job (KB)
+...
+005 (16219907.000.000) 2025-05-28 11:01:32 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:13, Sys 0 00:00:05  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:13, Sys 0 00:00:05  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated Assigned
+	   Cpus                 :                 4         4 
+	   Disk (KB)            :        1        1   2892100 
+	   Gpus (Average)       :                 1         1 "GPU-beb09e83"
+	   Memory (MB)          :      295   102400    102400 
+
+	Job terminated of its own accord at 2025-05-28T09:01:32Z with exit-code 0.
+...
+000 (16219908.000.000) 2025-05-28 11:05:05 Job submitted from host: <10.15.2.1:9618?PrivAddr=%3c172.22.0.101:9618%3fsock%3dschedd_2825_4b22%3e&PrivNet=internal.cluster.is.localnet&addrs=10.15.2.1-9618&alias=sched.cluster.is.localnet&noUDP&sock=schedd_2825_4b22>
+...
+001 (16219908.000.000) 2025-05-28 11:05:26 Job executing on host: <172.22.2.112:9618?addrs=172.22.2.112-9618&alias=g112.internal.cluster.is.localnet&noUDP&sock=startd_5107_8e41>
+...
+006 (16219908.000.000) 2025-05-28 11:05:35 Image size of job updated: 327556
+	320  -  MemoryUsage of job (MB)
+	327556  -  ResidentSetSize of job (KB)
+...
+006 (16219908.000.000) 2025-05-28 11:09:52 Image size of job updated: 28046360
+	2172  -  MemoryUsage of job (MB)
+	2223284  -  ResidentSetSize of job (KB)
+...
+004 (16219908.000.000) 2025-05-28 11:09:52 Job was evicted.
+	(0) CPU times
+		Usr 0 00:03:55, Sys 0 00:01:40  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated Assigned
+	   Cpus                 :     1.33        4         4 
+	   Disk (KB)            :     1           1   2892100 
+	   Gpus (Average)       :                 1         1 "GPU-beb09e83"
+	   Memory (MB)          :  2172      102400    102400 
+...
+009 (16219908.000.000) 2025-05-28 11:09:52 Job was aborted.
+	via condor_rm (by user fdraye)
+...
+000 (16219915.000.000) 2025-05-28 11:21:17 Job submitted from host: <10.15.2.1:9618?PrivAddr=%3c172.22.0.101:9618%3fsock%3dschedd_2825_4b22%3e&PrivNet=internal.cluster.is.localnet&addrs=10.15.2.1-9618&alias=sched.cluster.is.localnet&noUDP&sock=schedd_2825_4b22>
+...
+001 (16219915.000.000) 2025-05-28 11:21:18 Job executing on host: <172.22.2.112:9618?addrs=172.22.2.112-9618&alias=g112.internal.cluster.is.localnet&noUDP&sock=startd_5107_8e41>
+...
+006 (16219915.000.000) 2025-05-28 11:21:27 Image size of job updated: 3749396
+	320  -  MemoryUsage of job (MB)
+	326772  -  ResidentSetSize of job (KB)
+...
+006 (16219915.000.000) 2025-05-28 11:23:16 Image size of job updated: 27730340
+	2192  -  MemoryUsage of job (MB)
+	2243752  -  ResidentSetSize of job (KB)
+...
+004 (16219915.000.000) 2025-05-28 11:23:16 Job was evicted.
+	(0) CPU times
+		Usr 0 00:01:30, Sys 0 00:00:39  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated Assigned
+	   Cpus                 :     1.21        4         4 
+	   Disk (KB)            :     1           1   2892100 
+	   Gpus (Average)       :                 1         1 "GPU-beb09e83"
+	   Memory (MB)          :  2192      102400    102400 
+...
+009 (16219915.000.000) 2025-05-28 11:23:16 Job was aborted.
+	via condor_rm (by user fdraye)
+...
+000 (16222650.000.000) 2025-05-31 19:46:52 Job submitted from host: <10.15.2.1:9618?PrivAddr=%3c172.22.0.101:9618%3fsock%3dschedd_2825_4b22%3e&PrivNet=internal.cluster.is.localnet&addrs=10.15.2.1-9618&alias=sched.cluster.is.localnet&noUDP&sock=schedd_2825_4b22>
+...
+001 (16222650.000.000) 2025-05-31 19:46:55 Job executing on host: <172.22.2.164:9618?addrs=172.22.2.164-9618&alias=g164.internal.cluster.is.localnet&noUDP&sock=startd_5028_5e46>
+...
+006 (16222650.000.000) 2025-05-31 19:47:03 Image size of job updated: 3693636
+	350  -  MemoryUsage of job (MB)
+	357796  -  ResidentSetSize of job (KB)
+...
+006 (16222650.000.000) 2025-05-31 19:47:29 Image size of job updated: 15386944
+	350  -  MemoryUsage of job (MB)
+	357796  -  ResidentSetSize of job (KB)
+...
+005 (16222650.000.000) 2025-05-31 19:47:31 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:27, Sys 0 00:00:15  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:27, Sys 0 00:00:15  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated Assigned
+	   Cpus                 :                 4         4 
+	   Disk (KB)            :        1        1   2892100 
+	   Gpus (Average)       :                 1         1 "GPU-75975a43"
+	   Memory (MB)          :      350   409600    409600 
+
+	Job terminated of its own accord at 2025-05-31T17:47:29Z with exit-code 0.
+...
+000 (16222653.000.000) 2025-05-31 19:48:47 Job submitted from host: <10.15.2.1:9618?PrivAddr=%3c172.22.0.101:9618%3fsock%3dschedd_2825_4b22%3e&PrivNet=internal.cluster.is.localnet&addrs=10.15.2.1-9618&alias=sched.cluster.is.localnet&noUDP&sock=schedd_2825_4b22>
+...
+001 (16222653.000.000) 2025-05-31 19:48:49 Job executing on host: <172.22.2.164:9618?addrs=172.22.2.164-9618&alias=g164.internal.cluster.is.localnet&noUDP&sock=startd_5028_5e46>
+...
+006 (16222653.000.000) 2025-05-31 19:48:57 Image size of job updated: 352204
+	344  -  MemoryUsage of job (MB)
+	352204  -  ResidentSetSize of job (KB)
+...
+006 (16222653.000.000) 2025-05-31 19:49:24 Image size of job updated: 16372568
+	344  -  MemoryUsage of job (MB)
+	352204  -  ResidentSetSize of job (KB)
+...
+005 (16222653.000.000) 2025-05-31 19:49:24 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:27, Sys 0 00:00:14  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:27, Sys 0 00:00:14  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated Assigned
+	   Cpus                 :                 4         4 
+	   Disk (KB)            :        1        1   2892100 
+	   Gpus (Average)       :                 1         1 "GPU-75975a43"
+	   Memory (MB)          :      344   409600    409600 
+
+	Job terminated of its own accord at 2025-05-31T17:49:24Z with exit-code 0.
+...
+000 (16222654.000.000) 2025-05-31 19:50:10 Job submitted from host: <10.15.2.1:9618?PrivAddr=%3c172.22.0.101:9618%3fsock%3dschedd_2825_4b22%3e&PrivNet=internal.cluster.is.localnet&addrs=10.15.2.1-9618&alias=sched.cluster.is.localnet&noUDP&sock=schedd_2825_4b22>
+...
+001 (16222654.000.000) 2025-05-31 19:50:11 Job executing on host: <172.22.2.164:9618?addrs=172.22.2.164-9618&alias=g164.internal.cluster.is.localnet&noUDP&sock=startd_5028_5e46>
+...
+006 (16222654.000.000) 2025-05-31 19:50:20 Image size of job updated: 3922588
+	353  -  MemoryUsage of job (MB)
+	361164  -  ResidentSetSize of job (KB)
+...
+006 (16222654.000.000) 2025-05-31 19:50:46 Image size of job updated: 14058368
+	353  -  MemoryUsage of job (MB)
+	361164  -  ResidentSetSize of job (KB)
+...
+005 (16222654.000.000) 2025-05-31 19:50:47 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:26, Sys 0 00:00:15  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:26, Sys 0 00:00:15  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated Assigned
+	   Cpus                 :                 4         4 
+	   Disk (KB)            :        1        1   2892100 
+	   Gpus (Average)       :                 1         1 "GPU-75975a43"
+	   Memory (MB)          :      353   409600    409600 
+
+	Job terminated of its own accord at 2025-05-31T17:50:46Z with exit-code 0.
+...
+000 (16222655.000.000) 2025-05-31 19:51:27 Job submitted from host: <10.15.2.1:9618?PrivAddr=%3c172.22.0.101:9618%3fsock%3dschedd_2825_4b22%3e&PrivNet=internal.cluster.is.localnet&addrs=10.15.2.1-9618&alias=sched.cluster.is.localnet&noUDP&sock=schedd_2825_4b22>
+...
+001 (16222655.000.000) 2025-05-31 19:51:32 Job executing on host: <172.22.2.164:9618?addrs=172.22.2.164-9618&alias=g164.internal.cluster.is.localnet&noUDP&sock=startd_5028_5e46>
+...
+006 (16222655.000.000) 2025-05-31 19:51:41 Image size of job updated: 3771484
+	350  -  MemoryUsage of job (MB)
+	358316  -  ResidentSetSize of job (KB)
+...
+006 (16222655.000.000) 2025-05-31 19:51:54 Image size of job updated: 10434512
+	351  -  MemoryUsage of job (MB)
+	358404  -  ResidentSetSize of job (KB)
+...
+005 (16222655.000.000) 2025-05-31 19:51:55 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:11, Sys 0 00:00:04  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:11, Sys 0 00:00:04  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated Assigned
+	   Cpus                 :                 4         4 
+	   Disk (KB)            :        1        1   2892100 
+	   Gpus (Average)       :                 1         1 "GPU-75975a43"
+	   Memory (MB)          :      351   409600    409600 
+
+	Job terminated of its own accord at 2025-05-31T17:51:54Z with exit-code 0.
+...
+000 (16222658.000.000) 2025-05-31 19:56:36 Job submitted from host: <10.15.2.1:9618?PrivAddr=%3c172.22.0.101:9618%3fsock%3dschedd_2825_4b22%3e&PrivNet=internal.cluster.is.localnet&addrs=10.15.2.1-9618&alias=sched.cluster.is.localnet&noUDP&sock=schedd_2825_4b22>
+...
+001 (16222658.000.000) 2025-05-31 19:56:53 Job executing on host: <172.22.2.164:9618?addrs=172.22.2.164-9618&alias=g164.internal.cluster.is.localnet&noUDP&sock=startd_5028_5e46>
+...
+006 (16222658.000.000) 2025-05-31 19:57:02 Image size of job updated: 3771488
+	354  -  MemoryUsage of job (MB)
+	362312  -  ResidentSetSize of job (KB)
+...
+006 (16222658.000.000) 2025-05-31 20:00:23 Image size of job updated: 14573008
+	1552  -  MemoryUsage of job (MB)
+	1588476  -  ResidentSetSize of job (KB)
+...
+004 (16222658.000.000) 2025-05-31 20:00:24 Job was evicted.
+	(0) CPU times
+		Usr 0 00:03:17, Sys 0 00:00:04  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated Assigned
+	   Cpus                 :     1.00        4         4 
+	   Disk (KB)            :     1           1   2892100 
+	   Gpus (Average)       :                 1         1 "GPU-75975a43"
+	   Memory (MB)          :  1552      409600    409600 
+...
+009 (16222658.000.000) 2025-05-31 20:00:24 Job was aborted.
+	via condor_rm (by user fdraye)
+...
+000 (16222699.000.000) 2025-06-01 11:54:17 Job submitted from host: <10.15.2.1:9618?PrivAddr=%3c172.22.0.101:9618%3fsock%3dschedd_2825_4b22%3e&PrivNet=internal.cluster.is.localnet&addrs=10.15.2.1-9618&alias=sched.cluster.is.localnet&noUDP&sock=schedd_2825_4b22>
+...
+001 (16222699.000.000) 2025-06-01 11:54:18 Job executing on host: <172.22.2.109:9618?addrs=172.22.2.109-9618&alias=g109.internal.cluster.is.localnet&noUDP&sock=startd_5034_7bd8>
+...
+006 (16222699.000.000) 2025-06-01 11:54:27 Image size of job updated: 433684
+	248  -  MemoryUsage of job (MB)
+	253260  -  ResidentSetSize of job (KB)
+...
+006 (16222699.000.000) 2025-06-01 11:54:56 Image size of job updated: 15163244
+	248  -  MemoryUsage of job (MB)
+	253336  -  ResidentSetSize of job (KB)
+...
+005 (16222699.000.000) 2025-06-01 11:54:57 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:12, Sys 0 00:00:05  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:12, Sys 0 00:00:05  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated Assigned
+	   Cpus                 :                 4         4 
+	   Disk (KB)            :        1        1   2892100 
+	   Gpus (Average)       :                 1         1 "GPU-9377184b"
+	   Memory (MB)          :      248   409600    409600 
+
+	Job terminated of its own accord at 2025-06-01T09:54:56Z with exit-code 0.
+...
+000 (16222700.000.000) 2025-06-01 11:56:56 Job submitted from host: <10.15.2.1:9618?PrivAddr=%3c172.22.0.101:9618%3fsock%3dschedd_2825_4b22%3e&PrivNet=internal.cluster.is.localnet&addrs=10.15.2.1-9618&alias=sched.cluster.is.localnet&noUDP&sock=schedd_2825_4b22>
+...
+001 (16222700.000.000) 2025-06-01 11:56:58 Job executing on host: <172.22.2.109:9618?addrs=172.22.2.109-9618&alias=g109.internal.cluster.is.localnet&noUDP&sock=startd_5034_7bd8>
+...
+006 (16222700.000.000) 2025-06-01 11:57:06 Image size of job updated: 3629968
+	334  -  MemoryUsage of job (MB)
+	341100  -  ResidentSetSize of job (KB)
+...
+006 (16222700.000.000) 2025-06-01 11:57:22 Image size of job updated: 9130900
+	334  -  MemoryUsage of job (MB)
+	341104  -  ResidentSetSize of job (KB)
+...
+005 (16222700.000.000) 2025-06-01 11:57:23 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:11, Sys 0 00:00:04  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:11, Sys 0 00:00:04  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated Assigned
+	   Cpus                 :                 4         4 
+	   Disk (KB)            :        1        1   2892100 
+	   Gpus (Average)       :                 1         1 "GPU-9377184b"
+	   Memory (MB)          :      334   409600    409600 
+
+	Job terminated of its own accord at 2025-06-01T09:57:22Z with exit-code 0.
+...
+000 (16222703.000.000) 2025-06-01 12:09:35 Job submitted from host: <10.15.2.1:9618?PrivAddr=%3c172.22.0.101:9618%3fsock%3dschedd_2825_4b22%3e&PrivNet=internal.cluster.is.localnet&addrs=10.15.2.1-9618&alias=sched.cluster.is.localnet&noUDP&sock=schedd_2825_4b22>
+...
+001 (16222703.000.000) 2025-06-01 12:09:36 Job executing on host: <172.22.2.109:9618?addrs=172.22.2.109-9618&alias=g109.internal.cluster.is.localnet&noUDP&sock=startd_5034_7bd8>
+...
+006 (16222703.000.000) 2025-06-01 12:09:45 Image size of job updated: 3712984
+	353  -  MemoryUsage of job (MB)
+	360816  -  ResidentSetSize of job (KB)
+...
+006 (16222703.000.000) 2025-06-01 12:10:08 Image size of job updated: 11296116
+	353  -  MemoryUsage of job (MB)
+	360816  -  ResidentSetSize of job (KB)
+...
+005 (16222703.000.000) 2025-06-01 12:10:09 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:17, Sys 0 00:00:09  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:17, Sys 0 00:00:09  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated Assigned
+	   Cpus                 :                 4         4 
+	   Disk (KB)            :        1        1   2892100 
+	   Gpus (Average)       :                 1         1 "GPU-9377184b"
+	   Memory (MB)          :      353   409600    409600 
+
+	Job terminated of its own accord at 2025-06-01T10:10:08Z with exit-code 0.
+...
+000 (16222704.000.000) 2025-06-01 12:19:22 Job submitted from host: <10.15.2.1:9618?PrivAddr=%3c172.22.0.101:9618%3fsock%3dschedd_2825_4b22%3e&PrivNet=internal.cluster.is.localnet&addrs=10.15.2.1-9618&alias=sched.cluster.is.localnet&noUDP&sock=schedd_2825_4b22>
+...
+001 (16222704.000.000) 2025-06-01 12:19:24 Job executing on host: <172.22.2.109:9618?addrs=172.22.2.109-9618&alias=g109.internal.cluster.is.localnet&noUDP&sock=startd_5034_7bd8>
+...
+006 (16222704.000.000) 2025-06-01 12:19:33 Image size of job updated: 3654548
+	351  -  MemoryUsage of job (MB)
+	358740  -  ResidentSetSize of job (KB)
+...
+006 (16222704.000.000) 2025-06-01 12:24:33 Image size of job updated: 14571236
+	1555  -  MemoryUsage of job (MB)
+	1592236  -  ResidentSetSize of job (KB)
+...
+004 (16222704.000.000) 2025-06-01 12:25:53 Job was evicted.
+	(0) CPU times
+		Usr 0 00:06:15, Sys 0 00:00:04  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated Assigned
+	   Cpus                 :     1.00        4         4 
+	   Disk (KB)            :     1           1   2892100 
+	   Gpus (Average)       :                 1         1 "GPU-9377184b"
+	   Memory (MB)          :  1555      409600    409600 
+...
+009 (16222704.000.000) 2025-06-01 12:25:53 Job was aborted.
+	via condor_rm (by user fdraye)
+...
+000 (16222707.000.000) 2025-06-01 12:34:00 Job submitted from host: <10.15.2.1:9618?PrivAddr=%3c172.22.0.101:9618%3fsock%3dschedd_2825_4b22%3e&PrivNet=internal.cluster.is.localnet&addrs=10.15.2.1-9618&alias=sched.cluster.is.localnet&noUDP&sock=schedd_2825_4b22>
+...
+001 (16222707.000.000) 2025-06-01 12:34:01 Job executing on host: <172.22.2.180:9618?addrs=172.22.2.180-9618&alias=g180.internal.cluster.is.localnet&noUDP&sock=startd_5004_e800>
+...
+006 (16222707.000.000) 2025-06-01 12:34:10 Image size of job updated: 3399724
+	241  -  MemoryUsage of job (MB)
+	245936  -  ResidentSetSize of job (KB)
+...
+006 (16222707.000.000) 2025-06-01 12:34:38 Image size of job updated: 9130976
+	241  -  MemoryUsage of job (MB)
+	245944  -  ResidentSetSize of job (KB)
+...
+005 (16222707.000.000) 2025-06-01 12:34:39 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:12, Sys 0 00:00:05  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:12, Sys 0 00:00:05  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated Assigned
+	   Cpus                 :                 4         4 
+	   Disk (KB)            :        1        1   2892100 
+	   Gpus (Average)       :                 1         1 "GPU-cc76289a"
+	   Memory (MB)          :      241   409600    409600 
+
+	Job terminated of its own accord at 2025-06-01T10:34:38Z with exit-code 0.
+...
+000 (16222727.000.000) 2025-06-01 14:44:59 Job submitted from host: <10.15.2.1:9618?PrivAddr=%3c172.22.0.101:9618%3fsock%3dschedd_2825_4b22%3e&PrivNet=internal.cluster.is.localnet&addrs=10.15.2.1-9618&alias=sched.cluster.is.localnet&noUDP&sock=schedd_2825_4b22>
+...
+001 (16222727.000.000) 2025-06-01 14:45:01 Job executing on host: <172.22.2.180:9618?addrs=172.22.2.180-9618&alias=g180.internal.cluster.is.localnet&noUDP&sock=startd_5004_e800>
+...
+006 (16222727.000.000) 2025-06-01 14:45:09 Image size of job updated: 3667364
+	334  -  MemoryUsage of job (MB)
+	341128  -  ResidentSetSize of job (KB)
+...
+006 (16222727.000.000) 2025-06-01 14:45:25 Image size of job updated: 11291708
+	334  -  MemoryUsage of job (MB)
+	341132  -  ResidentSetSize of job (KB)
+...
+005 (16222727.000.000) 2025-06-01 14:45:26 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:11, Sys 0 00:00:04  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:11, Sys 0 00:00:04  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated Assigned
+	   Cpus                 :     0.65        4         4 
+	   Disk (KB)            :     1           1   2892100 
+	   Gpus (Average)       :                 1         1 "GPU-cc76289a"
+	   Memory (MB)          :   334      409600    409600 
+
+	Job terminated of its own accord at 2025-06-01T12:45:25Z with exit-code 0.
+...
+000 (16222728.000.000) 2025-06-01 14:47:43 Job submitted from host: <10.15.2.1:9618?PrivAddr=%3c172.22.0.101:9618%3fsock%3dschedd_2825_4b22%3e&PrivNet=internal.cluster.is.localnet&addrs=10.15.2.1-9618&alias=sched.cluster.is.localnet&noUDP&sock=schedd_2825_4b22>
+...
+001 (16222728.000.000) 2025-06-01 14:47:46 Job executing on host: <172.22.2.180:9618?addrs=172.22.2.180-9618&alias=g180.internal.cluster.is.localnet&noUDP&sock=startd_5004_e800>
+...
+006 (16222728.000.000) 2025-06-01 14:47:54 Image size of job updated: 3914056
+	325  -  MemoryUsage of job (MB)
+	332620  -  ResidentSetSize of job (KB)
+...
+006 (16222728.000.000) 2025-06-01 14:52:54 Image size of job updated: 14552924
+	1532  -  MemoryUsage of job (MB)
+	1567876  -  ResidentSetSize of job (KB)
+...
+005 (16222728.000.000) 2025-06-01 14:55:02 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:07:01, Sys 0 00:00:05  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:07:01, Sys 0 00:00:05  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated Assigned
+	   Cpus                 :     1.00        4         4 
+	   Disk (KB)            :     1           1   2892100 
+	   Gpus (Average)       :                 1         1 "GPU-cc76289a"
+	   Memory (MB)          :  1532      409600    409600 
+
+	Job terminated of its own accord at 2025-06-01T12:55:01Z with exit-code 0.
+...
+000 (16222729.000.000) 2025-06-01 15:00:25 Job submitted from host: <10.15.2.1:9618?PrivAddr=%3c172.22.0.101:9618%3fsock%3dschedd_2825_4b22%3e&PrivNet=internal.cluster.is.localnet&addrs=10.15.2.1-9618&alias=sched.cluster.is.localnet&noUDP&sock=schedd_2825_4b22>
+...
+001 (16222729.000.000) 2025-06-01 15:00:26 Job executing on host: <172.22.2.180:9618?addrs=172.22.2.180-9618&alias=g180.internal.cluster.is.localnet&noUDP&sock=startd_5004_e800>
+...
+006 (16222729.000.000) 2025-06-01 15:00:35 Image size of job updated: 3938512
+	348  -  MemoryUsage of job (MB)
+	355544  -  ResidentSetSize of job (KB)
+...
+006 (16222729.000.000) 2025-06-01 15:05:36 Image size of job updated: 14514220
+	1493  -  MemoryUsage of job (MB)
+	1528464  -  ResidentSetSize of job (KB)
+...
+006 (16222729.000.000) 2025-06-01 15:10:36 Image size of job updated: 299585840
+	79641  -  MemoryUsage of job (MB)
+	81552372  -  ResidentSetSize of job (KB)
+...
+006 (16222729.000.000) 2025-06-01 15:15:37 Image size of job updated: 299585852
+	219927  -  MemoryUsage of job (MB)
+	225204248  -  ResidentSetSize of job (KB)
+...
+006 (16222729.000.000) 2025-06-01 15:18:48 Image size of job updated: 441155896
+	408777  -  MemoryUsage of job (MB)
+	418586708  -  ResidentSetSize of job (KB)
+...
+007 (16222729.000.000) 2025-06-01 15:18:49 Shadow exception!
+	Error from slot1_1@g180.internal.cluster.is.localnet: Job has gone over memory limit of 368640 megabytes. Peak usage: 408777 megabytes.
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+...
+012 (16222729.000.000) 2025-06-01 15:18:49 Job was held.
+	Error from slot1_1@g180.internal.cluster.is.localnet: Job has gone over memory limit of 368640 megabytes. Peak usage: 408777 megabytes.
+	Code 34 Subcode 0
+...
+000 (16222772.000.000) 2025-06-01 15:37:40 Job submitted from host: <10.15.2.1:9618?PrivAddr=%3c172.22.0.101:9618%3fsock%3dschedd_2825_4b22%3e&PrivNet=internal.cluster.is.localnet&addrs=10.15.2.1-9618&alias=sched.cluster.is.localnet&noUDP&sock=schedd_2825_4b22>
+...
+001 (16222772.000.000) 2025-06-01 15:37:42 Job executing on host: <172.22.2.107:9618?addrs=172.22.2.107-9618&alias=g107.internal.cluster.is.localnet&noUDP&sock=startd_5085_772c>
+...
+006 (16222772.000.000) 2025-06-01 15:37:51 Image size of job updated: 442116
+	252  -  MemoryUsage of job (MB)
+	257964  -  ResidentSetSize of job (KB)
+...
+006 (16222772.000.000) 2025-06-01 15:42:52 Image size of job updated: 14485208
+	1467  -  MemoryUsage of job (MB)
+	1501540  -  ResidentSetSize of job (KB)
+...
+009 (16222729.000.000) 2025-06-01 15:43:32 Job was aborted.
+	via condor_rm (by user fdraye)
+...
+006 (16222772.000.000) 2025-06-01 15:47:53 Image size of job updated: 299235564
+	75647  -  MemoryUsage of job (MB)
+	77461580  -  ResidentSetSize of job (KB)
+...
+006 (16222772.000.000) 2025-06-01 15:52:54 Image size of job updated: 299616500
+	204795  -  MemoryUsage of job (MB)
+	209709304  -  ResidentSetSize of job (KB)
+...
+006 (16222772.000.000) 2025-06-01 15:57:54 Image size of job updated: 583125236
+	490808  -  MemoryUsage of job (MB)
+	502587024  -  ResidentSetSize of job (KB)
+...
+006 (16222772.000.000) 2025-06-01 16:02:54 Image size of job updated: 583310072
+	556960  -  MemoryUsage of job (MB)
+	570326404  -  ResidentSetSize of job (KB)
+...
+004 (16222772.000.000) 2025-06-01 16:51:29 Job was evicted.
+	(0) CPU times
+		Usr 0 00:34:54, Sys 0 00:28:21  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	Partitionable Resources :     Usage  Request Allocated Assigned
+	   Cpus                 :      1.47        4         4 
+	   Disk (KB)            :      1           1   2892100 
+	   Gpus (Average)       :                  1         1 "GPU-5896e301"
+	   Memory (MB)          : 556960      819200    819200 
+...
+009 (16222772.000.000) 2025-06-01 16:51:29 Job was aborted.
+	via condor_rm (by user fdraye)
+...
+000 (16223458.000.000) 2025-06-01 18:56:26 Job submitted from host: <10.15.2.1:9618?PrivAddr=%3c172.22.0.101:9618%3fsock%3dschedd_2825_4b22%3e&PrivNet=internal.cluster.is.localnet&addrs=10.15.2.1-9618&alias=sched.cluster.is.localnet&noUDP&sock=schedd_2825_4b22>
+...
+001 (16223458.000.000) 2025-06-01 18:57:04 Job executing on host: <172.22.2.102:9618?addrs=172.22.2.102-9618&alias=g102.internal.cluster.is.localnet&noUDP&sock=startd_5238_692a>
+...
+006 (16223458.000.000) 2025-06-01 18:57:12 Image size of job updated: 3722548
+	259  -  MemoryUsage of job (MB)
+	264812  -  ResidentSetSize of job (KB)
+...
+006 (16223458.000.000) 2025-06-01 18:57:14 Image size of job updated: 3733868
+	259  -  MemoryUsage of job (MB)
+	264816  -  ResidentSetSize of job (KB)
+...
+005 (16223458.000.000) 2025-06-01 18:57:15 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:03, Sys 0 00:00:01  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:03, Sys 0 00:00:01  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated Assigned
+	   Cpus                 :                 4         4 
+	   Disk (KB)            :        1        1   2892100 
+	   Gpus (Average)       :                 1         1 "GPU-ceed1ff4"
+	   Memory (MB)          :      259   819200    819200 
+
+	Job terminated of its own accord at 2025-06-01T16:57:14Z with exit-code 0.
+...
+000 (16223496.000.000) 2025-06-01 18:59:26 Job submitted from host: <10.15.2.1:9618?PrivAddr=%3c172.22.0.101:9618%3fsock%3dschedd_2825_4b22%3e&PrivNet=internal.cluster.is.localnet&addrs=10.15.2.1-9618&alias=sched.cluster.is.localnet&noUDP&sock=schedd_2825_4b22>
+...
+001 (16223496.000.000) 2025-06-01 18:59:29 Job executing on host: <172.22.2.162:9618?addrs=172.22.2.162-9618&alias=g162.internal.cluster.is.localnet&noUDP&sock=startd_5062_b07e>
+...
+006 (16223496.000.000) 2025-06-01 18:59:38 Image size of job updated: 3354332
+	353  -  MemoryUsage of job (MB)
+	361412  -  ResidentSetSize of job (KB)
+...
+006 (16223496.000.000) 2025-06-01 18:59:54 Image size of job updated: 4431524
+	353  -  MemoryUsage of job (MB)
+	361412  -  ResidentSetSize of job (KB)
+...
+005 (16223496.000.000) 2025-06-01 18:59:55 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:11, Sys 0 00:00:04  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:11, Sys 0 00:00:04  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated Assigned
+	   Cpus                 :     0.66        4         4 
+	   Disk (KB)            :     1           1   2892100 
+	   Gpus (Average)       :                 1         1 "GPU-c4e78c2a"
+	   Memory (MB)          :   353      819200    819200 
+
+	Job terminated of its own accord at 2025-06-01T16:59:54Z with exit-code 0.
+...
+000 (16223602.000.000) 2025-06-01 19:10:20 Job submitted from host: <10.15.2.1:9618?PrivAddr=%3c172.22.0.101:9618%3fsock%3dschedd_2825_4b22%3e&PrivNet=internal.cluster.is.localnet&addrs=10.15.2.1-9618&alias=sched.cluster.is.localnet&noUDP&sock=schedd_2825_4b22>
+...
+001 (16223602.000.000) 2025-06-01 19:11:03 Job executing on host: <172.22.2.129:9618?addrs=172.22.2.129-9618&alias=g129.internal.cluster.is.localnet&noUDP&sock=startd_5356_5956>
+...
+006 (16223602.000.000) 2025-06-01 19:11:12 Image size of job updated: 3975172
+	348  -  MemoryUsage of job (MB)
+	356168  -  ResidentSetSize of job (KB)
+...
+006 (16223602.000.000) 2025-06-01 19:11:19 Image size of job updated: 4167448
+	349  -  MemoryUsage of job (MB)
+	356560  -  ResidentSetSize of job (KB)
+...
+005 (16223602.000.000) 2025-06-01 19:11:20 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:08, Sys 0 00:00:02  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:08, Sys 0 00:00:02  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated Assigned
+	   Cpus                 :                 4         4 
+	   Disk (KB)            :        1        1   2892100 
+	   Gpus (Average)       :                 1         1 "GPU-a3e8da7c"
+	   Memory (MB)          :      349   819200    819200 
+
+	Job terminated of its own accord at 2025-06-01T17:11:19Z with exit-code 0.
+...
+000 (16223688.000.000) 2025-06-01 19:19:28 Job submitted from host: <10.15.2.1:9618?PrivAddr=%3c172.22.0.101:9618%3fsock%3dschedd_2825_4b22%3e&PrivNet=internal.cluster.is.localnet&addrs=10.15.2.1-9618&alias=sched.cluster.is.localnet&noUDP&sock=schedd_2825_4b22>
+...
+001 (16223688.000.000) 2025-06-01 19:19:48 Job executing on host: <172.22.2.159:9618?addrs=172.22.2.159-9618&alias=g159.internal.cluster.is.localnet&noUDP&sock=startd_5083_17fc>
+...
+006 (16223688.000.000) 2025-06-01 19:19:56 Image size of job updated: 3769840
+	346  -  MemoryUsage of job (MB)
+	353776  -  ResidentSetSize of job (KB)
+...
+006 (16223688.000.000) 2025-06-01 19:20:05 Image size of job updated: 9126780
+	346  -  MemoryUsage of job (MB)
+	353780  -  ResidentSetSize of job (KB)
+...
+005 (16223688.000.000) 2025-06-01 19:20:06 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:09, Sys 0 00:00:02  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:09, Sys 0 00:00:02  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated Assigned
+	   Cpus                 :                 4         4 
+	   Disk (KB)            :        1        1   2892100 
+	   Gpus (Average)       :                 1         1 "GPU-6fca2066"
+	   Memory (MB)          :      346   819200    819200 
+
+	Job terminated of its own accord at 2025-06-01T17:20:05Z with exit-code 0.
+...
+000 (16223766.000.000) 2025-06-01 19:32:40 Job submitted from host: <10.15.2.1:9618?PrivAddr=%3c172.22.0.101:9618%3fsock%3dschedd_2825_4b22%3e&PrivNet=internal.cluster.is.localnet&addrs=10.15.2.1-9618&alias=sched.cluster.is.localnet&noUDP&sock=schedd_2825_4b22>
+...
+001 (16223766.000.000) 2025-06-01 19:32:49 Job executing on host: <172.22.2.163:9618?addrs=172.22.2.163-9618&alias=g163.internal.cluster.is.localnet&noUDP&sock=startd_5081_b8cb>
+...
+006 (16223766.000.000) 2025-06-01 19:32:57 Image size of job updated: 3654384
+	249  -  MemoryUsage of job (MB)
+	254716  -  ResidentSetSize of job (KB)
+...
+006 (16223766.000.000) 2025-06-01 19:33:17 Image size of job updated: 4028756
+	249  -  MemoryUsage of job (MB)
+	254728  -  ResidentSetSize of job (KB)
+...
+005 (16223766.000.000) 2025-06-01 19:33:17 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:09, Sys 0 00:00:03  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:09, Sys 0 00:00:03  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated Assigned
+	   Cpus                 :                 4         4 
+	   Disk (KB)            :        1        1   2892100 
+	   Gpus (Average)       :                 1         1 "GPU-bb0384f8"
+	   Memory (MB)          :      249   819200    819200 
+
+	Job terminated of its own accord at 2025-06-01T17:33:17Z with exit-code 0.
+...
+000 (16223793.000.000) 2025-06-01 19:39:21 Job submitted from host: <10.15.2.1:9618?PrivAddr=%3c172.22.0.101:9618%3fsock%3dschedd_2825_4b22%3e&PrivNet=internal.cluster.is.localnet&addrs=10.15.2.1-9618&alias=sched.cluster.is.localnet&noUDP&sock=schedd_2825_4b22>
+...
+001 (16223793.000.000) 2025-06-01 19:39:35 Job executing on host: <172.22.2.107:9618?addrs=172.22.2.107-9618&alias=g107.internal.cluster.is.localnet&noUDP&sock=startd_5085_772c>
+...
+006 (16223793.000.000) 2025-06-01 19:39:43 Image size of job updated: 3654512
+	250  -  MemoryUsage of job (MB)
+	255936  -  ResidentSetSize of job (KB)
+...
+006 (16223793.000.000) 2025-06-01 19:40:01 Image size of job updated: 4160696
+	250  -  MemoryUsage of job (MB)
+	255944  -  ResidentSetSize of job (KB)
+...
+005 (16223793.000.000) 2025-06-01 19:40:02 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:10, Sys 0 00:00:03  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:10, Sys 0 00:00:03  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated Assigned
+	   Cpus                 :                 4         4 
+	   Disk (KB)            :        1        1   2892100 
+	   Gpus (Average)       :                 1         1 "GPU-5896e301"
+	   Memory (MB)          :      250   819200    819200 
+
+	Job terminated of its own accord at 2025-06-01T17:40:01Z with exit-code 0.
+...
+000 (16223802.000.000) 2025-06-01 19:41:53 Job submitted from host: <10.15.2.1:9618?PrivAddr=%3c172.22.0.101:9618%3fsock%3dschedd_2825_4b22%3e&PrivNet=internal.cluster.is.localnet&addrs=10.15.2.1-9618&alias=sched.cluster.is.localnet&noUDP&sock=schedd_2825_4b22>
+...
+001 (16223802.000.000) 2025-06-01 19:41:56 Job executing on host: <172.22.2.125:9618?addrs=172.22.2.125-9618&alias=g125.internal.cluster.is.localnet&noUDP&sock=startd_5451_82d6>
+...
+006 (16223802.000.000) 2025-06-01 19:42:05 Image size of job updated: 3628076
+	259  -  MemoryUsage of job (MB)
+	265080  -  ResidentSetSize of job (KB)
+...
+006 (16223802.000.000) 2025-06-01 19:42:22 Image size of job updated: 4166016
+	259  -  MemoryUsage of job (MB)
+	265080  -  ResidentSetSize of job (KB)
+...
+005 (16223802.000.000) 2025-06-01 19:42:23 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:09, Sys 0 00:00:03  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:09, Sys 0 00:00:03  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated Assigned
+	   Cpus                 :                 4         4 
+	   Disk (KB)            :        1        1   2892100 
+	   Gpus (Average)       :                 1         1 "GPU-748af042"
+	   Memory (MB)          :      259   819200    819200 
+
+	Job terminated of its own accord at 2025-06-01T17:42:22Z with exit-code 0.
+...
+000 (16223817.000.000) 2025-06-01 19:45:31 Job submitted from host: <10.15.2.1:9618?PrivAddr=%3c172.22.0.101:9618%3fsock%3dschedd_2825_4b22%3e&PrivNet=internal.cluster.is.localnet&addrs=10.15.2.1-9618&alias=sched.cluster.is.localnet&noUDP&sock=schedd_2825_4b22>
+...
+001 (16223817.000.000) 2025-06-01 19:45:40 Job executing on host: <172.22.2.103:9618?addrs=172.22.2.103-9618&alias=g103.internal.cluster.is.localnet&noUDP&sock=startd_5247_9584>
+...
+006 (16223817.000.000) 2025-06-01 19:45:49 Image size of job updated: 3354312
+	261  -  MemoryUsage of job (MB)
+	267072  -  ResidentSetSize of job (KB)
+...
+006 (16223817.000.000) 2025-06-01 19:46:11 Image size of job updated: 9127124
+	261  -  MemoryUsage of job (MB)
+	267072  -  ResidentSetSize of job (KB)
+...
+005 (16223817.000.000) 2025-06-01 19:46:11 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:09, Sys 0 00:00:03  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:09, Sys 0 00:00:03  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated Assigned
+	   Cpus                 :                 4         4 
+	   Disk (KB)            :        1        1   2892100 
+	   Gpus (Average)       :                 1         1 "GPU-343f3d4e"
+	   Memory (MB)          :      261   819200    819200 
+
+	Job terminated of its own accord at 2025-06-01T17:46:11Z with exit-code 0.
+...
+000 (16223826.000.000) 2025-06-01 19:48:08 Job submitted from host: <10.15.2.1:9618?PrivAddr=%3c172.22.0.101:9618%3fsock%3dschedd_2825_4b22%3e&PrivNet=internal.cluster.is.localnet&addrs=10.15.2.1-9618&alias=sched.cluster.is.localnet&noUDP&sock=schedd_2825_4b22>
+...
+001 (16223826.000.000) 2025-06-01 19:48:10 Job executing on host: <172.22.2.107:9618?addrs=172.22.2.107-9618&alias=g107.internal.cluster.is.localnet&noUDP&sock=startd_5085_772c>
+...
+006 (16223826.000.000) 2025-06-01 19:48:19 Image size of job updated: 3695836
+	353  -  MemoryUsage of job (MB)
+	360928  -  ResidentSetSize of job (KB)
+...
+006 (16223826.000.000) 2025-06-01 19:48:29 Image size of job updated: 4166016
+	353  -  MemoryUsage of job (MB)
+	360928  -  ResidentSetSize of job (KB)
+...
+005 (16223826.000.000) 2025-06-01 19:48:31 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:09, Sys 0 00:00:03  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:09, Sys 0 00:00:03  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated Assigned
+	   Cpus                 :                 4         4 
+	   Disk (KB)            :        1        1   2892100 
+	   Gpus (Average)       :                 1         1 "GPU-5896e301"
+	   Memory (MB)          :      353   819200    819200 
+
+	Job terminated of its own accord at 2025-06-01T17:48:29Z with exit-code 0.
+...
+000 (16223851.000.000) 2025-06-01 19:55:55 Job submitted from host: <10.15.2.1:9618?PrivAddr=%3c172.22.0.101:9618%3fsock%3dschedd_2825_4b22%3e&PrivNet=internal.cluster.is.localnet&addrs=10.15.2.1-9618&alias=sched.cluster.is.localnet&noUDP&sock=schedd_2825_4b22>
+...
+001 (16223851.000.000) 2025-06-01 19:55:56 Job executing on host: <172.22.2.112:9618?addrs=172.22.2.112-9618&alias=g112.internal.cluster.is.localnet&noUDP&sock=startd_5107_8e41>
+...
+006 (16223851.000.000) 2025-06-01 19:56:05 Image size of job updated: 3630984
+	352  -  MemoryUsage of job (MB)
+	359908  -  ResidentSetSize of job (KB)
+...
+006 (16223851.000.000) 2025-06-01 19:56:16 Image size of job updated: 4469280
+	352  -  MemoryUsage of job (MB)
+	359936  -  ResidentSetSize of job (KB)
+...
+005 (16223851.000.000) 2025-06-01 19:56:17 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:09, Sys 0 00:00:02  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:09, Sys 0 00:00:02  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated Assigned
+	   Cpus                 :                 4         4 
+	   Disk (KB)            :        1        1   2892100 
+	   Gpus (Average)       :                 1         1 "GPU-2f4df785"
+	   Memory (MB)          :      352   819200    819200 
+
+	Job terminated of its own accord at 2025-06-01T17:56:16Z with exit-code 0.
+...
+000 (16223903.000.000) 2025-06-01 20:10:31 Job submitted from host: <10.15.2.1:9618?PrivAddr=%3c172.22.0.101:9618%3fsock%3dschedd_2825_4b22%3e&PrivNet=internal.cluster.is.localnet&addrs=10.15.2.1-9618&alias=sched.cluster.is.localnet&noUDP&sock=schedd_2825_4b22>
+...
+001 (16223903.000.000) 2025-06-01 20:10:50 Job executing on host: <172.22.2.118:9618?addrs=172.22.2.118-9618&alias=g118.internal.cluster.is.localnet&noUDP&sock=startd_5013_145a>
+...
+006 (16223903.000.000) 2025-06-01 20:10:54 Image size of job updated: 3593940
+	154  -  MemoryUsage of job (MB)
+	156796  -  ResidentSetSize of job (KB)
+...
+004 (16223903.000.000) 2025-06-01 20:10:54 Job was evicted.
+	(0) CPU times
+		Usr 0 00:00:01, Sys 0 00:00:01  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated Assigned
+	   Cpus                 :        0        4         4 
+	   Disk (KB)            :        1        1   2892100 
+	   Gpus (Average)       :                 1         1 "GPU-7b4010a9"
+	   Memory (MB)          :      154   819200    819200 
+...
+009 (16223903.000.000) 2025-06-01 20:10:54 Job was aborted.
+	via condor_rm (by user fdraye)
+...
+000 (16223906.000.000) 2025-06-01 20:12:40 Job submitted from host: <10.15.2.1:9618?PrivAddr=%3c172.22.0.101:9618%3fsock%3dschedd_2825_4b22%3e&PrivNet=internal.cluster.is.localnet&addrs=10.15.2.1-9618&alias=sched.cluster.is.localnet&noUDP&sock=schedd_2825_4b22>
+...
+001 (16223906.000.000) 2025-06-01 20:12:41 Job executing on host: <172.22.2.116:9618?addrs=172.22.2.116-9618&alias=g116.internal.cluster.is.localnet&noUDP&sock=startd_5008_a661>
+...
+006 (16223906.000.000) 2025-06-01 20:12:50 Image size of job updated: 3445736
+	251  -  MemoryUsage of job (MB)
+	256740  -  ResidentSetSize of job (KB)
+...
+006 (16223906.000.000) 2025-06-01 20:13:26 Image size of job updated: 12565136
+	251  -  MemoryUsage of job (MB)
+	256824  -  ResidentSetSize of job (KB)
+...
+005 (16223906.000.000) 2025-06-01 20:13:27 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:15, Sys 0 00:00:08  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:15, Sys 0 00:00:08  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated Assigned
+	   Cpus                 :     0.48        4         4 
+	   Disk (KB)            :     1           1   2892100 
+	   Gpus (Average)       :                 1         1 "GPU-3cf72241"
+	   Memory (MB)          :   251      819200    819200 
+
+	Job terminated of its own accord at 2025-06-01T18:13:26Z with exit-code 0.
+...
+000 (16223913.000.000) 2025-06-01 20:15:20 Job submitted from host: <10.15.2.1:9618?PrivAddr=%3c172.22.0.101:9618%3fsock%3dschedd_2825_4b22%3e&PrivNet=internal.cluster.is.localnet&addrs=10.15.2.1-9618&alias=sched.cluster.is.localnet&noUDP&sock=schedd_2825_4b22>
+...
+001 (16223913.000.000) 2025-06-01 20:15:22 Job executing on host: <172.22.2.107:9618?addrs=172.22.2.107-9618&alias=g107.internal.cluster.is.localnet&noUDP&sock=startd_5085_772c>
+...
+006 (16223913.000.000) 2025-06-01 20:15:30 Image size of job updated: 3638904
+	351  -  MemoryUsage of job (MB)
+	358516  -  ResidentSetSize of job (KB)
+...
+006 (16223913.000.000) 2025-06-01 20:17:13 Image size of job updated: 55132604
+	351  -  MemoryUsage of job (MB)
+	358564  -  ResidentSetSize of job (KB)
+...
+005 (16223913.000.000) 2025-06-01 20:17:13 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:20, Sys 0 00:00:14  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:20, Sys 0 00:00:14  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated Assigned
+	   Cpus                 :                 4         4 
+	   Disk (KB)            :        1        1   2892100 
+	   Gpus (Average)       :                 1         1 "GPU-5896e301"
+	   Memory (MB)          :      351   819200    819200 
+
+	Job terminated of its own accord at 2025-06-01T18:17:13Z with exit-code 0.
+...
+000 (16223920.000.000) 2025-06-01 20:19:11 Job submitted from host: <10.15.2.1:9618?PrivAddr=%3c172.22.0.101:9618%3fsock%3dschedd_2825_4b22%3e&PrivNet=internal.cluster.is.localnet&addrs=10.15.2.1-9618&alias=sched.cluster.is.localnet&noUDP&sock=schedd_2825_4b22>
+...
+001 (16223920.000.000) 2025-06-01 20:19:22 Job executing on host: <172.22.2.107:9618?addrs=172.22.2.107-9618&alias=g107.internal.cluster.is.localnet&noUDP&sock=startd_5085_772c>
+...
+006 (16223920.000.000) 2025-06-01 20:19:30 Image size of job updated: 3637280
+	350  -  MemoryUsage of job (MB)
+	357772  -  ResidentSetSize of job (KB)
+...
+006 (16223920.000.000) 2025-06-01 20:24:13 Image size of job updated: 56241088
+	1541  -  MemoryUsage of job (MB)
+	1577504  -  ResidentSetSize of job (KB)
+...
+004 (16223920.000.000) 2025-06-01 20:24:14 Job was evicted.
+	(0) CPU times
+		Usr 0 00:05:00, Sys 0 00:00:27  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated Assigned
+	   Cpus                 :     1.11        4         4 
+	   Disk (KB)            :     1           1   2892100 
+	   Gpus (Average)       :                 1         1 "GPU-5896e301"
+	   Memory (MB)          :  1541      819200    819200 
+...
+009 (16223920.000.000) 2025-06-01 20:24:14 Job was aborted.
+	via condor_rm (by user fdraye)
+...
+000 (16223944.000.000) 2025-06-01 20:31:58 Job submitted from host: <10.15.2.1:9618?PrivAddr=%3c172.22.0.101:9618%3fsock%3dschedd_2825_4b22%3e&PrivNet=internal.cluster.is.localnet&addrs=10.15.2.1-9618&alias=sched.cluster.is.localnet&noUDP&sock=schedd_2825_4b22>
+...
+001 (16223944.000.000) 2025-06-01 20:32:03 Job executing on host: <172.22.2.168:9618?addrs=172.22.2.168-9618&alias=g168.internal.cluster.is.localnet&noUDP&sock=startd_4997_1ad7>
+...
+006 (16223944.000.000) 2025-06-01 20:32:12 Image size of job updated: 3691976
+	347  -  MemoryUsage of job (MB)
+	355128  -  ResidentSetSize of job (KB)
+...
+006 (16223944.000.000) 2025-06-01 20:32:26 Image size of job updated: 4396556
+	347  -  MemoryUsage of job (MB)
+	355136  -  ResidentSetSize of job (KB)
+...
+005 (16223944.000.000) 2025-06-01 20:32:27 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:09, Sys 0 00:00:03  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:09, Sys 0 00:00:03  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated Assigned
+	   Cpus                 :                 4         4 
+	   Disk (KB)            :        1        1   2892100 
+	   Gpus (Average)       :                 1         1 "GPU-decea86c"
+	   Memory (MB)          :      347   819200    819200 
+
+	Job terminated of its own accord at 2025-06-01T18:32:26Z with exit-code 0.
+...
+000 (16223951.000.000) 2025-06-01 20:37:34 Job submitted from host: <10.15.2.1:9618?PrivAddr=%3c172.22.0.101:9618%3fsock%3dschedd_2825_4b22%3e&PrivNet=internal.cluster.is.localnet&addrs=10.15.2.1-9618&alias=sched.cluster.is.localnet&noUDP&sock=schedd_2825_4b22>
+...
+001 (16223951.000.000) 2025-06-01 20:37:36 Job executing on host: <172.22.2.107:9618?addrs=172.22.2.107-9618&alias=g107.internal.cluster.is.localnet&noUDP&sock=startd_5085_772c>
+...
+006 (16223951.000.000) 2025-06-01 20:37:44 Image size of job updated: 3730828
+	353  -  MemoryUsage of job (MB)
+	360804  -  ResidentSetSize of job (KB)
+...
+006 (16223951.000.000) 2025-06-01 20:42:05 Image size of job updated: 55287456
+	1537  -  MemoryUsage of job (MB)
+	1573696  -  ResidentSetSize of job (KB)
+...
+004 (16223951.000.000) 2025-06-01 20:42:05 Job was evicted.
+	(0) CPU times
+		Usr 0 00:03:43, Sys 0 00:00:26  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated Assigned
+	   Cpus                 :     1.16        4         4 
+	   Disk (KB)            :     1           1   2892100 
+	   Gpus (Average)       :                 1         1 "GPU-5896e301"
+	   Memory (MB)          :  1537      819200    819200 
+...
+009 (16223951.000.000) 2025-06-01 20:42:05 Job was aborted.
+	via condor_rm (by user fdraye)
+...
+000 (16223958.000.000) 2025-06-01 20:46:38 Job submitted from host: <10.15.2.1:9618?PrivAddr=%3c172.22.0.101:9618%3fsock%3dschedd_2825_4b22%3e&PrivNet=internal.cluster.is.localnet&addrs=10.15.2.1-9618&alias=sched.cluster.is.localnet&noUDP&sock=schedd_2825_4b22>
+...
+001 (16223958.000.000) 2025-06-01 20:46:39 Job executing on host: <172.22.2.107:9618?addrs=172.22.2.107-9618&alias=g107.internal.cluster.is.localnet&noUDP&sock=startd_5085_772c>
+...
+006 (16223958.000.000) 2025-06-01 20:46:48 Image size of job updated: 3676004
+	350  -  MemoryUsage of job (MB)
+	357812  -  ResidentSetSize of job (KB)
+...
+006 (16223958.000.000) 2025-06-01 20:51:48 Image size of job updated: 14574860
+	1555  -  MemoryUsage of job (MB)
+	1591316  -  ResidentSetSize of job (KB)
+...
+006 (16223958.000.000) 2025-06-01 20:55:21 Image size of job updated: 299620140
+	42482  -  MemoryUsage of job (MB)
+	43501132  -  ResidentSetSize of job (KB)
+...
+004 (16223958.000.000) 2025-06-01 20:55:21 Job was evicted.
+	(0) CPU times
+		Usr 0 00:08:29, Sys 0 00:00:52  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated Assigned
+	   Cpus                 :     1.55        4         4 
+	   Disk (KB)            :     1           1   2892100 
+	   Gpus (Average)       :                 1         1 "GPU-5896e301"
+	   Memory (MB)          : 42482      819200    819200 
+...
+009 (16223958.000.000) 2025-06-01 20:55:21 Job was aborted.
+	via condor_rm (by user fdraye)
+...
+000 (16223964.000.000) 2025-06-01 20:59:36 Job submitted from host: <10.15.2.1:9618?PrivAddr=%3c172.22.0.101:9618%3fsock%3dschedd_2825_4b22%3e&PrivNet=internal.cluster.is.localnet&addrs=10.15.2.1-9618&alias=sched.cluster.is.localnet&noUDP&sock=schedd_2825_4b22>
+...
+001 (16223964.000.000) 2025-06-01 20:59:38 Job executing on host: <172.22.2.107:9618?addrs=172.22.2.107-9618&alias=g107.internal.cluster.is.localnet&noUDP&sock=startd_5085_772c>
+...
+006 (16223964.000.000) 2025-06-01 20:59:47 Image size of job updated: 3703508
+	354  -  MemoryUsage of job (MB)
+	361896  -  ResidentSetSize of job (KB)
+...
+006 (16223964.000.000) 2025-06-01 21:04:47 Image size of job updated: 14573380
+	1555  -  MemoryUsage of job (MB)
+	1591452  -  ResidentSetSize of job (KB)
+...
+006 (16223964.000.000) 2025-06-01 21:09:48 Image size of job updated: 26185008
+	12858  -  MemoryUsage of job (MB)
+	13166216  -  ResidentSetSize of job (KB)
+...
+006 (16223964.000.000) 2025-06-01 21:19:50 Image size of job updated: 26185008
+	12882  -  MemoryUsage of job (MB)
+	13190800  -  ResidentSetSize of job (KB)
+...
+006 (16223964.000.000) 2025-06-01 22:14:56 Image size of job updated: 26188592
+	12882  -  MemoryUsage of job (MB)
+	13190800  -  ResidentSetSize of job (KB)
+...
+006 (16223964.000.000) 2025-06-01 22:29:59 Image size of job updated: 26197296
+	12906  -  MemoryUsage of job (MB)
+	13215376  -  ResidentSetSize of job (KB)
+...
+005 (16223964.000.000) 2025-06-02 05:35:10 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 03:45:49, Sys 0 04:01:40  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 03:45:49, Sys 0 04:01:40  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated Assigned
+	   Cpus                 :     1.28        4         4 
+	   Disk (KB)            :     1           1   2892100 
+	   Gpus (Average)       :                 1         1 "GPU-5896e301"
+	   Memory (MB)          : 12906      819200    819200 
+
+	Job terminated of its own accord at 2025-06-02T03:35:09Z with exit-code 0.
+...
+000 (16228599.000.000) 2025-06-06 18:28:36 Job submitted from host: <10.15.2.1:9618?PrivAddr=%3c172.22.0.101:9618%3fsock%3dschedd_2825_4b22%3e&PrivNet=internal.cluster.is.localnet&addrs=10.15.2.1-9618&alias=sched.cluster.is.localnet&noUDP&sock=schedd_2825_4b22>
+...
+001 (16228599.000.000) 2025-06-06 18:28:54 Job executing on host: <172.22.2.158:9618?addrs=172.22.2.158-9618&alias=g158.internal.cluster.is.localnet&noUDP&sock=startd_5028_5e46>
+...
+006 (16228599.000.000) 2025-06-06 18:29:02 Image size of job updated: 3354320
+	241  -  MemoryUsage of job (MB)
+	246640  -  ResidentSetSize of job (KB)
+...
+006 (16228599.000.000) 2025-06-06 18:29:33 Image size of job updated: 12300160
+	242  -  MemoryUsage of job (MB)
+	246900  -  ResidentSetSize of job (KB)
+...
+005 (16228599.000.000) 2025-06-06 18:29:34 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:17, Sys 0 00:00:06  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:17, Sys 0 00:00:06  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated Assigned
+	   Cpus                 :                 4         4 
+	   Disk (KB)            :        1        1   2892100 
+	   Gpus (Average)       :                 1         1 "GPU-e4ea4745"
+	   Memory (MB)          :      242   819200    819200 
+
+	Job terminated of its own accord at 2025-06-06T16:29:33Z with exit-code 0.
+...
+000 (16228639.000.000) 2025-06-06 18:37:02 Job submitted from host: <10.15.2.1:9618?PrivAddr=%3c172.22.0.101:9618%3fsock%3dschedd_2825_4b22%3e&PrivNet=internal.cluster.is.localnet&addrs=10.15.2.1-9618&alias=sched.cluster.is.localnet&noUDP&sock=schedd_2825_4b22>
+...
+001 (16228639.000.000) 2025-06-06 18:37:08 Job executing on host: <172.22.2.180:9618?addrs=172.22.2.180-9618&alias=g180.internal.cluster.is.localnet&noUDP&sock=startd_5004_e800>
+...
+006 (16228639.000.000) 2025-06-06 18:37:17 Image size of job updated: 3730568
+	269  -  MemoryUsage of job (MB)
+	274848  -  ResidentSetSize of job (KB)
+...
+006 (16228639.000.000) 2025-06-06 18:37:32 Image size of job updated: 9126800
+	269  -  MemoryUsage of job (MB)
+	274848  -  ResidentSetSize of job (KB)
+...
+005 (16228639.000.000) 2025-06-06 18:37:34 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:09, Sys 0 00:00:03  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:09, Sys 0 00:00:03  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated Assigned
+	   Cpus                 :                 4         4 
+	   Disk (KB)            :        1        1   2892100 
+	   Gpus (Average)       :                 1         1 "GPU-f163d58a"
+	   Memory (MB)          :      269   819200    819200 
+
+	Job terminated of its own accord at 2025-06-06T16:37:32Z with exit-code 0.
+...
+000 (16228649.000.000) 2025-06-06 18:40:07 Job submitted from host: <10.15.2.1:9618?PrivAddr=%3c172.22.0.101:9618%3fsock%3dschedd_2825_4b22%3e&PrivNet=internal.cluster.is.localnet&addrs=10.15.2.1-9618&alias=sched.cluster.is.localnet&noUDP&sock=schedd_2825_4b22>
+...
+001 (16228649.000.000) 2025-06-06 18:40:16 Job executing on host: <172.22.2.180:9618?addrs=172.22.2.180-9618&alias=g180.internal.cluster.is.localnet&noUDP&sock=startd_5004_e800>
+...
+006 (16228649.000.000) 2025-06-06 18:40:25 Image size of job updated: 3630984
+	332  -  MemoryUsage of job (MB)
+	339644  -  ResidentSetSize of job (KB)
+...
+006 (16228649.000.000) 2025-06-06 18:43:22 Image size of job updated: 21787176
+	332  -  MemoryUsage of job (MB)
+	339732  -  ResidentSetSize of job (KB)
+...
+005 (16228649.000.000) 2025-06-06 18:43:23 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:14, Sys 0 00:00:30  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:14, Sys 0 00:00:30  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated Assigned
+	   Cpus                 :     0.66        4         4 
+	   Disk (KB)            :     1           1   2892100 
+	   Gpus (Average)       :                 1         1 "GPU-f163d58a"
+	   Memory (MB)          :   332      819200    819200 
+
+	Job terminated of its own accord at 2025-06-06T16:43:22Z with exit-code 0.
+...
+000 (16228668.000.000) 2025-06-06 18:47:24 Job submitted from host: <10.15.2.1:9618?PrivAddr=%3c172.22.0.101:9618%3fsock%3dschedd_2825_4b22%3e&PrivNet=internal.cluster.is.localnet&addrs=10.15.2.1-9618&alias=sched.cluster.is.localnet&noUDP&sock=schedd_2825_4b22>
+...
+001 (16228668.000.000) 2025-06-06 18:47:43 Job executing on host: <172.22.2.163:9618?addrs=172.22.2.163-9618&alias=g163.internal.cluster.is.localnet&noUDP&sock=startd_5081_b8cb>
+...
+006 (16228668.000.000) 2025-06-06 18:47:52 Image size of job updated: 3669196
+	341  -  MemoryUsage of job (MB)
+	348908  -  ResidentSetSize of job (KB)
+...
+006 (16228668.000.000) 2025-06-06 18:52:52 Image size of job updated: 31972700
+	6577  -  MemoryUsage of job (MB)
+	6733948  -  ResidentSetSize of job (KB)
+...
+006 (16228668.000.000) 2025-06-06 18:55:13 Image size of job updated: 33726164
+	7569  -  MemoryUsage of job (MB)
+	7749848  -  ResidentSetSize of job (KB)
+...
+004 (16228668.000.000) 2025-06-06 18:55:14 Job was evicted.
+	(0) CPU times
+		Usr 0 00:00:26, Sys 0 00:00:54  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated Assigned
+	   Cpus                 :     0.11        4         4 
+	   Disk (KB)            :     1           1   2892100 
+	   Gpus (Average)       :                 1         1 "GPU-778a92c3"
+	   Memory (MB)          :  7569      819200    819200 
+...
+009 (16228668.000.000) 2025-06-06 18:55:14 Job was aborted.
+	via condor_rm (by user fdraye)
+...
+000 (16244310.000.000) 2025-06-18 10:23:34 Job submitted from host: <10.15.2.1:9618?PrivAddr=%3c172.22.0.101:9618%3fsock%3dschedd_2825_4b22%3e&PrivNet=internal.cluster.is.localnet&addrs=10.15.2.1-9618&alias=sched.cluster.is.localnet&noUDP&sock=schedd_2825_4b22>
+...
+001 (16244310.000.000) 2025-06-18 10:23:38 Job executing on host: <172.22.2.189:9618?addrs=172.22.2.189-9618&alias=g189.internal.cluster.is.localnet&noUDP&sock=startd_4896_d3c6>
+...
+006 (16244310.000.000) 2025-06-18 10:23:46 Image size of job updated: 3660564
+	288  -  MemoryUsage of job (MB)
+	294152  -  ResidentSetSize of job (KB)
+...
+006 (16244310.000.000) 2025-06-18 10:28:47 Image size of job updated: 35039636
+	6742  -  MemoryUsage of job (MB)
+	6903160  -  ResidentSetSize of job (KB)
+...
+006 (16244310.000.000) 2025-06-18 10:33:48 Image size of job updated: 35039636
+	6750  -  MemoryUsage of job (MB)
+	6911892  -  ResidentSetSize of job (KB)
+...
+006 (16244310.000.000) 2025-06-18 10:43:50 Image size of job updated: 35039636
+	6925  -  MemoryUsage of job (MB)
+	7090628  -  ResidentSetSize of job (KB)
+...
+006 (16244310.000.000) 2025-06-18 10:48:50 Image size of job updated: 35039636
+	6930  -  MemoryUsage of job (MB)
+	7095488  -  ResidentSetSize of job (KB)
+...
+006 (16244310.000.000) 2025-06-18 10:53:50 Image size of job updated: 35039636
+	8700  -  MemoryUsage of job (MB)
+	8908780  -  ResidentSetSize of job (KB)
+...
+006 (16244310.000.000) 2025-06-18 10:58:50 Image size of job updated: 35051924
+	8708  -  MemoryUsage of job (MB)
+	8916160  -  ResidentSetSize of job (KB)
+...
+006 (16244310.000.000) 2025-06-18 11:03:50 Image size of job updated: 35051924
+	13213  -  MemoryUsage of job (MB)
+	13529424  -  ResidentSetSize of job (KB)
+...
+006 (16244310.000.000) 2025-06-18 11:53:54 Image size of job updated: 35051924
+	13225  -  MemoryUsage of job (MB)
+	13541712  -  ResidentSetSize of job (KB)
+...
+005 (16244310.000.000) 2025-06-18 16:55:23 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 03:36:47, Sys 0 05:04:24  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 03:36:47, Sys 0 05:04:24  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated Assigned
+	   Cpus                 :     1.80        4         4 
+	   Disk (KB)            :     1           1  12413191 
+	   Gpus (Average)       :                 1         1 "GPU-5bd6e157"
+	   Memory (MB)          : 13225      819200    819200 
+
+	Job terminated of its own accord at 2025-06-18T14:55:23Z with exit-code 0.
+...
+000 (16262178.000.000) 2025-06-29 11:04:02 Job submitted from host: <10.15.2.1:9618?PrivAddr=%3c172.22.0.101:9618%3fsock%3dschedd_2825_4b22%3e&PrivNet=internal.cluster.is.localnet&addrs=10.15.2.1-9618&alias=sched.cluster.is.localnet&noUDP&sock=schedd_2825_4b22>
+...
+001 (16262178.000.000) 2025-06-29 11:04:03 Job executing on host: <172.22.2.196:9618?addrs=172.22.2.196-9618&alias=g196.internal.cluster.is.localnet&noUDP&sock=startd_4843_7941>
+...
+006 (16262178.000.000) 2025-06-29 11:04:12 Image size of job updated: 3697716
+	258  -  MemoryUsage of job (MB)
+	263984  -  ResidentSetSize of job (KB)
+...
+006 (16262178.000.000) 2025-06-29 11:09:12 Image size of job updated: 35049488
+	4349  -  MemoryUsage of job (MB)
+	4452608  -  ResidentSetSize of job (KB)
+...
+006 (16262178.000.000) 2025-06-29 11:14:12 Image size of job updated: 35049488
+	13208  -  MemoryUsage of job (MB)
+	13524528  -  ResidentSetSize of job (KB)
+...
+006 (16262178.000.000) 2025-06-29 11:49:16 Image size of job updated: 35058192
+	13208  -  MemoryUsage of job (MB)
+	13524528  -  ResidentSetSize of job (KB)
+...
+006 (16262178.000.000) 2025-06-29 12:44:22 Image size of job updated: 35058192
+	13224  -  MemoryUsage of job (MB)
+	13540400  -  ResidentSetSize of job (KB)
+...
+005 (16262178.000.000) 2025-06-29 16:35:12 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 03:21:35, Sys 0 04:37:30  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 03:21:35, Sys 0 04:37:30  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated Assigned
+	   Cpus                 :     1.35        4         4 
+	   Disk (KB)            :     1           1  12413191 
+	   Gpus (Average)       :                 1         1 "GPU-3ad2ba5c"
+	   Memory (MB)          : 13224      819200    819200 
+
+	Job terminated of its own accord at 2025-06-29T14:35:12Z with exit-code 0.
+...
+000 (16262279.000.000) 2025-06-29 19:18:55 Job submitted from host: <10.15.2.1:9618?PrivAddr=%3c172.22.0.101:9618%3fsock%3dschedd_2825_4b22%3e&PrivNet=internal.cluster.is.localnet&addrs=10.15.2.1-9618&alias=sched.cluster.is.localnet&noUDP&sock=schedd_2825_4b22>
+...
+001 (16262279.000.000) 2025-06-29 19:18:57 Job executing on host: <172.22.2.196:9618?addrs=172.22.2.196-9618&alias=g196.internal.cluster.is.localnet&noUDP&sock=startd_4843_7941>
+...
+006 (16262279.000.000) 2025-06-29 19:19:06 Image size of job updated: 3732660
+	268  -  MemoryUsage of job (MB)
+	274128  -  ResidentSetSize of job (KB)
+...
+006 (16262279.000.000) 2025-06-29 19:24:07 Image size of job updated: 35056056
+	4215  -  MemoryUsage of job (MB)
+	4315892  -  ResidentSetSize of job (KB)
+...
+006 (16262279.000.000) 2025-06-29 19:29:07 Image size of job updated: 35056056
+	4215  -  MemoryUsage of job (MB)
+	4316072  -  ResidentSetSize of job (KB)
+...
+006 (16262279.000.000) 2025-06-29 19:34:07 Image size of job updated: 35056056
+	13107  -  MemoryUsage of job (MB)
+	13421444  -  ResidentSetSize of job (KB)
+...
+006 (16262279.000.000) 2025-06-29 19:49:09 Image size of job updated: 35056056
+	13155  -  MemoryUsage of job (MB)
+	13470600  -  ResidentSetSize of job (KB)
+...
+006 (16262279.000.000) 2025-06-29 20:54:17 Image size of job updated: 35056056
+	13215  -  MemoryUsage of job (MB)
+	13531912  -  ResidentSetSize of job (KB)
+...
+006 (16262279.000.000) 2025-06-29 21:04:17 Image size of job updated: 35056824
+	13215  -  MemoryUsage of job (MB)
+	13531912  -  ResidentSetSize of job (KB)
+...
+006 (16262279.000.000) 2025-06-30 00:59:41 Image size of job updated: 35056824
+	13227  -  MemoryUsage of job (MB)
+	13544200  -  ResidentSetSize of job (KB)
+...
+005 (16262279.000.000) 2025-06-30 01:19:39 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 03:22:50, Sys 0 04:56:39  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 03:22:50, Sys 0 04:56:39  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated Assigned
+	   Cpus                 :     1.52        4         4 
+	   Disk (KB)            :     1           1  12413191 
+	   Gpus (Average)       :                 1         1 "GPU-3ad2ba5c"
+	   Memory (MB)          : 13227      819200    819200 
+
+	Job terminated of its own accord at 2025-06-29T23:19:39Z with exit-code 0.
+...
+000 (16270414.000.000) 2025-07-06 10:58:11 Job submitted from host: <10.15.2.1:9618?PrivAddr=%3c172.22.0.101:9618%3fsock%3dschedd_2825_4b22%3e&PrivNet=internal.cluster.is.localnet&addrs=10.15.2.1-9618&alias=sched.cluster.is.localnet&noUDP&sock=schedd_2825_4b22>
+...
+001 (16270414.000.000) 2025-07-06 10:58:12 Job executing on host: <172.22.2.200:9618?addrs=172.22.2.200-9618&alias=g200.internal.cluster.is.localnet&noUDP&sock=startd_4488_f922>
+...
+006 (16270414.000.000) 2025-07-06 10:58:21 Image size of job updated: 3354584
+	275  -  MemoryUsage of job (MB)
+	281160  -  ResidentSetSize of job (KB)
+...
+006 (16270414.000.000) 2025-07-06 11:03:22 Image size of job updated: 78391208
+	21819  -  MemoryUsage of job (MB)
+	22342092  -  ResidentSetSize of job (KB)
+...
+006 (16270414.000.000) 2025-07-06 11:53:26 Image size of job updated: 78409640
+	21819  -  MemoryUsage of job (MB)
+	22342092  -  ResidentSetSize of job (KB)
+...
+006 (16270414.000.000) 2025-07-06 19:19:09 Image size of job updated: 78409640
+	21837  -  MemoryUsage of job (MB)
+	22360524  -  ResidentSetSize of job (KB)
+...
+005 (16270414.000.000) 2025-07-07 05:44:09 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 10:18:52, Sys 0 15:25:09  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 10:18:52, Sys 0 15:25:09  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated Assigned
+	   Cpus                 :     1.43        4         4 
+	   Disk (KB)            :     1           1  12413191 
+	   Gpus (Average)       :                 1         1 "GPU-2a0a29a4"
+	   Memory (MB)          : 21837      819200    819200 
+
+	Job terminated of its own accord at 2025-07-07T03:44:08Z with exit-code 0.
+...

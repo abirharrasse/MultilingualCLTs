@@ -1,0 +1,27 @@
+universe = vanilla
+
+executable = /lustre/home/fdraye/projects/featflow/example/gpt2_multilingual_20/run_on_gpt2_multi_20.sh
+arguments = $(percentage)
+initialdir = /lustre/home/fdraye/projects/featflow/example/gpt2_multilingual_20
+
+output = logs/results.txt
+error  = logs/error.txt
+log    = logs/job.log
+
+request_cpus = 20
+request_memory = 1200GB
+request_gpus = 2
+
+requirements = (CUDACapability == 9.0)
+
+percentage = 20
+queue
+
+percentage = 50
+queue
+
+percentage = 70
+queue
+
+percentage = 90
+queue

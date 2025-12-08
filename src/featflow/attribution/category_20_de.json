@@ -1,0 +1,770 @@
+{
+  "version": "2.0",
+  "timestamp": "2025-09-19T15:44:43.511Z",
+  "clusters": {
+    "4a9db138-c138-4244-9b9e-a445378fc065": {
+      "name": "Cluster 1",
+      "color": "#34d399",
+      "nodes": [
+        {
+          "node_index": 6,
+          "layer": 0,
+          "pos": 1,
+          "feature_idx": 20283,
+          "description": "Unknown",
+          "x": -317.64052287581694,
+          "y": -275
+        },
+        {
+          "node_index": 7,
+          "layer": 0,
+          "pos": 1,
+          "feature_idx": 22653,
+          "description": "Unknown",
+          "x": -306.592156862745,
+          "y": -275
+        },
+        {
+          "node_index": 90,
+          "layer": 3,
+          "pos": 1,
+          "feature_idx": 13197,
+          "description": "Unknown",
+          "x": -345.26143790849665,
+          "y": -125
+        },
+        {
+          "node_index": 25,
+          "layer": 0,
+          "pos": 4,
+          "feature_idx": 8509,
+          "description": "Unknown",
+          "x": -74.57647058823525,
+          "y": -275
+        },
+        {
+          "node_index": 26,
+          "layer": 0,
+          "pos": 4,
+          "feature_idx": 10121,
+          "description": "Unknown",
+          "x": -63.52810457516337,
+          "y": -275
+        },
+        {
+          "node_index": 29,
+          "layer": 0,
+          "pos": 4,
+          "feature_idx": 22653,
+          "description": "Unknown",
+          "x": -30.383006535947686,
+          "y": -275
+        },
+        {
+          "node_index": 38,
+          "layer": 0,
+          "pos": 6,
+          "feature_idx": 10121,
+          "description": "Unknown",
+          "x": 91.14901960784316,
+          "y": -275
+        },
+        {
+          "node_index": 41,
+          "layer": 0,
+          "pos": 6,
+          "feature_idx": 22653,
+          "description": "Unknown",
+          "x": 124.29411764705884,
+          "y": -275
+        },
+        {
+          "node_index": 118,
+          "layer": 10,
+          "pos": 8,
+          "feature_idx": 21636,
+          "description": "Unknown",
+          "x": 334.2130718954249,
+          "y": 225
+        }
+      ],
+      "description": "sport/team"
+    },
+    "1fe3df91-3722-45c7-ab7f-a0ca47d1ffc1": {
+      "name": "Cluster 2",
+      "color": "#60a5fa",
+      "nodes": [
+        {
+          "node_index": 72,
+          "layer": 1,
+          "pos": 6,
+          "feature_idx": 17410,
+          "description": "Unknown",
+          "x": 96.67320261437911,
+          "y": -225
+        }
+      ],
+      "description": "basketball"
+    },
+    "09884aa1-bb69-4de5-84fb-474d25289e43": {
+      "name": "Cluster 3",
+      "color": "#f472b6",
+      "nodes": [
+        {
+          "node_index": 82,
+          "layer": 2,
+          "pos": 6,
+          "feature_idx": 20088,
+          "description": "",
+          "x": 91.14901960784316,
+          "y": -175
+        }
+      ],
+      "description": "list of stuff"
+    },
+    "cef19364-8622-424c-ae05-5d31495f7ff9": {
+      "name": "Cluster 4",
+      "color": "#a78bfa",
+      "nodes": [
+        {
+          "node_index": 13,
+          "layer": 0,
+          "pos": 3,
+          "feature_idx": 7040,
+          "description": "Unknown",
+          "x": -218.2052287581699,
+          "y": -275
+        }
+      ],
+      "description": "radsport"
+    },
+    "72341fb5-e3ca-40ef-b484-429003b14531": {
+      "name": "Cluster 5",
+      "color": "#f87171",
+      "nodes": [
+        {
+          "node_index": 8,
+          "layer": 0,
+          "pos": 2,
+          "feature_idx": 7652,
+          "description": "Unknown",
+          "x": -284.4954248366012,
+          "y": -275
+        },
+        {
+          "node_index": 9,
+          "layer": 0,
+          "pos": 2,
+          "feature_idx": 9928,
+          "description": "Unknown",
+          "x": -273.44705882352935,
+          "y": -275
+        },
+        {
+          "node_index": 10,
+          "layer": 0,
+          "pos": 2,
+          "feature_idx": 14682,
+          "description": "Unknown",
+          "x": -262.3986928104574,
+          "y": -275
+        },
+        {
+          "node_index": 11,
+          "layer": 0,
+          "pos": 2,
+          "feature_idx": 18266,
+          "description": "Unknown",
+          "x": -251.35032679738555,
+          "y": -275
+        },
+        {
+          "node_index": 31,
+          "layer": 0,
+          "pos": 5,
+          "feature_idx": 7652,
+          "description": "Unknown",
+          "x": 2.7620915032679996,
+          "y": -275
+        },
+        {
+          "node_index": 32,
+          "layer": 0,
+          "pos": 5,
+          "feature_idx": 9928,
+          "description": "Unknown",
+          "x": 13.810457516339895,
+          "y": -275
+        },
+        {
+          "node_index": 34,
+          "layer": 0,
+          "pos": 5,
+          "feature_idx": 18266,
+          "description": "Unknown",
+          "x": 35.907189542483685,
+          "y": -275
+        }
+      ],
+      "description": ","
+    },
+    "19b2d933-cb7d-4e65-b72e-965265bf0fc1": {
+      "name": "Cluster 6",
+      "color": "#fb923c",
+      "nodes": [
+        {
+          "node_index": 36,
+          "layer": 0,
+          "pos": 6,
+          "feature_idx": 5045,
+          "description": "Unknown",
+          "x": 69.05228758169937,
+          "y": -275
+        },
+        {
+          "node_index": 71,
+          "layer": 1,
+          "pos": 6,
+          "feature_idx": 534,
+          "description": "Unknown",
+          "x": 85.62483660130721,
+          "y": -225
+        }
+      ],
+      "description": "football(baseball)"
+    },
+    "1e48f58d-d083-442b-904d-da38f03ffcbd": {
+      "name": "Cluster 7",
+      "color": "#22d3ee",
+      "nodes": [
+        {
+          "node_index": 30,
+          "layer": 0,
+          "pos": 5,
+          "feature_idx": 4807,
+          "description": "Unknown",
+          "x": -8.286274509803896,
+          "y": -275
+        },
+        {
+          "node_index": 33,
+          "layer": 0,
+          "pos": 5,
+          "feature_idx": 14682,
+          "description": "Unknown",
+          "x": 24.858823529411787,
+          "y": -275
+        }
+      ],
+      "description": "list sep"
+    },
+    "89aa03c9-1f90-4a22-a96b-eb8331b63440": {
+      "name": "Cluster 8",
+      "color": "#38bdf8",
+      "nodes": [
+        {
+          "node_index": 66,
+          "layer": 1,
+          "pos": 1,
+          "feature_idx": 534,
+          "description": "Unknown",
+          "x": -350.7856209150326,
+          "y": -225
+        }
+      ],
+      "description": "football"
+    },
+    "fbf55670-0896-4d4c-a01c-e643a1b6ec94": {
+      "name": "Cluster 9",
+      "color": "#f472b6",
+      "nodes": [
+        {
+          "node_index": 44,
+          "layer": 0,
+          "pos": 7,
+          "feature_idx": 9310,
+          "description": "Unknown",
+          "x": 168.48758169934644,
+          "y": -275
+        },
+        {
+          "node_index": 49,
+          "layer": 0,
+          "pos": 7,
+          "feature_idx": 22638,
+          "description": "Unknown",
+          "x": 223.7294117647059,
+          "y": -275
+        },
+        {
+          "node_index": 83,
+          "layer": 2,
+          "pos": 7,
+          "feature_idx": 14224,
+          "description": "",
+          "x": 185.06013071895427,
+          "y": -175
+        },
+        {
+          "node_index": 107,
+          "layer": 8,
+          "pos": 7,
+          "feature_idx": 7729,
+          "description": "Unknown",
+          "x": 190.58431372549023,
+          "y": 125
+        },
+        {
+          "node_index": 115,
+          "layer": 10,
+          "pos": 7,
+          "feature_idx": 23909,
+          "description": "German pronouns",
+          "x": 185.06013071895427,
+          "y": 225
+        }
+      ],
+      "description": "is/ist//"
+    },
+    "da45c7f6-3f40-4180-8972-a4ad5af889aa": {
+      "name": "Cluster 10",
+      "color": "#34d399",
+      "nodes": [
+        {
+          "node_index": 52,
+          "layer": 0,
+          "pos": 8,
+          "feature_idx": 3400,
+          "description": "Unknown",
+          "x": 267.9228758169935,
+          "y": -275
+        },
+        {
+          "node_index": 59,
+          "layer": 0,
+          "pos": 8,
+          "feature_idx": 18069,
+          "description": "Unknown",
+          "x": 345.26143790849676,
+          "y": -275
+        },
+        {
+          "node_index": 64,
+          "layer": 0,
+          "pos": 8,
+          "feature_idx": 21688,
+          "description": "Unknown",
+          "x": 400.5032679738562,
+          "y": -275
+        },
+        {
+          "node_index": 76,
+          "layer": 1,
+          "pos": 8,
+          "feature_idx": 13315,
+          "description": "Unknown",
+          "x": 323.16470588235296,
+          "y": -225
+        },
+        {
+          "node_index": 77,
+          "layer": 1,
+          "pos": 8,
+          "feature_idx": 14538,
+          "description": "Unknown",
+          "x": 334.2130718954249,
+          "y": -225
+        },
+        {
+          "node_index": 78,
+          "layer": 1,
+          "pos": 8,
+          "feature_idx": 16095,
+          "description": "Unknown",
+          "x": 345.26143790849676,
+          "y": -225
+        },
+        {
+          "node_index": 86,
+          "layer": 2,
+          "pos": 8,
+          "feature_idx": 12021,
+          "description": "",
+          "x": 323.16470588235296,
+          "y": -175
+        },
+        {
+          "node_index": 89,
+          "layer": 2,
+          "pos": 8,
+          "feature_idx": 23744,
+          "description": "",
+          "x": 356.30980392156863,
+          "y": -175
+        },
+        {
+          "node_index": 91,
+          "layer": 3,
+          "pos": 8,
+          "feature_idx": 15530,
+          "description": "Unknown",
+          "x": 317.64052287581706,
+          "y": -125
+        },
+        {
+          "node_index": 93,
+          "layer": 3,
+          "pos": 8,
+          "feature_idx": 20615,
+          "description": "Quantifier words",
+          "x": 339.73725490196085,
+          "y": -125
+        },
+        {
+          "node_index": 95,
+          "layer": 4,
+          "pos": 8,
+          "feature_idx": 13133,
+          "description": "Unknown",
+          "x": 312.1163398692811,
+          "y": -75
+        },
+        {
+          "node_index": 96,
+          "layer": 4,
+          "pos": 8,
+          "feature_idx": 17627,
+          "description": "Unknown",
+          "x": 323.16470588235296,
+          "y": -75
+        },
+        {
+          "node_index": 97,
+          "layer": 4,
+          "pos": 8,
+          "feature_idx": 18763,
+          "description": "Unknown",
+          "x": 334.2130718954249,
+          "y": -75
+        },
+        {
+          "node_index": 98,
+          "layer": 4,
+          "pos": 8,
+          "feature_idx": 20824,
+          "description": "Unknown",
+          "x": 345.26143790849676,
+          "y": -75
+        },
+        {
+          "node_index": 99,
+          "layer": 5,
+          "pos": 8,
+          "feature_idx": 1595,
+          "description": "Unknown",
+          "x": 317.64052287581706,
+          "y": -25
+        },
+        {
+          "node_index": 101,
+          "layer": 5,
+          "pos": 8,
+          "feature_idx": 14293,
+          "description": "Unknown",
+          "x": 339.73725490196085,
+          "y": -25
+        },
+        {
+          "node_index": 102,
+          "layer": 6,
+          "pos": 8,
+          "feature_idx": 8507,
+          "description": "Unknown",
+          "x": 317.64052287581706,
+          "y": 25
+        },
+        {
+          "node_index": 103,
+          "layer": 6,
+          "pos": 8,
+          "feature_idx": 16873,
+          "description": "Unknown",
+          "x": 328.6888888888889,
+          "y": 25
+        },
+        {
+          "node_index": 104,
+          "layer": 6,
+          "pos": 8,
+          "feature_idx": 21150,
+          "description": "Unknown",
+          "x": 339.73725490196085,
+          "y": 25
+        },
+        {
+          "node_index": 111,
+          "layer": 8,
+          "pos": 8,
+          "feature_idx": 13702,
+          "description": "Unknown",
+          "x": 339.7372549019608,
+          "y": 125
+        }
+      ],
+      "description": "alle/all/tout/koul"
+    },
+    "e0960bca-e65e-4a53-9027-0cb67cb36176": {
+      "name": "Cluster 11",
+      "color": "#60a5fa",
+      "nodes": [
+        {
+          "node_index": 112,
+          "layer": 8,
+          "pos": 8,
+          "feature_idx": 18487,
+          "description": "Unknown",
+          "x": 350.7856209150327,
+          "y": 125
+        }
+      ],
+      "description": "category after list"
+    },
+    "5f0456be-c88d-4fae-8700-197cb5f20ddb": {
+      "name": "Cluster 12",
+      "color": "#f472b6",
+      "nodes": [
+        {
+          "node_index": 73,
+          "layer": 1,
+          "pos": 8,
+          "feature_idx": 573,
+          "description": "Unknown",
+          "x": 290.0196078431373,
+          "y": -225
+        },
+        {
+          "node_index": 85,
+          "layer": 2,
+          "pos": 8,
+          "feature_idx": 2929,
+          "description": "",
+          "x": 312.11633986928103,
+          "y": -175
+        }
+      ],
+      "description": "retour (steering away from this gives sport)"
+    },
+    "b53ce8dc-6a3d-402f-8b60-d951a5ce6a03": {
+      "name": "Cluster 13",
+      "color": "#a78bfa",
+      "nodes": [
+        {
+          "node_index": 114,
+          "layer": 9,
+          "pos": 8,
+          "feature_idx": 8561,
+          "description": "Unknown",
+          "x": 334.21307189542483,
+          "y": 175
+        }
+      ],
+      "description": "list of sports"
+    },
+    "aed9c4cb-1eef-4f36-88dc-611e5e540b69": {
+      "name": "Cluster 14",
+      "color": "#f87171",
+      "nodes": [
+        {
+          "node_index": 116,
+          "layer": 10,
+          "pos": 8,
+          "feature_idx": 5098,
+          "description": "Number ranges",
+          "x": 312.1163398692811,
+          "y": 225
+        },
+        {
+          "node_index": 117,
+          "layer": 10,
+          "pos": 8,
+          "feature_idx": 8543,
+          "description": "Prepositions",
+          "x": 323.16470588235296,
+          "y": 225
+        }
+      ],
+      "description": "say sport in german"
+    },
+    "02288b65-331d-4944-ba32-f6d441493d9a": {
+      "name": "Cluster 15",
+      "color": "#fb923c",
+      "nodes": [
+        {
+          "node_index": 120,
+          "layer": 11,
+          "pos": 8,
+          "feature_idx": 16072,
+          "description": "Unknown",
+          "x": 328.6888888888889,
+          "y": 275
+        }
+      ],
+      "description": "german trans"
+    }
+  },
+  "text_annotations": {},
+  "selected_feature": null,
+  "selected_clusters": [
+    "da45c7f6-3f40-4180-8972-a4ad5af889aa"
+  ],
+  "annotation_mode": {
+    "active": false
+  },
+  "cluster_positions": {
+    "4a9db138-c138-4244-9b9e-a445378fc065": {
+      "x": -382.71869218492395,
+      "y": -10.921961722614014
+    },
+    "1fe3df91-3722-45c7-ab7f-a0ca47d1ffc1": {
+      "x": 38.88116826484901,
+      "y": -41.867519936687096
+    },
+    "09884aa1-bb69-4de5-84fb-474d25289e43": {
+      "x": 115.12744854030348,
+      "y": -9.550350231823238
+    },
+    "cef19364-8622-424c-ae05-5d31495f7ff9": {
+      "x": -137.16319856670756,
+      "y": -20.453828146191732
+    },
+    "72341fb5-e3ca-40ef-b484-429003b14531": {
+      "x": -221.4066914280516,
+      "y": -26.348661299732832
+    },
+    "19b2d933-cb7d-4e65-b72e-965265bf0fc1": {
+      "x": 19.77555204850131,
+      "y": -11.438508633493477
+    },
+    "1e48f58d-d083-442b-904d-da38f03ffcbd": {
+      "x": -47.5902428209107,
+      "y": -21.35188278252116
+    },
+    "89aa03c9-1f90-4a22-a96b-eb8331b63440": {
+      "x": -318.29105580773046,
+      "y": -27.68085936765476
+    },
+    "4a9db138-c138-4244-9b9e-a445378fc065_label": {
+      "x": -382.71869218492395,
+      "y": 16.578038277385986
+    },
+    "256786a8-b803-4ed0-afe2-95634800495f_label": {
+      "x": 29.226150689746113,
+      "y": 10.296531058496083
+    },
+    "89aa03c9-1f90-4a22-a96b-eb8331b63440_label": {
+      "x": -318.29105580773046,
+      "y": -0.18085936765476163
+    },
+    "72341fb5-e3ca-40ef-b484-429003b14531_label": {
+      "x": -221.4066914280516,
+      "y": 1.1513387002671678
+    },
+    "cef19364-8622-424c-ae05-5d31495f7ff9_label": {
+      "x": -137.16319856670756,
+      "y": 7.046171853808268
+    },
+    "1e48f58d-d083-442b-904d-da38f03ffcbd_label": {
+      "x": -47.5902428209107,
+      "y": 6.148117217478841
+    },
+    "19b2d933-cb7d-4e65-b72e-965265bf0fc1_label": {
+      "x": 19.77555204850131,
+      "y": 16.061491366506523
+    },
+    "1fe3df91-3722-45c7-ab7f-a0ca47d1ffc1_label": {
+      "x": 38.88116826484901,
+      "y": -14.367519936687096
+    },
+    "09884aa1-bb69-4de5-84fb-474d25289e43_label": {
+      "x": 115.12744854030348,
+      "y": 17.949649768176762
+    },
+    "fbf55670-0896-4d4c-a01c-e643a1b6ec94": {
+      "x": 243.5625925831003,
+      "y": -8.432341148313773
+    },
+    "da45c7f6-3f40-4180-8972-a4ad5af889aa": {
+      "x": 341.0213217696105,
+      "y": -25.29702344494129
+    },
+    "e0960bca-e65e-4a53-9027-0cb67cb36176": {
+      "x": 426.6434454538847,
+      "y": -44.97248612434009
+    },
+    "5f0456be-c88d-4fae-8700-197cb5f20ddb": {
+      "x": 227.61754369223007,
+      "y": -81.13185951136654
+    },
+    "fbf55670-0896-4d4c-a01c-e643a1b6ec94_label": {
+      "x": 243.5625925831003,
+      "y": 19.067658851686225
+    },
+    "da45c7f6-3f40-4180-8972-a4ad5af889aa_label": {
+      "x": 341.0213217696105,
+      "y": 2.2029765550587115
+    },
+    "5f0456be-c88d-4fae-8700-197cb5f20ddb_label": {
+      "x": 227.61754369223007,
+      "y": -53.63185951136654
+    },
+    "e0960bca-e65e-4a53-9027-0cb67cb36176_label": {
+      "x": 426.6434454538847,
+      "y": -17.472486124340087
+    },
+    "b53ce8dc-6a3d-402f-8b60-d951a5ce6a03": {
+      "x": 596.7877751196784,
+      "y": -4.334162843285469
+    },
+    "aed9c4cb-1eef-4f36-88dc-611e5e540b69": {
+      "x": 628.7927521793911,
+      "y": -43.341628432854684
+    },
+    "b53ce8dc-6a3d-402f-8b60-d951a5ce6a03_label": {
+      "x": 596.7877751196784,
+      "y": 23.16583715671453
+    },
+    "aed9c4cb-1eef-4f36-88dc-611e5e540b69_label": {
+      "x": 628.7927521793911,
+      "y": -15.841628432854684
+    },
+    "02288b65-331d-4944-ba32-f6d441493d9a": {
+      "x": 700.7132015392602,
+      "y": -79.7044964142023
+    },
+    "02288b65-331d-4944-ba32-f6d441493d9a_label": {
+      "x": 700.7132015392602,
+      "y": -52.204496414202296
+    }
+  },
+  "manual_edges": [],
+  "link_mode": {
+    "active": false,
+    "first_cluster": null
+  },
+  "delete_mode": {
+    "active": false
+  },
+  "tsne_toggle": {
+    "active": false
+  },
+  "embedding_data": {},
+  "active_tab": {
+    "tab": "manual"
+  },
+  "tsne_clusters": {},
+  "intervention_mode": {
+    "active": false,
+    "selected_cluster": null
+  },
+  "manual_features": []
+}

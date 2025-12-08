@@ -1,0 +1,32 @@
+[project]
+name = "featflow"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Your Name",email = "you@example.com"}
+]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "sae-lens (>=5.9.1,<6.0.0)",
+    "pydantic (>=2.11.3,<3.0.0)",
+    "pytest (>=8.3.5,<9.0.0)",
+    "wandb (>=0.19.10,<0.20.0)",
+    "torchvision (>=0.22.0,<0.23.0)",
+    "vllm (>=0.9.0,<0.10.0)",
+    "dash (>=3.0.4,<4.0.0)",
+    "dash-cytoscape (>=1.0.2,<2.0.0)",
+    "dash-bootstrap-components (>=2.0.3,<3.0.0)",
+    "seaborn (>=0.13.2,<0.14.0)",
+    "pexpect (>=4.9.0,<5.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "featflow", from = "src"}]
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^4.2.0"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"

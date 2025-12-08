@@ -1,0 +1,16 @@
+universe = vanilla
+
+executable = /home/abir19/FeatFlow/src/featflow/frontend/run_cluster/run_cluster_intervention.sh
+initialdir = /home/abir19/FeatFlow
+
+output = /home/abir19/FeatFlow/src/featflow/frontend/run_cluster/condor_intervention.out
+error  = /home/abir19/FeatFlow/src/featflow/frontend/run_cluster/condor_intervention.err
+log    = /home/abir19/FeatFlow/src/featflow/frontend/run_cluster/condor_intervention.log
+
+request_cpus = 1
+request_memory = 100GB
+request_gpus = 1
+
+requirements = (CUDACapability == 8.0)
+
+queue

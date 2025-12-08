@@ -1,0 +1,1399 @@
+Exception in rank 4:
+Traceback (most recent call last):
+  File "/lustre/home/fdraye/projects/featflow/example/tiny_stories/run_on_tiny_stories.py", line 20, in _ddp_worker
+    trainer = CLTTrainingRunner(cfg, rank=rank, world_size=world_size)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/lustre/home/fdraye/projects/featflow/src/featflow/clt_training_runner.py", line 62, in __init__
+    n_layers=model_cfg.n_layer, # TODO: to change
+             ^^^^^^^^^^^^^^^^^
+  File "/home/fdraye/.cache/pypoetry/virtualenvs/featflow-66hVYwpV-py3.11/lib/python3.11/site-packages/transformers/configuration_utils.py", line 211, in __getattribute__
+    return super().__getattribute__(key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'GPTNeoConfig' object has no attribute 'n_layer'
+Rank 4 crashed. See /home/fdraye/projects/featflow/example/tiny_stories/logs/error.txt for details.
+[rank0]:[W707 00:41:47.395894993 ProcessGroupNCCL.cpp:1476] Warning: WARNING: destroy_process_group() was not called before program exit, which can leak resources. For more info, please see https://pytorch.org/docs/stable/distributed.html#shutdown (function operator())
+[rank3]:[W707 00:41:48.673683299 TCPStore.cpp:125] [c10d] recvValue failed on SocketImpl(fd=46, addr=[localhost.internal.cluster.is.localnet]:48300, remote=[localhost.internal.cluster.is.localnet]:29500): failed to recv, got 0 bytes
+Exception raised from recvBytes at /pytorch/torch/csrc/distributed/c10d/Utils.hpp:678 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) + 0x98 (0x14d66f7785e8 in /home/fdraye/.cache/pypoetry/virtualenvs/featflow-66hVYwpV-py3.11/lib/python3.11/site-packages/torch/lib/libc10.so)
+frame #1: <unknown function> + 0x5ba8afe (0x14d65862dafe in /home/fdraye/.cache/pypoetry/virtualenvs/featflow-66hVYwpV-py3.11/lib/python3.11/site-packages/torch/lib/libtorch_cpu.so)
+frame #2: <unknown function> + 0x5baae40 (0x14d65862fe40 in /home/fdraye/.cache/pypoetry/virtualenvs/featflow-66hVYwpV-py3.11/lib/python3.11/site-packages/torch/lib/libtorch_cpu.so)
+frame #3: <unknown function> + 0x5bab74a (0x14d65863074a in /home/fdraye/.cache/pypoetry/virtualenvs/featflow-66hVYwpV-py3.11/lib/python3.11/site-packages/torch/lib/libtorch_cpu.so)
+frame #4: c10d::TCPStore::check(std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > const&) + 0x2a9 (0x14d65862a1a9 in /home/fdraye/.cache/pypoetry/virtualenvs/featflow-66hVYwpV-py3.11/lib/python3.11/site-packages/torch/lib/libtorch_cpu.so)
+frame #5: c10d::ProcessGroupNCCL::heartbeatMonitor() + 0x379 (0x14d6158239a9 in /home/fdraye/.cache/pypoetry/virtualenvs/featflow-66hVYwpV-py3.11/lib/python3.11/site-packages/torch/lib/libtorch_cuda.so)
+frame #6: <unknown function> + 0xe62b3 (0x14d6057a12b3 in /lib/x86_64-linux-gnu/libstdc++.so.6)
+frame #7: <unknown function> + 0x94ac3 (0x14d67093aac3 in /lib/x86_64-linux-gnu/libc.so.6)
+frame #8: <unknown function> + 0x126a40 (0x14d6709cca40 in /lib/x86_64-linux-gnu/libc.so.6)
+
+[rank3]:[W707 00:41:48.688949929 ProcessGroupNCCL.cpp:1659] [PG ID 0 PG GUID 0 Rank 3] Failed to check the "should dump" flag on TCPStore, (maybe TCPStore server has shut down too early), with error: failed to recv, got 0 bytes
+W0707 00:41:48.696000 924201 /lustre/home/fdraye/.cache/pypoetry/virtualenvs/featflow-66hVYwpV-py3.11/lib/python3.11/site-packages/torch/multiprocessing/spawn.py:169] Terminating process 924397 via signal SIGTERM
+W0707 00:41:48.697000 924201 /lustre/home/fdraye/.cache/pypoetry/virtualenvs/featflow-66hVYwpV-py3.11/lib/python3.11/site-packages/torch/multiprocessing/spawn.py:169] Terminating process 924398 via signal SIGTERM
+W0707 00:41:48.698000 924201 /lustre/home/fdraye/.cache/pypoetry/virtualenvs/featflow-66hVYwpV-py3.11/lib/python3.11/site-packages/torch/multiprocessing/spawn.py:169] Terminating process 924399 via signal SIGTERM
+W0707 00:41:48.698000 924201 /lustre/home/fdraye/.cache/pypoetry/virtualenvs/featflow-66hVYwpV-py3.11/lib/python3.11/site-packages/torch/multiprocessing/spawn.py:169] Terminating process 924400 via signal SIGTERM
+W0707 00:41:48.698000 924201 /lustre/home/fdraye/.cache/pypoetry/virtualenvs/featflow-66hVYwpV-py3.11/lib/python3.11/site-packages/torch/multiprocessing/spawn.py:169] Terminating process 924401 via signal SIGTERM
+W0707 00:41:48.699000 924201 /lustre/home/fdraye/.cache/pypoetry/virtualenvs/featflow-66hVYwpV-py3.11/lib/python3.11/site-packages/torch/multiprocessing/spawn.py:169] Terminating process 924402 via signal SIGTERM
+W0707 00:41:48.699000 924201 /lustre/home/fdraye/.cache/pypoetry/virtualenvs/featflow-66hVYwpV-py3.11/lib/python3.11/site-packages/torch/multiprocessing/spawn.py:169] Terminating process 924403 via signal SIGTERM
+Traceback (most recent call last):
+  File "/lustre/home/fdraye/projects/featflow/example/tiny_stories/run_on_tiny_stories.py", line 102, in <module>
+    main()
+  File "/lustre/home/fdraye/projects/featflow/example/tiny_stories/run_on_tiny_stories.py", line 99, in main
+    mp.spawn(_ddp_worker, args=(world_size, cfg), nprocs=world_size, join=True)
+  File "/home/fdraye/.cache/pypoetry/virtualenvs/featflow-66hVYwpV-py3.11/lib/python3.11/site-packages/torch/multiprocessing/spawn.py", line 340, in spawn
+    return start_processes(fn, args, nprocs, join, daemon, start_method="spawn")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/fdraye/.cache/pypoetry/virtualenvs/featflow-66hVYwpV-py3.11/lib/python3.11/site-packages/torch/multiprocessing/spawn.py", line 296, in start_processes
+    while not context.join():
+              ^^^^^^^^^^^^^^
+  File "/home/fdraye/.cache/pypoetry/virtualenvs/featflow-66hVYwpV-py3.11/lib/python3.11/site-packages/torch/multiprocessing/spawn.py", line 215, in join
+    raise ProcessRaisedException(msg, error_index, failed_process.pid)
+torch.multiprocessing.spawn.ProcessRaisedException: 
+
+-- Process 0 terminated with the following error:
+Traceback (most recent call last):
+  File "/home/fdraye/.cache/pypoetry/virtualenvs/featflow-66hVYwpV-py3.11/lib/python3.11/site-packages/torch/multiprocessing/spawn.py", line 90, in _wrap
+    fn(i, *args)
+  File "/lustre/home/fdraye/projects/featflow/example/tiny_stories/run_on_tiny_stories.py", line 20, in _ddp_worker
+    trainer = CLTTrainingRunner(cfg, rank=rank, world_size=world_size)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/lustre/home/fdraye/projects/featflow/src/featflow/clt_training_runner.py", line 62, in __init__
+    n_layers=model_cfg.n_layer, # TODO: to change
+             ^^^^^^^^^^^^^^^^^
+  File "/home/fdraye/.cache/pypoetry/virtualenvs/featflow-66hVYwpV-py3.11/lib/python3.11/site-packages/transformers/configuration_utils.py", line 211, in __getattribute__
+    return super().__getattribute__(key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'GPTNeoConfig' object has no attribute 'n_layer'
+
++ echo 'run_on_tiny_stories.py completed'
+2025-07-07 00:44:35,797 - INFO - MSE Loss: 321.1635
+2025-07-07 00:44:35,799 - INFO - L0 Loss: 47.2431
+2025-07-07 00:44:40,472 - INFO - MSE Loss: 312.3741
+2025-07-07 00:44:40,472 - INFO - L0 Loss: 45.9587
+2025-07-07 00:44:45,142 - INFO - MSE Loss: 334.7653
+2025-07-07 00:44:45,143 - INFO - L0 Loss: 46.4503
+2025-07-07 00:44:50,310 - INFO - MSE Loss: 313.2168
+2025-07-07 00:44:50,311 - INFO - L0 Loss: 46.1719
+2025-07-07 00:44:57,187 - INFO - MSE Loss: 306.3914
+2025-07-07 00:44:57,187 - INFO - L0 Loss: 45.9083
+2025-07-07 00:45:02,433 - INFO - MSE Loss: 328.4124
+2025-07-07 00:45:02,433 - INFO - L0 Loss: 46.7051
+2025-07-07 00:45:05,445 - INFO - MSE Loss: 316.3246
+2025-07-07 00:45:05,445 - INFO - L0 Loss: 40.4206
+2025-07-07 00:45:12,295 - INFO - MSE Loss: 310.1227
+2025-07-07 00:45:12,295 - INFO - L0 Loss: 45.2525
+2025-07-07 00:45:16,937 - INFO - MSE Loss: 318.7954
+2025-07-07 00:45:16,937 - INFO - L0 Loss: 45.5241
+2025-07-07 00:45:20,262 - INFO - MSE Loss: 328.8080
+2025-07-07 00:45:20,262 - INFO - L0 Loss: 40.8516
+2025-07-07 00:45:32,750 - INFO - MSE Loss: 318.9485
+2025-07-07 00:45:32,750 - INFO - L0 Loss: 44.9294
+2025-07-07 00:45:37,437 - INFO - MSE Loss: 312.0773
+2025-07-07 00:45:37,438 - INFO - L0 Loss: 45.6220
+2025-07-07 00:45:42,537 - INFO - MSE Loss: 318.0571
+2025-07-07 00:45:42,538 - INFO - L0 Loss: 45.4526
+2025-07-07 00:45:47,170 - INFO - MSE Loss: 316.6175
+2025-07-07 00:45:47,171 - INFO - L0 Loss: 45.2179
+2025-07-07 00:45:50,420 - INFO - [ActivationsStore] Loaded split 826 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_826.safetensors
+2025-07-07 00:46:52,329 - INFO - MSE Loss: 315.6100
+2025-07-07 00:46:52,330 - INFO - L0 Loss: 45.0854
+2025-07-07 00:46:57,524 - INFO - MSE Loss: 318.2599
+2025-07-07 00:46:57,524 - INFO - L0 Loss: 45.5935
+2025-07-07 00:47:02,191 - INFO - MSE Loss: 315.8474
+2025-07-07 00:47:02,192 - INFO - L0 Loss: 45.1348
+2025-07-07 00:47:07,285 - INFO - MSE Loss: 317.7900
+2025-07-07 00:47:07,285 - INFO - L0 Loss: 44.9664
+2025-07-07 00:47:12,028 - INFO - MSE Loss: 327.5413
+2025-07-07 00:47:12,028 - INFO - L0 Loss: 46.6114
+2025-07-07 00:47:17,013 - INFO - MSE Loss: 318.3747
+2025-07-07 00:47:17,013 - INFO - L0 Loss: 45.1382
+2025-07-07 00:47:20,268 - INFO - [ActivationsStore] Loaded split 829 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_829.safetensors
+2025-07-07 00:47:20,274 - INFO - [ActivationsStore] Loaded split 828 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_828.safetensors
+2025-07-07 00:47:20,275 - INFO - [ActivationsStore] Loaded split 827 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_827.safetensors
+2025-07-07 00:47:20,280 - INFO - [ActivationsStore] Loaded split 830 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_830.safetensors
+2025-07-07 00:47:20,301 - INFO - [ActivationsStore] Loaded split 832 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_832.safetensors
+2025-07-07 00:47:20,352 - INFO - [ActivationsStore] Loaded split 831 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_831.safetensors
+                                                                                                      2025-07-07 00:48:59,594 - INFO - MSE Loss: 330.2108
+2025-07-07 00:48:59,596 - INFO - L0 Loss: 45.1634
+2025-07-07 00:49:04,360 - INFO - MSE Loss: 322.9246
+2025-07-07 00:49:04,361 - INFO - L0 Loss: 45.0772
+2025-07-07 00:49:09,536 - INFO - MSE Loss: 327.8531
+2025-07-07 00:49:09,537 - INFO - L0 Loss: 44.9871
+2025-07-07 00:49:14,153 - INFO - MSE Loss: 323.2260
+2025-07-07 00:49:14,154 - INFO - L0 Loss: 45.5846
+2025-07-07 00:49:21,475 - INFO - MSE Loss: 322.1917
+2025-07-07 00:49:21,475 - INFO - L0 Loss: 45.1959
+2025-07-07 00:49:26,189 - INFO - MSE Loss: 310.8457
+2025-07-07 00:49:26,189 - INFO - L0 Loss: 44.2220
+2025-07-07 00:49:31,128 - INFO - MSE Loss: 316.1336
+2025-07-07 00:49:31,128 - INFO - L0 Loss: 44.5107
+2025-07-07 00:49:35,769 - INFO - MSE Loss: 320.3155
+2025-07-07 00:49:35,769 - INFO - L0 Loss: 45.2571
+2025-07-07 00:49:40,449 - INFO - MSE Loss: 325.8607
+2025-07-07 00:49:40,449 - INFO - L0 Loss: 44.9885
+2025-07-07 00:49:45,583 - INFO - MSE Loss: 323.6961
+2025-07-07 00:49:45,583 - INFO - L0 Loss: 44.6923
+2025-07-07 00:49:59,215 - INFO - MSE Loss: 321.4634
+2025-07-07 00:49:59,215 - INFO - L0 Loss: 44.8800
+2025-07-07 00:50:04,457 - INFO - MSE Loss: 316.9330
+2025-07-07 00:50:04,457 - INFO - L0 Loss: 44.3121
+2025-07-07 00:50:09,247 - INFO - MSE Loss: 322.5497
+2025-07-07 00:50:09,248 - INFO - L0 Loss: 45.9821
+2025-07-07 00:50:13,948 - INFO - MSE Loss: 318.1841
+2025-07-07 00:50:13,948 - INFO - L0 Loss: 44.8131
+2025-07-07 00:50:17,675 - INFO - [ActivationsStore] Loaded split 833 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_833.safetensors
+2025-07-07 00:51:16,902 - INFO - MSE Loss: 323.3737
+2025-07-07 00:51:16,902 - INFO - L0 Loss: 44.3518
+2025-07-07 00:51:21,705 - INFO - MSE Loss: 322.2408
+2025-07-07 00:51:21,706 - INFO - L0 Loss: 44.0036
+2025-07-07 00:51:26,866 - INFO - MSE Loss: 314.1376
+2025-07-07 00:51:26,867 - INFO - L0 Loss: 43.9161
+2025-07-07 00:51:31,523 - INFO - MSE Loss: 321.7099
+2025-07-07 00:51:31,523 - INFO - L0 Loss: 43.9405
+2025-07-07 00:51:36,454 - INFO - MSE Loss: 329.2623
+2025-07-07 00:51:36,455 - INFO - L0 Loss: 44.8227
+2025-07-07 00:51:41,141 - INFO - MSE Loss: 325.5545
+2025-07-07 00:51:41,142 - INFO - L0 Loss: 44.7000
+2025-07-07 00:51:44,427 - INFO - [ActivationsStore] Loaded split 836 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_836.safetensors
+2025-07-07 00:51:44,428 - INFO - [ActivationsStore] Loaded split 838 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_838.safetensors
+2025-07-07 00:51:44,428 - INFO - [ActivationsStore] Loaded split 835 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_835.safetensors
+2025-07-07 00:51:44,448 - INFO - [ActivationsStore] Loaded split 837 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_837.safetensors
+2025-07-07 00:51:44,456 - INFO - [ActivationsStore] Loaded split 834 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_834.safetensors
+2025-07-07 00:51:44,456 - INFO - [ActivationsStore] Loaded split 839 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_839.safetensors
+                                                                                                      2025-07-07 00:53:26,191 - INFO - MSE Loss: 319.1797
+2025-07-07 00:53:26,193 - INFO - L0 Loss: 43.6205
+2025-07-07 00:53:31,389 - INFO - MSE Loss: 321.2424
+2025-07-07 00:53:31,390 - INFO - L0 Loss: 44.2813
+2025-07-07 00:53:36,072 - INFO - MSE Loss: 334.5299
+2025-07-07 00:53:36,073 - INFO - L0 Loss: 46.1226
+2025-07-07 00:53:41,293 - INFO - MSE Loss: 320.0668
+2025-07-07 00:53:41,293 - INFO - L0 Loss: 43.4370
+2025-07-07 00:53:48,237 - INFO - MSE Loss: 322.9344
+2025-07-07 00:53:48,237 - INFO - L0 Loss: 44.2786
+2025-07-07 00:53:52,863 - INFO - MSE Loss: 324.0342
+2025-07-07 00:53:52,864 - INFO - L0 Loss: 44.4152
+2025-07-07 00:53:58,095 - INFO - MSE Loss: 319.0754
+2025-07-07 00:53:58,095 - INFO - L0 Loss: 43.3541
+2025-07-07 00:54:02,801 - INFO - MSE Loss: 307.3274
+2025-07-07 00:54:02,802 - INFO - L0 Loss: 42.5563
+2025-07-07 00:54:08,034 - INFO - MSE Loss: 327.5344
+2025-07-07 00:54:08,034 - INFO - L0 Loss: 44.9608
+2025-07-07 00:54:12,731 - INFO - MSE Loss: 320.0468
+2025-07-07 00:54:12,731 - INFO - L0 Loss: 43.6544
+2025-07-07 00:54:27,619 - INFO - MSE Loss: 308.3418
+2025-07-07 00:54:27,619 - INFO - L0 Loss: 42.6188
+2025-07-07 00:54:32,326 - INFO - MSE Loss: 314.7353
+2025-07-07 00:54:32,326 - INFO - L0 Loss: 43.3140
+2025-07-07 00:54:37,075 - INFO - MSE Loss: 324.0628
+2025-07-07 00:54:37,075 - INFO - L0 Loss: 44.2152
+2025-07-07 00:54:42,201 - INFO - MSE Loss: 320.8419
+2025-07-07 00:54:42,202 - INFO - L0 Loss: 44.9807
+2025-07-07 00:54:45,464 - INFO - [ActivationsStore] Loaded split 840 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_840.safetensors
+2025-07-07 00:55:47,410 - INFO - MSE Loss: 318.3648
+2025-07-07 00:55:47,411 - INFO - L0 Loss: 43.3030
+2025-07-07 00:55:52,662 - INFO - MSE Loss: 314.4610
+2025-07-07 00:55:52,663 - INFO - L0 Loss: 43.2596
+2025-07-07 00:55:57,416 - INFO - MSE Loss: 323.4422
+2025-07-07 00:55:57,416 - INFO - L0 Loss: 43.5953
+2025-07-07 00:56:02,445 - INFO - MSE Loss: 326.9498
+2025-07-07 00:56:02,446 - INFO - L0 Loss: 43.6171
+2025-07-07 00:56:07,111 - INFO - MSE Loss: 313.7708
+2025-07-07 00:56:07,112 - INFO - L0 Loss: 42.9754
+2025-07-07 00:56:11,798 - INFO - MSE Loss: 331.5817
+2025-07-07 00:56:11,798 - INFO - L0 Loss: 44.1211
+2025-07-07 00:56:15,598 - INFO - [ActivationsStore] Loaded split 841 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_841.safetensors
+2025-07-07 00:56:14,645 - INFO - [ActivationsStore] Loaded split 843 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_843.safetensors
+2025-07-07 00:56:14,650 - INFO - [ActivationsStore] Loaded split 844 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_844.safetensors
+2025-07-07 00:56:14,662 - INFO - [ActivationsStore] Loaded split 846 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_846.safetensors
+2025-07-07 00:56:14,671 - INFO - [ActivationsStore] Loaded split 845 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_845.safetensors
+2025-07-07 00:56:14,721 - INFO - [ActivationsStore] Loaded split 842 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_842.safetensors
+2025-07-07 00:57:56,217 - INFO - MSE Loss: 323.3347
+2025-07-07 00:57:56,219 - INFO - L0 Loss: 37.8559
+                                                                                                      2025-07-07 00:58:01,370 - INFO - MSE Loss: 309.3994
+2025-07-07 00:58:01,371 - INFO - L0 Loss: 36.6103
+2025-07-07 00:58:06,024 - INFO - MSE Loss: 325.5518
+2025-07-07 00:58:06,025 - INFO - L0 Loss: 38.2747
+2025-07-07 00:58:11,048 - INFO - MSE Loss: 317.7074
+2025-07-07 00:58:11,048 - INFO - L0 Loss: 37.8426
+2025-07-07 00:58:17,987 - INFO - MSE Loss: 319.1684
+2025-07-07 00:58:17,988 - INFO - L0 Loss: 37.9691
+2025-07-07 00:58:22,631 - INFO - MSE Loss: 335.7046
+2025-07-07 00:58:22,631 - INFO - L0 Loss: 38.1345
+2025-07-07 00:58:27,769 - INFO - MSE Loss: 324.5590
+2025-07-07 00:58:27,769 - INFO - L0 Loss: 38.1129
+2025-07-07 00:58:32,496 - INFO - MSE Loss: 322.8246
+2025-07-07 00:58:32,496 - INFO - L0 Loss: 37.1920
+2025-07-07 00:58:37,608 - INFO - MSE Loss: 323.5944
+2025-07-07 00:58:37,609 - INFO - L0 Loss: 37.1255
+2025-07-07 00:58:43,942 - INFO - MSE Loss: 322.7538
+2025-07-07 00:58:43,943 - INFO - L0 Loss: 37.4934
+2025-07-07 00:58:57,982 - INFO - MSE Loss: 321.1706
+2025-07-07 00:58:57,982 - INFO - L0 Loss: 37.1421
+2025-07-07 00:59:03,182 - INFO - MSE Loss: 320.8048
+2025-07-07 00:59:03,183 - INFO - L0 Loss: 37.1201
+2025-07-07 00:59:07,858 - INFO - MSE Loss: 315.1657
+2025-07-07 00:59:07,858 - INFO - L0 Loss: 37.1871
+2025-07-07 00:59:12,993 - INFO - MSE Loss: 321.5371
+2025-07-07 00:59:12,994 - INFO - L0 Loss: 36.6756
+2025-07-07 00:59:19,961 - INFO - MSE Loss: 333.2828
+2025-07-07 00:59:19,962 - INFO - L0 Loss: 37.1661
+2025-07-07 00:59:24,973 - INFO - MSE Loss: 320.4807
+2025-07-07 00:59:24,974 - INFO - L0 Loss: 37.2646
+2025-07-07 00:59:29,676 - INFO - MSE Loss: 327.9133
+2025-07-07 00:59:29,677 - INFO - L0 Loss: 37.1624
+2025-07-07 00:59:34,327 - INFO - MSE Loss: 321.3388
+2025-07-07 00:59:34,328 - INFO - L0 Loss: 36.7259
+2025-07-07 00:59:39,509 - INFO - MSE Loss: 322.4077
+2025-07-07 00:59:39,509 - INFO - L0 Loss: 38.0911
+2025-07-07 00:59:44,131 - INFO - MSE Loss: 325.3735
+2025-07-07 00:59:44,132 - INFO - L0 Loss: 37.2139
+2025-07-07 00:59:55,814 - INFO - MSE Loss: 329.7312
+2025-07-07 00:59:55,814 - INFO - L0 Loss: 37.6739
+2025-07-07 01:00:00,545 - INFO - MSE Loss: 329.8778
+2025-07-07 01:00:00,545 - INFO - L0 Loss: 37.1930
+2025-07-07 01:00:05,623 - INFO - MSE Loss: 332.3981
+2025-07-07 01:00:05,624 - INFO - L0 Loss: 37.8662
+2025-07-07 01:00:10,315 - INFO - MSE Loss: 348.7478
+2025-07-07 01:00:10,316 - INFO - L0 Loss: 37.3718
+2025-07-07 01:00:13,589 - INFO - [ActivationsStore] Loaded split 847 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_847.safetensors
+2025-07-07 01:01:11,785 - INFO - MSE Loss: 330.4108
+2025-07-07 01:01:11,786 - INFO - L0 Loss: 36.4679
+                                                                                                      2025-07-07 01:01:17,074 - INFO - MSE Loss: 324.9017
+2025-07-07 01:01:20,437 - INFO - L0 Loss: 42.2923
+2025-07-07 01:01:25,136 - INFO - MSE Loss: 314.4188
+2025-07-07 01:01:25,136 - INFO - L0 Loss: 42.1572
+2025-07-07 01:01:29,897 - INFO - MSE Loss: 319.2994
+2025-07-07 01:01:29,898 - INFO - L0 Loss: 42.6204
+2025-07-07 01:01:35,106 - INFO - MSE Loss: 327.6794
+2025-07-07 01:01:35,106 - INFO - L0 Loss: 42.7060
+2025-07-07 01:01:38,489 - INFO - [ActivationsStore] Loaded split 850 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_850.safetensors
+2025-07-07 01:01:38,491 - INFO - [ActivationsStore] Loaded split 849 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_849.safetensors
+2025-07-07 01:01:38,491 - INFO - [ActivationsStore] Loaded split 853 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_853.safetensors
+2025-07-07 01:01:38,491 - INFO - [ActivationsStore] Loaded split 851 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_851.safetensors
+2025-07-07 01:01:38,491 - INFO - [ActivationsStore] Loaded split 852 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_852.safetensors
+2025-07-07 01:01:38,491 - INFO - [ActivationsStore] Loaded split 848 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_848.safetensors
+                                                                                                      2025-07-07 01:04:08,718 - INFO - MSE Loss: 316.4202
+2025-07-07 01:04:08,719 - INFO - L0 Loss: 41.5854
+2025-07-07 01:04:14,030 - INFO - MSE Loss: 337.3033
+2025-07-07 01:04:14,031 - INFO - L0 Loss: 42.4997
+2025-07-07 01:04:18,765 - INFO - MSE Loss: 327.7541
+2025-07-07 01:04:18,765 - INFO - L0 Loss: 43.2758
+2025-07-07 01:04:23,834 - INFO - MSE Loss: 322.3548
+2025-07-07 01:04:23,835 - INFO - L0 Loss: 41.7975
+2025-07-07 01:04:30,772 - INFO - MSE Loss: 328.9064
+2025-07-07 01:04:30,773 - INFO - L0 Loss: 42.3111
+2025-07-07 01:04:35,547 - INFO - MSE Loss: 322.9943
+2025-07-07 01:04:35,548 - INFO - L0 Loss: 41.4082
+2025-07-07 01:04:40,827 - INFO - MSE Loss: 323.1833
+2025-07-07 01:04:40,827 - INFO - L0 Loss: 41.6853
+2025-07-07 01:04:45,568 - INFO - MSE Loss: 322.0992
+2025-07-07 01:04:45,568 - INFO - L0 Loss: 41.4982
+2025-07-07 01:04:50,838 - INFO - MSE Loss: 328.8752
+2025-07-07 01:04:50,838 - INFO - L0 Loss: 41.7772
+2025-07-07 01:04:55,553 - INFO - MSE Loss: 327.9389
+2025-07-07 01:04:55,554 - INFO - L0 Loss: 41.3587
+2025-07-07 01:05:06,212 - INFO - MSE Loss: 309.1551
+2025-07-07 01:05:06,213 - INFO - L0 Loss: 40.2036
+2025-07-07 01:05:11,461 - INFO - MSE Loss: 319.3131
+2025-07-07 01:05:11,461 - INFO - L0 Loss: 40.9212
+2025-07-07 01:05:16,285 - INFO - MSE Loss: 321.6986
+2025-07-07 01:05:16,286 - INFO - L0 Loss: 42.1261
+2025-07-07 01:05:21,501 - INFO - MSE Loss: 321.0372
+2025-07-07 01:05:21,502 - INFO - L0 Loss: 41.3291
+2025-07-07 01:05:24,823 - INFO - [ActivationsStore] Loaded split 854 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_854.safetensors
+2025-07-07 01:06:25,900 - INFO - MSE Loss: 327.5133
+2025-07-07 01:06:25,901 - INFO - L0 Loss: 41.1666
+2025-07-07 01:06:31,241 - INFO - MSE Loss: 325.4471
+2025-07-07 01:06:31,241 - INFO - L0 Loss: 40.8536
+2025-07-07 01:06:35,961 - INFO - MSE Loss: 318.7411
+2025-07-07 01:06:35,962 - INFO - L0 Loss: 41.8398
+2025-07-07 01:06:40,717 - INFO - MSE Loss: 324.4139
+2025-07-07 01:06:40,718 - INFO - L0 Loss: 41.0161
+2025-07-07 01:06:45,934 - INFO - MSE Loss: 325.6982
+2025-07-07 01:06:45,934 - INFO - L0 Loss: 40.7056
+2025-07-07 01:06:50,765 - INFO - MSE Loss: 323.2796
+2025-07-07 01:06:50,766 - INFO - L0 Loss: 40.9766
+2025-07-07 01:06:54,647 - INFO - [ActivationsStore] Loaded split 856 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_856.safetensors
+2025-07-07 01:06:54,660 - INFO - [ActivationsStore] Loaded split 860 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_860.safetensors
+2025-07-07 01:06:53,602 - INFO - [ActivationsStore] Loaded split 855 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_855.safetensors
+2025-07-07 01:06:53,611 - INFO - [ActivationsStore] Loaded split 859 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_859.safetensors
+2025-07-07 01:06:53,620 - INFO - [ActivationsStore] Loaded split 857 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_857.safetensors
+2025-07-07 01:06:53,651 - INFO - [ActivationsStore] Loaded split 856 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_856.safetensors
+2025-07-07 01:08:34,453 - INFO - MSE Loss: 327.5641
+2025-07-07 01:08:34,455 - INFO - L0 Loss: 35.4845
+2025-07-07 01:08:39,714 - INFO - MSE Loss: 335.4345
+2025-07-07 01:08:39,714 - INFO - L0 Loss: 36.0384
+2025-07-07 01:08:44,495 - INFO - MSE Loss: 319.8903
+2025-07-07 01:08:44,496 - INFO - L0 Loss: 35.6754
+2025-07-07 01:08:49,197 - INFO - MSE Loss: 329.8915
+2025-07-07 01:08:49,197 - INFO - L0 Loss: 35.3961
+2025-07-07 01:08:56,656 - INFO - MSE Loss: 340.5703
+2025-07-07 01:08:56,657 - INFO - L0 Loss: 35.5758
+2025-07-07 01:09:01,342 - INFO - MSE Loss: 320.3675
+2025-07-07 01:09:01,342 - INFO - L0 Loss: 35.2700
+2025-07-07 01:09:06,604 - INFO - MSE Loss: 336.4774
+2025-07-07 01:09:06,605 - INFO - L0 Loss: 35.8713
+2025-07-07 01:09:11,246 - INFO - MSE Loss: 324.3837
+2025-07-07 01:09:11,247 - INFO - L0 Loss: 35.4983
+2025-07-07 01:09:16,254 - INFO - MSE Loss: 329.8444
+2025-07-07 01:09:16,254 - INFO - L0 Loss: 36.0252
+2025-07-07 01:09:20,993 - INFO - MSE Loss: 327.5205
+2025-07-07 01:09:20,994 - INFO - L0 Loss: 35.4965
+2025-07-07 01:09:34,767 - INFO - MSE Loss: 340.1043
+2025-07-07 01:09:34,768 - INFO - L0 Loss: 35.5898
+2025-07-07 01:09:39,955 - INFO - MSE Loss: 319.9686
+2025-07-07 01:09:39,955 - INFO - L0 Loss: 34.7100
+2025-07-07 01:09:44,609 - INFO - MSE Loss: 334.5918
+2025-07-07 01:09:44,609 - INFO - L0 Loss: 35.1532
+2025-07-07 01:09:49,842 - INFO - MSE Loss: 326.7309
+2025-07-07 01:09:49,842 - INFO - L0 Loss: 35.4744
+2025-07-07 01:09:53,159 - INFO - [ActivationsStore] Loaded split 861 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_861.safetensors
+2025-07-07 01:10:56,037 - INFO - MSE Loss: 319.0826
+2025-07-07 01:10:56,038 - INFO - L0 Loss: 35.0177
+2025-07-07 01:11:01,089 - INFO - MSE Loss: 324.0419
+2025-07-07 01:11:01,090 - INFO - L0 Loss: 35.2286
+2025-07-07 01:11:05,832 - INFO - MSE Loss: 334.4363
+2025-07-07 01:11:05,833 - INFO - L0 Loss: 35.5514
+2025-07-07 01:11:10,503 - INFO - MSE Loss: 332.3525
+2025-07-07 01:11:10,504 - INFO - L0 Loss: 34.9831
+2025-07-07 01:11:15,679 - INFO - MSE Loss: 323.5551
+2025-07-07 01:11:15,680 - INFO - L0 Loss: 34.9962
+2025-07-07 01:11:20,355 - INFO - MSE Loss: 312.7392
+2025-07-07 01:11:20,356 - INFO - L0 Loss: 33.9886
+2025-07-07 01:11:24,158 - INFO - [ActivationsStore] Loaded split 862 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_862.safetensors
+2025-07-07 01:11:24,171 - INFO - [ActivationsStore] Loaded split 863 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_863.safetensors
+2025-07-07 01:11:24,182 - INFO - [ActivationsStore] Loaded split 866 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_866.safetensors
+2025-07-07 01:11:24,172 - INFO - [ActivationsStore] Loaded split 865 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_865.safetensors
+2025-07-07 01:11:24,221 - INFO - [ActivationsStore] Loaded split 867 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_867.safetensors
+2025-07-07 01:11:24,254 - INFO - [ActivationsStore] Loaded split 864 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_864.safetensors
+2025-07-07 01:13:06,212 - INFO - MSE Loss: 323.1251
+2025-07-07 01:13:06,214 - INFO - L0 Loss: 34.5549
+2025-07-07 01:13:10,896 - INFO - MSE Loss: 329.8293
+2025-07-07 01:13:10,897 - INFO - L0 Loss: 35.6589
+2025-07-07 01:13:15,539 - INFO - MSE Loss: 328.2924
+2025-07-07 01:13:15,539 - INFO - L0 Loss: 34.5008
+2025-07-07 01:13:20,844 - INFO - MSE Loss: 342.6607
+2025-07-07 01:13:20,845 - INFO - L0 Loss: 35.2862
+2025-07-07 01:13:27,808 - INFO - MSE Loss: 342.8456
+2025-07-07 01:13:27,809 - INFO - L0 Loss: 35.1872
+                                                                                                      2025-07-07 01:13:33,070 - INFO - MSE Loss: 328.4795
+2025-07-07 01:13:33,071 - INFO - L0 Loss: 34.5488
+2025-07-07 01:13:37,789 - INFO - MSE Loss: 322.7747
+2025-07-07 01:13:37,790 - INFO - L0 Loss: 34.8260
+2025-07-07 01:13:42,827 - INFO - MSE Loss: 333.0649
+2025-07-07 01:13:42,828 - INFO - L0 Loss: 34.4881
+2025-07-07 01:13:47,540 - INFO - MSE Loss: 335.9872
+2025-07-07 01:13:47,541 - INFO - L0 Loss: 34.4430
+2025-07-07 01:13:52,230 - INFO - MSE Loss: 343.3372
+2025-07-07 01:13:52,231 - INFO - L0 Loss: 34.5885
+2025-07-07 01:14:03,799 - INFO - MSE Loss: 327.0885
+2025-07-07 01:14:03,800 - INFO - L0 Loss: 33.9340
+2025-07-07 01:14:08,476 - INFO - MSE Loss: 330.5115
+2025-07-07 01:14:08,476 - INFO - L0 Loss: 34.1474
+2025-07-07 01:14:13,710 - INFO - MSE Loss: 333.1168
+2025-07-07 01:14:13,711 - INFO - L0 Loss: 34.0460
+2025-07-07 01:14:18,395 - INFO - MSE Loss: 327.5970
+2025-07-07 01:14:18,396 - INFO - L0 Loss: 34.4541
+2025-07-07 01:14:22,039 - INFO - [ActivationsStore] Loaded split 868 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_868.safetensors
+2025-07-07 01:15:23,449 - INFO - MSE Loss: 329.3699
+2025-07-07 01:15:23,450 - INFO - L0 Loss: 33.6009
+2025-07-07 01:15:28,159 - INFO - MSE Loss: 348.2026
+2025-07-07 01:15:28,160 - INFO - L0 Loss: 35.3434
+2025-07-07 01:15:32,882 - INFO - MSE Loss: 337.6828
+2025-07-07 01:15:32,883 - INFO - L0 Loss: 34.0000
+2025-07-07 01:15:38,121 - INFO - MSE Loss: 333.2522
+2025-07-07 01:15:38,122 - INFO - L0 Loss: 34.5743
+2025-07-07 01:15:42,816 - INFO - MSE Loss: 331.3465
+2025-07-07 01:15:42,817 - INFO - L0 Loss: 34.0462
+2025-07-07 01:15:47,991 - INFO - MSE Loss: 325.3062
+2025-07-07 01:15:47,991 - INFO - L0 Loss: 34.0465
+2025-07-07 01:15:51,275 - INFO - [ActivationsStore] Loaded split 869 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_869.safetensors
+2025-07-07 01:15:51,275 - INFO - [ActivationsStore] Loaded split 873 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_873.safetensors
+2025-07-07 01:15:51,277 - INFO - [ActivationsStore] Loaded split 871 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_871.safetensors
+2025-07-07 01:15:51,294 - INFO - [ActivationsStore] Loaded split 870 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_870.safetensors
+2025-07-07 01:15:51,326 - INFO - [ActivationsStore] Loaded split 872 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_872.safetensors
+2025-07-07 01:15:51,350 - INFO - [ActivationsStore] Loaded split 874 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_874.safetensors
+2025-07-07 01:17:33,391 - INFO - MSE Loss: 338.0372
+2025-07-07 01:17:33,392 - INFO - L0 Loss: 33.8912
+2025-07-07 01:17:38,529 - INFO - MSE Loss: 337.4883
+2025-07-07 01:17:38,530 - INFO - L0 Loss: 33.7907
+2025-07-07 01:17:43,183 - INFO - MSE Loss: 333.7506
+2025-07-07 01:17:43,184 - INFO - L0 Loss: 33.2936
+2025-07-07 01:17:47,880 - INFO - MSE Loss: 330.3856
+2025-07-07 01:17:47,881 - INFO - L0 Loss: 33.7708
+2025-07-07 01:17:55,357 - INFO - MSE Loss: 326.8737
+2025-07-07 01:17:55,358 - INFO - L0 Loss: 33.7888
+2025-07-07 01:18:00,045 - INFO - MSE Loss: 346.4924
+2025-07-07 01:18:00,046 - INFO - L0 Loss: 33.6813
+2025-07-07 01:18:05,242 - INFO - MSE Loss: 327.9160
+2025-07-07 01:18:05,243 - INFO - L0 Loss: 33.0455
+2025-07-07 01:18:09,958 - INFO - MSE Loss: 330.9167
+2025-07-07 01:18:09,959 - INFO - L0 Loss: 32.9559
+2025-07-07 01:18:14,701 - INFO - MSE Loss: 343.0919
+2025-07-07 01:18:14,702 - INFO - L0 Loss: 34.3263
+2025-07-07 01:18:19,925 - INFO - MSE Loss: 339.6298
+2025-07-07 01:18:19,925 - INFO - L0 Loss: 33.7113
+2025-07-07 01:18:34,083 - INFO - MSE Loss: 321.9043
+2025-07-07 01:18:34,084 - INFO - L0 Loss: 32.9876
+2025-07-07 01:18:39,351 - INFO - MSE Loss: 331.4334
+2025-07-07 01:18:39,352 - INFO - L0 Loss: 33.7812
+2025-07-07 01:18:44,064 - INFO - MSE Loss: 342.9356
+2025-07-07 01:18:44,065 - INFO - L0 Loss: 33.8908
+2025-07-07 01:18:49,083 - INFO - MSE Loss: 326.0092
+2025-07-07 01:18:49,084 - INFO - L0 Loss: 33.2457
+2025-07-07 01:18:56,074 - INFO - MSE Loss: 323.4424
+2025-07-07 01:18:56,075 - INFO - L0 Loss: 32.9693
+2025-07-07 01:19:00,852 - INFO - MSE Loss: 342.5115
+2025-07-07 01:19:00,853 - INFO - L0 Loss: 33.4357
+2025-07-07 01:19:06,083 - INFO - MSE Loss: 334.7736
+2025-07-07 01:19:06,084 - INFO - L0 Loss: 32.9294
+2025-07-07 01:19:10,811 - INFO - MSE Loss: 324.7120
+2025-07-07 01:19:10,812 - INFO - L0 Loss: 33.1339
+2025-07-07 01:19:16,005 - INFO - MSE Loss: 330.3981
+2025-07-07 01:19:16,006 - INFO - L0 Loss: 32.3329
+2025-07-07 01:19:20,727 - INFO - MSE Loss: 336.7731
+2025-07-07 01:19:20,727 - INFO - L0 Loss: 33.1467
+2025-07-07 01:19:32,444 - INFO - MSE Loss: 333.6689
+2025-07-07 01:19:32,445 - INFO - L0 Loss: 32.9284
+2025-07-07 01:19:37,140 - INFO - MSE Loss: 344.7591
+2025-07-07 01:19:37,141 - INFO - L0 Loss: 33.0069
+2025-07-07 01:19:41,957 - INFO - MSE Loss: 320.8186
+2025-07-07 01:19:41,958 - INFO - L0 Loss: 32.4778
+2025-07-07 01:19:47,192 - INFO - MSE Loss: 333.5765
+2025-07-07 01:19:47,193 - INFO - L0 Loss: 32.5260
+2025-07-07 01:19:50,534 - INFO - [ActivationsStore] Loaded split 875 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_875.safetensors
+2025-07-07 01:20:52,878 - INFO - MSE Loss: 319.1755
+2025-07-07 01:20:52,879 - INFO - L0 Loss: 32.3052
+2025-07-07 01:20:58,314 - INFO - MSE Loss: 327.7732
+2025-07-07 01:20:58,315 - INFO - L0 Loss: 33.1480
+2025-07-07 01:21:03,052 - INFO - MSE Loss: 331.3502
+2025-07-07 01:21:03,052 - INFO - L0 Loss: 32.6559
+2025-07-07 01:21:08,331 - INFO - MSE Loss: 326.1815
+2025-07-07 01:21:08,331 - INFO - L0 Loss: 32.4269
+2025-07-07 01:21:13,013 - INFO - MSE Loss: 334.5227
+2025-07-07 01:21:13,014 - INFO - L0 Loss: 32.6860
+2025-07-07 01:21:17,795 - INFO - MSE Loss: 338.5734
+2025-07-07 01:21:17,796 - INFO - L0 Loss: 32.5967
+2025-07-07 01:21:21,638 - INFO - [ActivationsStore] Loaded split 878 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_878.safetensors
+2025-07-07 01:21:21,640 - INFO - [ActivationsStore] Loaded split 876 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_876.safetensors
+2025-07-07 01:21:21,641 - INFO - [ActivationsStore] Loaded split 877 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_877.safetensors
+2025-07-07 01:21:21,642 - INFO - [ActivationsStore] Loaded split 880 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_880.safetensors
+2025-07-07 01:21:21,643 - INFO - [ActivationsStore] Loaded split 881 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_881.safetensors
+2025-07-07 01:21:21,646 - INFO - [ActivationsStore] Loaded split 879 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_879.safetensors
+                                                                                                      2025-07-07 01:23:08,784 - INFO - MSE Loss: 338.3130
+2025-07-07 01:23:08,785 - INFO - L0 Loss: 32.7582
+2025-07-07 01:23:13,562 - INFO - MSE Loss: 350.6047
+2025-07-07 01:23:13,563 - INFO - L0 Loss: 33.6627
+2025-07-07 01:23:18,947 - INFO - MSE Loss: 319.0679
+2025-07-07 01:23:18,948 - INFO - L0 Loss: 31.9027
+2025-07-07 01:23:23,617 - INFO - MSE Loss: 324.2326
+2025-07-07 01:23:23,618 - INFO - L0 Loss: 32.0258
+2025-07-07 01:23:30,919 - INFO - MSE Loss: 336.0875
+2025-07-07 01:23:30,920 - INFO - L0 Loss: 32.4792
+2025-07-07 01:23:35,641 - INFO - MSE Loss: 337.1835
+2025-07-07 01:23:35,642 - INFO - L0 Loss: 32.5627
+2025-07-07 01:23:40,416 - INFO - MSE Loss: 338.6638
+2025-07-07 01:23:40,417 - INFO - L0 Loss: 32.6296
+                                                                                                      2025-07-07 01:23:45,608 - INFO - MSE Loss: 339.5782
+2025-07-07 01:23:45,608 - INFO - L0 Loss: 32.4470
+2025-07-07 01:23:50,340 - INFO - MSE Loss: 327.8836
+2025-07-07 01:23:50,341 - INFO - L0 Loss: 31.6884
+2025-07-07 01:23:55,656 - INFO - MSE Loss: 369.4748
+2025-07-07 01:23:55,657 - INFO - L0 Loss: 33.7588
+2025-07-07 01:24:06,429 - INFO - MSE Loss: 328.0228
+2025-07-07 01:24:06,430 - INFO - L0 Loss: 31.6636
+2025-07-07 01:24:11,497 - INFO - MSE Loss: 328.7428
+2025-07-07 01:24:11,497 - INFO - L0 Loss: 30.7890
+2025-07-07 01:24:16,274 - INFO - MSE Loss: 357.7918
+2025-07-07 01:24:16,275 - INFO - L0 Loss: 33.1948
+2025-07-07 01:24:21,087 - INFO - MSE Loss: 327.2302
+2025-07-07 01:24:21,087 - INFO - L0 Loss: 32.1372
+2025-07-07 01:24:24,875 - INFO - [ActivationsStore] Loaded split 882 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_882.safetensors
+2025-07-07 01:25:23,348 - INFO - MSE Loss: 325.7497
+2025-07-07 01:25:23,349 - INFO - L0 Loss: 32.3245
+2025-07-07 01:25:28,093 - INFO - MSE Loss: 327.9199
+2025-07-07 01:25:28,094 - INFO - L0 Loss: 31.7101
+2025-07-07 01:25:33,419 - INFO - MSE Loss: 343.2815
+2025-07-07 01:25:33,419 - INFO - L0 Loss: 32.0050
+2025-07-07 01:25:38,165 - INFO - MSE Loss: 340.0811
+2025-07-07 01:25:38,166 - INFO - L0 Loss: 31.6542
+2025-07-07 01:25:43,213 - INFO - MSE Loss: 334.1886
+2025-07-07 01:25:43,214 - INFO - L0 Loss: 31.7047
+2025-07-07 01:25:47,940 - INFO - MSE Loss: 318.8232
+2025-07-07 01:25:47,940 - INFO - L0 Loss: 30.9015
+2025-07-07 01:25:51,300 - INFO - [ActivationsStore] Loaded split 887 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_887.safetensors
+2025-07-07 01:25:51,306 - INFO - [ActivationsStore] Loaded split 885 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_885.safetensors
+2025-07-07 01:25:51,317 - INFO - [ActivationsStore] Loaded split 884 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_884.safetensors
+2025-07-07 01:25:51,317 - INFO - [ActivationsStore] Loaded split 883 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_883.safetensors
+2025-07-07 01:25:51,337 - INFO - [ActivationsStore] Loaded split 888 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_888.safetensors
+2025-07-07 01:25:51,367 - INFO - [ActivationsStore] Loaded split 886 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_886.safetensors
+2025-07-07 01:27:32,690 - INFO - MSE Loss: 342.8641
+2025-07-07 01:27:32,691 - INFO - L0 Loss: 31.6160
+2025-07-07 01:27:37,987 - INFO - MSE Loss: 334.7686
+2025-07-07 01:27:37,988 - INFO - L0 Loss: 31.8539
+2025-07-07 01:27:42,762 - INFO - MSE Loss: 340.5837
+2025-07-07 01:27:42,762 - INFO - L0 Loss: 31.7596
+2025-07-07 01:27:48,117 - INFO - MSE Loss: 323.2997
+2025-07-07 01:27:48,118 - INFO - L0 Loss: 31.3009
+2025-07-07 01:27:55,129 - INFO - MSE Loss: 348.3681
+2025-07-07 01:27:55,130 - INFO - L0 Loss: 31.4264
+2025-07-07 01:28:00,171 - INFO - MSE Loss: 330.1804
+2025-07-07 01:28:00,171 - INFO - L0 Loss: 31.3721
+2025-07-07 01:28:04,899 - INFO - MSE Loss: 335.3643
+2025-07-07 01:28:05,435 - INFO - L0 Loss: 38.4983
+2025-07-07 01:28:10,748 - INFO - MSE Loss: 339.0077
+2025-07-07 01:28:10,749 - INFO - L0 Loss: 38.4044
+2025-07-07 01:28:15,602 - INFO - MSE Loss: 333.2229
+2025-07-07 01:28:15,603 - INFO - L0 Loss: 37.8671
+2025-07-07 01:28:20,863 - INFO - MSE Loss: 319.7338
+2025-07-07 01:28:20,864 - INFO - L0 Loss: 37.1573
+2025-07-07 01:28:31,967 - INFO - MSE Loss: 347.1689
+2025-07-07 01:28:31,968 - INFO - L0 Loss: 38.2139
+2025-07-07 01:28:37,102 - INFO - MSE Loss: 332.4170
+2025-07-07 01:28:37,103 - INFO - L0 Loss: 38.0663
+2025-07-07 01:28:41,861 - INFO - MSE Loss: 313.4797
+2025-07-07 01:28:41,861 - INFO - L0 Loss: 37.7240
+2025-07-07 01:28:46,629 - INFO - MSE Loss: 326.3216
+2025-07-07 01:28:46,630 - INFO - L0 Loss: 37.6646
+2025-07-07 01:28:50,477 - INFO - [ActivationsStore] Loaded split 889 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_889.safetensors
+2025-07-07 01:29:50,587 - INFO - MSE Loss: 338.6335
+2025-07-07 01:29:50,588 - INFO - L0 Loss: 38.0708
+2025-07-07 01:29:55,429 - INFO - MSE Loss: 322.6874
+2025-07-07 01:29:55,430 - INFO - L0 Loss: 37.7074
+2025-07-07 01:30:00,786 - INFO - MSE Loss: 323.9199
+2025-07-07 01:30:00,787 - INFO - L0 Loss: 37.0565
+                                                                                                      2025-07-07 01:30:05,641 - INFO - MSE Loss: 360.1529
+2025-07-07 01:30:05,642 - INFO - L0 Loss: 38.8831
+2025-07-07 01:30:10,381 - INFO - MSE Loss: 333.8705
+2025-07-07 01:30:10,382 - INFO - L0 Loss: 37.1566
+2025-07-07 01:30:15,651 - INFO - MSE Loss: 326.4850
+2025-07-07 01:30:15,651 - INFO - L0 Loss: 37.6122
+2025-07-07 01:30:19,091 - INFO - [ActivationsStore] Loaded split 893 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_893.safetensors
+2025-07-07 01:30:19,092 - INFO - [ActivationsStore] Loaded split 891 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_891.safetensors
+2025-07-07 01:30:19,093 - INFO - [ActivationsStore] Loaded split 894 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_894.safetensors
+2025-07-07 01:30:19,119 - INFO - [ActivationsStore] Loaded split 895 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_895.safetensors
+2025-07-07 01:30:19,136 - INFO - [ActivationsStore] Loaded split 892 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_892.safetensors
+2025-07-07 01:30:19,158 - INFO - [ActivationsStore] Loaded split 890 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_890.safetensors
+2025-07-07 01:31:58,847 - INFO - MSE Loss: 326.6306
+2025-07-07 01:31:58,849 - INFO - L0 Loss: 37.1408
+2025-07-07 01:32:04,269 - INFO - MSE Loss: 333.9615
+2025-07-07 01:32:04,269 - INFO - L0 Loss: 37.5067
+2025-07-07 01:32:09,064 - INFO - MSE Loss: 366.9093
+2025-07-07 01:32:09,065 - INFO - L0 Loss: 38.5527
+2025-07-07 01:32:14,239 - INFO - MSE Loss: 326.0219
+2025-07-07 01:32:14,239 - INFO - L0 Loss: 37.4086
+2025-07-07 01:32:21,333 - INFO - MSE Loss: 350.9027
+2025-07-07 01:32:21,334 - INFO - L0 Loss: 37.6103
+2025-07-07 01:32:26,113 - INFO - MSE Loss: 333.1339
+2025-07-07 01:32:26,114 - INFO - L0 Loss: 37.4553
+2025-07-07 01:32:31,503 - INFO - MSE Loss: 325.5430
+2025-07-07 01:32:31,504 - INFO - L0 Loss: 37.2585
+2025-07-07 01:32:36,265 - INFO - MSE Loss: 346.8720
+2025-07-07 01:32:36,266 - INFO - L0 Loss: 38.0387
+2025-07-07 01:32:41,597 - INFO - MSE Loss: 347.5832
+2025-07-07 01:32:41,598 - INFO - L0 Loss: 38.2975
+2025-07-07 01:32:46,391 - INFO - MSE Loss: 337.5400
+2025-07-07 01:32:46,392 - INFO - L0 Loss: 37.1757
+2025-07-07 01:32:58,554 - INFO - MSE Loss: 345.7114
+2025-07-07 01:32:58,554 - INFO - L0 Loss: 39.1351
+2025-07-07 01:33:03,398 - INFO - MSE Loss: 354.5893
+2025-07-07 01:33:03,399 - INFO - L0 Loss: 38.0612
+2025-07-07 01:33:08,170 - INFO - MSE Loss: 329.6431
+2025-07-07 01:33:07,812 - INFO - L0 Loss: 30.4532
+2025-07-07 01:33:12,571 - INFO - MSE Loss: 331.4864
+2025-07-07 01:33:12,572 - INFO - L0 Loss: 30.2523
+2025-07-07 01:33:16,403 - INFO - [ActivationsStore] Loaded split 896 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_896.safetensors
+2025-07-07 01:34:16,837 - INFO - MSE Loss: 337.0921
+2025-07-07 01:34:16,838 - INFO - L0 Loss: 30.4278
+2025-07-07 01:34:21,653 - INFO - MSE Loss: 332.8103
+2025-07-07 01:34:21,655 - INFO - L0 Loss: 30.4753
+2025-07-07 01:34:26,918 - INFO - MSE Loss: 332.9474
+2025-07-07 01:34:26,919 - INFO - L0 Loss: 30.7306
+                                                                                                      2025-07-07 01:34:31,708 - INFO - MSE Loss: 328.4043
+2025-07-07 01:34:31,708 - INFO - L0 Loss: 29.8371
+2025-07-07 01:34:36,544 - INFO - MSE Loss: 332.7046
+2025-07-07 01:34:36,544 - INFO - L0 Loss: 30.0574
+2025-07-07 01:34:41,781 - INFO - MSE Loss: 337.6711
+2025-07-07 01:34:41,782 - INFO - L0 Loss: 30.0778
+2025-07-07 01:34:45,170 - INFO - [ActivationsStore] Loaded split 898 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_898.safetensors
+2025-07-07 01:34:45,176 - INFO - [ActivationsStore] Loaded split 900 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_900.safetensors
+2025-07-07 01:34:45,177 - INFO - [ActivationsStore] Loaded split 902 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_902.safetensors
+2025-07-07 01:34:45,188 - INFO - [ActivationsStore] Loaded split 897 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_897.safetensors
+2025-07-07 01:34:45,202 - INFO - [ActivationsStore] Loaded split 901 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_901.safetensors
+2025-07-07 01:34:45,270 - INFO - [ActivationsStore] Loaded split 899 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_899.safetensors
+2025-07-07 01:36:32,026 - INFO - MSE Loss: 339.5662
+2025-07-07 01:36:32,028 - INFO - L0 Loss: 30.4617
+2025-07-07 01:36:37,312 - INFO - MSE Loss: 339.2902
+2025-07-07 01:36:37,312 - INFO - L0 Loss: 30.7474
+2025-07-07 01:36:42,162 - INFO - MSE Loss: 342.4161
+2025-07-07 01:36:42,162 - INFO - L0 Loss: 30.5610
+2025-07-07 01:36:47,340 - INFO - MSE Loss: 346.4825
+2025-07-07 01:36:47,341 - INFO - L0 Loss: 30.0917
+2025-07-07 01:36:54,363 - INFO - MSE Loss: 351.5893
+2025-07-07 01:36:54,364 - INFO - L0 Loss: 30.6371
+2025-07-07 01:36:59,165 - INFO - MSE Loss: 333.5544
+2025-07-07 01:36:59,166 - INFO - L0 Loss: 30.0578
+2025-07-07 01:37:04,418 - INFO - MSE Loss: 338.7187
+2025-07-07 01:37:04,419 - INFO - L0 Loss: 29.4505
+                                                                                                      2025-07-07 01:37:09,211 - INFO - MSE Loss: 337.1328
+2025-07-07 01:37:09,211 - INFO - L0 Loss: 30.1998
+2025-07-07 01:37:14,456 - INFO - MSE Loss: 343.8298
+2025-07-07 01:37:14,457 - INFO - L0 Loss: 30.3944
+2025-07-07 01:37:19,338 - INFO - MSE Loss: 353.6002
+2025-07-07 01:37:19,338 - INFO - L0 Loss: 30.3388
+2025-07-07 01:37:29,731 - INFO - MSE Loss: 357.0139
+2025-07-07 01:37:29,732 - INFO - L0 Loss: 31.1712
+2025-07-07 01:37:35,045 - INFO - MSE Loss: 326.0484
+2025-07-07 01:37:35,046 - INFO - L0 Loss: 29.3183
+2025-07-07 01:37:39,890 - INFO - MSE Loss: 344.0893
+2025-07-07 01:37:39,891 - INFO - L0 Loss: 29.8563
+2025-07-07 01:37:45,116 - INFO - MSE Loss: 345.3999
+2025-07-07 01:37:45,116 - INFO - L0 Loss: 30.0201
+2025-07-07 01:37:48,461 - INFO - [ActivationsStore] Loaded split 903 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_903.safetensors
+2025-07-07 01:38:49,590 - INFO - MSE Loss: 337.6308
+2025-07-07 01:38:49,590 - INFO - L0 Loss: 29.9732
+2025-07-07 01:38:54,945 - INFO - MSE Loss: 352.3213
+2025-07-07 01:38:54,945 - INFO - L0 Loss: 30.3680
+2025-07-07 01:38:59,745 - INFO - MSE Loss: 341.0078
+2025-07-07 01:38:59,745 - INFO - L0 Loss: 29.7418
+2025-07-07 01:39:04,550 - INFO - MSE Loss: 317.4102
+2025-07-07 01:39:04,551 - INFO - L0 Loss: 29.3775
+2025-07-07 01:39:09,774 - INFO - MSE Loss: 345.4203
+2025-07-07 01:39:09,774 - INFO - L0 Loss: 29.4184
+2025-07-07 01:39:14,602 - INFO - MSE Loss: 339.5901
+2025-07-07 01:39:14,602 - INFO - L0 Loss: 29.6210
+2025-07-07 01:39:18,509 - INFO - [ActivationsStore] Loaded split 904 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_904.safetensors
+2025-07-07 01:39:18,522 - INFO - [ActivationsStore] Loaded split 905 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_905.safetensors
+2025-07-07 01:39:18,531 - INFO - [ActivationsStore] Loaded split 908 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_908.safetensors
+2025-07-07 01:39:18,537 - INFO - [ActivationsStore] Loaded split 907 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_907.safetensors
+2025-07-07 01:39:18,538 - INFO - [ActivationsStore] Loaded split 906 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_906.safetensors
+2025-07-07 01:39:18,563 - INFO - [ActivationsStore] Loaded split 909 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_909.safetensors
+                                                                                                      2025-07-07 01:41:43,774 - INFO - MSE Loss: 343.8123
+2025-07-07 01:41:43,776 - INFO - L0 Loss: 29.3628
+2025-07-07 01:41:48,554 - INFO - MSE Loss: 381.2408
+2025-07-07 01:41:48,555 - INFO - L0 Loss: 31.1594
+2025-07-07 01:41:53,703 - INFO - MSE Loss: 321.5532
+2025-07-07 01:41:53,703 - INFO - L0 Loss: 28.8485
+2025-07-07 01:41:58,536 - INFO - MSE Loss: 336.9467
+2025-07-07 01:41:58,536 - INFO - L0 Loss: 29.7350
+2025-07-07 01:42:05,576 - INFO - MSE Loss: 335.9807
+2025-07-07 01:42:05,577 - INFO - L0 Loss: 29.2996
+2025-07-07 01:42:10,895 - INFO - MSE Loss: 349.1246
+2025-07-07 01:42:10,895 - INFO - L0 Loss: 29.8515
+2025-07-07 01:42:15,729 - INFO - MSE Loss: 343.1606
+2025-07-07 01:42:15,730 - INFO - L0 Loss: 29.4364
+2025-07-07 01:42:21,064 - INFO - MSE Loss: 331.9314
+2025-07-07 01:42:21,065 - INFO - L0 Loss: 29.1659
+2025-07-07 01:42:25,809 - INFO - MSE Loss: 343.8715
+2025-07-07 01:42:25,810 - INFO - L0 Loss: 29.8383
+2025-07-07 01:42:30,569 - INFO - MSE Loss: 340.9816
+2025-07-07 01:42:30,569 - INFO - L0 Loss: 29.6366
+2025-07-07 01:42:45,521 - INFO - MSE Loss: 361.3691
+2025-07-07 01:42:45,522 - INFO - L0 Loss: 30.2251
+2025-07-07 01:42:50,268 - INFO - MSE Loss: 348.8221
+2025-07-07 01:42:50,269 - INFO - L0 Loss: 30.1093
+2025-07-07 01:42:55,572 - INFO - MSE Loss: 365.4820
+2025-07-07 01:42:55,573 - INFO - L0 Loss: 31.6108
+                                                                                                      2025-07-07 01:43:00,586 - INFO - MSE Loss: 333.6177
+2025-07-07 01:43:00,586 - INFO - L0 Loss: 29.0374
+2025-07-07 01:43:07,921 - INFO - MSE Loss: 320.0567
+2025-07-07 01:43:07,922 - INFO - L0 Loss: 28.7319
+2025-07-07 01:43:12,713 - INFO - MSE Loss: 348.3263
+2025-07-07 01:43:12,713 - INFO - L0 Loss: 29.0647
+2025-07-07 01:43:19,377 - INFO - MSE Loss: 322.8654
+2025-07-07 01:43:19,377 - INFO - L0 Loss: 28.4773
+2025-07-07 01:43:24,759 - INFO - MSE Loss: 358.1030
+2025-07-07 01:43:24,760 - INFO - L0 Loss: 29.3950
+2025-07-07 01:43:29,541 - INFO - MSE Loss: 339.3382
+2025-07-07 01:43:29,541 - INFO - L0 Loss: 29.1204
+                                                                                                      2025-07-07 01:43:34,827 - INFO - MSE Loss: 343.9612
+2025-07-07 01:43:34,828 - INFO - L0 Loss: 29.7300
+2025-07-07 01:43:46,001 - INFO - MSE Loss: 333.2254
+2025-07-07 01:43:46,001 - INFO - L0 Loss: 28.6725
+2025-07-07 01:43:51,247 - INFO - MSE Loss: 367.9033
+2025-07-07 01:43:51,247 - INFO - L0 Loss: 29.5082
+2025-07-07 01:43:56,004 - INFO - MSE Loss: 358.3864
+2025-07-07 01:43:56,005 - INFO - L0 Loss: 29.9368
+2025-07-07 01:44:00,762 - INFO - MSE Loss: 342.6535
+2025-07-07 01:44:00,763 - INFO - L0 Loss: 28.9831
+2025-07-07 01:44:04,651 - INFO - [ActivationsStore] Loaded split 910 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_910.safetensors
+2025-07-07 01:45:07,007 - INFO - MSE Loss: 325.1637
+2025-07-07 01:45:07,008 - INFO - L0 Loss: 28.6116
+2025-07-07 01:45:11,800 - INFO - MSE Loss: 342.2818
+2025-07-07 01:45:11,801 - INFO - L0 Loss: 28.5212
+2025-07-07 01:45:17,115 - INFO - MSE Loss: 350.9024
+2025-07-07 01:45:17,116 - INFO - L0 Loss: 29.2960
+2025-07-07 01:45:21,987 - INFO - MSE Loss: 349.8964
+2025-07-07 01:45:21,988 - INFO - L0 Loss: 28.5838
+2025-07-07 01:45:26,776 - INFO - MSE Loss: 340.0052
+2025-07-07 01:45:26,777 - INFO - L0 Loss: 28.6214
+2025-07-07 01:45:32,053 - INFO - MSE Loss: 353.7303
+2025-07-07 01:45:32,053 - INFO - L0 Loss: 28.9866
+2025-07-07 01:45:35,446 - INFO - [ActivationsStore] Loaded split 916 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_916.safetensors
+2025-07-07 01:45:35,452 - INFO - [ActivationsStore] Loaded split 915 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_915.safetensors
+2025-07-07 01:45:35,460 - INFO - [ActivationsStore] Loaded split 912 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_912.safetensors
+2025-07-07 01:45:35,467 - INFO - [ActivationsStore] Loaded split 914 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_914.safetensors
+2025-07-07 01:45:35,475 - INFO - [ActivationsStore] Loaded split 913 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_913.safetensors
+2025-07-07 01:45:35,509 - INFO - [ActivationsStore] Loaded split 911 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_911.safetensors
+2025-07-07 01:47:20,862 - INFO - MSE Loss: 353.9650
+2025-07-07 01:47:20,863 - INFO - L0 Loss: 29.3190
+                                                                                                      2025-07-07 01:47:26,211 - INFO - MSE Loss: 340.1621
+2025-07-07 01:47:26,212 - INFO - L0 Loss: 28.3975
+2025-07-07 01:47:30,938 - INFO - MSE Loss: 331.6877
+2025-07-07 01:47:30,938 - INFO - L0 Loss: 28.1711
+2025-07-07 01:47:36,045 - INFO - MSE Loss: 343.2002
+2025-07-07 01:47:36,046 - INFO - L0 Loss: 28.5315
+2025-07-07 01:47:43,153 - INFO - MSE Loss: 341.1755
+2025-07-07 01:47:43,154 - INFO - L0 Loss: 28.5142
+2025-07-07 01:47:47,953 - INFO - MSE Loss: 352.6837
+2025-07-07 01:47:47,954 - INFO - L0 Loss: 28.4919
+2025-07-07 01:47:53,257 - INFO - MSE Loss: 344.5604
+2025-07-07 01:47:53,257 - INFO - L0 Loss: 29.4274
+2025-07-07 01:47:57,957 - INFO - MSE Loss: 341.2571
+2025-07-07 01:47:57,957 - INFO - L0 Loss: 28.7186
+2025-07-07 01:48:03,299 - INFO - MSE Loss: 342.2918
+2025-07-07 01:48:03,300 - INFO - L0 Loss: 28.2512
+2025-07-07 01:48:08,080 - INFO - MSE Loss: 356.5962
+2025-07-07 01:48:08,080 - INFO - L0 Loss: 29.1623
+2025-07-07 01:48:19,087 - INFO - MSE Loss: 343.5529
+2025-07-07 01:48:19,087 - INFO - L0 Loss: 28.0247
+2025-07-07 01:48:23,894 - INFO - MSE Loss: 339.5861
+2025-07-07 01:48:23,895 - INFO - L0 Loss: 28.8531
+2025-07-07 01:48:28,637 - INFO - MSE Loss: 344.8294
+2025-07-07 01:48:28,637 - INFO - L0 Loss: 28.2369
+2025-07-07 01:48:33,972 - INFO - MSE Loss: 341.3507
+2025-07-07 01:48:33,972 - INFO - L0 Loss: 28.0288
+2025-07-07 01:48:37,338 - INFO - [ActivationsStore] Loaded split 917 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_917.safetensors
+2025-07-07 01:49:38,772 - INFO - MSE Loss: 334.0037
+2025-07-07 01:49:38,773 - INFO - L0 Loss: 28.0709
+2025-07-07 01:49:44,169 - INFO - MSE Loss: 348.6049
+2025-07-07 01:49:44,169 - INFO - L0 Loss: 28.2796
+2025-07-07 01:49:48,963 - INFO - MSE Loss: 344.0135
+2025-07-07 01:49:48,964 - INFO - L0 Loss: 28.3755
+2025-07-07 01:49:53,769 - INFO - MSE Loss: 341.6838
+2025-07-07 01:49:53,770 - INFO - L0 Loss: 28.5412
+2025-07-07 01:49:59,122 - INFO - MSE Loss: 346.6018
+2025-07-07 01:49:59,122 - INFO - L0 Loss: 28.6215
+2025-07-07 01:50:03,953 - INFO - MSE Loss: 333.2892
+2025-07-07 01:50:03,953 - INFO - L0 Loss: 27.9452
+2025-07-07 01:50:07,872 - INFO - [ActivationsStore] Loaded split 921 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_921.safetensors
+2025-07-07 01:50:07,874 - INFO - [ActivationsStore] Loaded split 923 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_923.safetensors
+2025-07-07 01:50:07,879 - INFO - [ActivationsStore] Loaded split 922 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_922.safetensors
+2025-07-07 01:50:07,882 - INFO - [ActivationsStore] Loaded split 919 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_919.safetensors
+2025-07-07 01:50:07,888 - INFO - [ActivationsStore] Loaded split 918 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_918.safetensors
+2025-07-07 01:50:07,926 - INFO - [ActivationsStore] Loaded split 920 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_920.safetensors
+2025-07-07 01:51:49,789 - INFO - MSE Loss: 350.3626
+2025-07-07 01:51:49,791 - INFO - L0 Loss: 28.1457
+2025-07-07 01:51:54,579 - INFO - MSE Loss: 346.9337
+2025-07-07 01:51:54,580 - INFO - L0 Loss: 28.9802
+2025-07-07 01:51:59,978 - INFO - MSE Loss: 344.7458
+2025-07-07 01:51:59,979 - INFO - L0 Loss: 28.5008
+                                                                                                      2025-07-07 01:52:04,767 - INFO - MSE Loss: 338.5932
+2025-07-07 01:52:04,768 - INFO - L0 Loss: 28.1087
+2025-07-07 01:52:11,860 - INFO - MSE Loss: 355.6878
+2025-07-07 01:52:11,861 - INFO - L0 Loss: 28.8335
+2025-07-07 01:52:17,232 - INFO - MSE Loss: 362.9063
+2025-07-07 01:52:17,233 - INFO - L0 Loss: 28.0866
+2025-07-07 01:52:22,036 - INFO - MSE Loss: 333.4779
+2025-07-07 01:52:22,037 - INFO - L0 Loss: 27.7969
+2025-07-07 01:52:27,311 - INFO - MSE Loss: 340.9535
+2025-07-07 01:52:27,312 - INFO - L0 Loss: 27.5442
+2025-07-07 01:52:32,124 - INFO - MSE Loss: 345.0012
+2025-07-07 01:52:32,125 - INFO - L0 Loss: 28.1908
+2025-07-07 01:52:37,550 - INFO - MSE Loss: 365.2180
+2025-07-07 01:52:37,551 - INFO - L0 Loss: 28.3428
+2025-07-07 01:52:52,490 - INFO - MSE Loss: 349.7798
+2025-07-07 01:52:52,491 - INFO - L0 Loss: 28.4689
+2025-07-07 01:52:57,270 - INFO - MSE Loss: 353.9210
+2025-07-07 01:52:57,271 - INFO - L0 Loss: 28.3741
+2025-07-07 01:53:02,602 - INFO - MSE Loss: 343.8770
+2025-07-07 01:53:02,603 - INFO - L0 Loss: 27.6895
+2025-07-07 01:53:07,446 - INFO - MSE Loss: 338.1174
+2025-07-07 01:53:07,447 - INFO - L0 Loss: 27.6413
+2025-07-07 01:53:11,360 - INFO - [ActivationsStore] Loaded split 924 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_924.safetensors
+2025-07-07 01:54:12,355 - INFO - MSE Loss: 343.4806
+2025-07-07 01:54:12,355 - INFO - L0 Loss: 27.2319
+2025-07-07 01:54:17,135 - INFO - MSE Loss: 347.3729
+2025-07-07 01:54:17,136 - INFO - L0 Loss: 27.9753
+2025-07-07 01:54:22,561 - INFO - MSE Loss: 349.1741
+2025-07-07 01:54:22,561 - INFO - L0 Loss: 27.7696
+2025-07-07 01:54:27,369 - INFO - MSE Loss: 394.9633
+2025-07-07 01:54:27,369 - INFO - L0 Loss: 31.1539
+2025-07-07 01:54:32,153 - INFO - MSE Loss: 339.2099
+2025-07-07 01:54:32,154 - INFO - L0 Loss: 27.3689
+2025-07-07 01:54:37,480 - INFO - MSE Loss: 340.6463
+2025-07-07 01:54:37,480 - INFO - L0 Loss: 27.8633
+2025-07-07 01:54:40,899 - INFO - [ActivationsStore] Loaded split 928 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_925.safetensors
+2025-07-07 01:54:41,712 - INFO - [ActivationsStore] Loaded split 928 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_928.safetensors
+2025-07-07 01:54:41,713 - INFO - [ActivationsStore] Loaded split 929 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_929.safetensors
+2025-07-07 01:54:41,725 - INFO - [ActivationsStore] Loaded split 927 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_927.safetensors
+2025-07-07 01:54:41,769 - INFO - [ActivationsStore] Loaded split 930 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_930.safetensors
+2025-07-07 01:54:41,773 - INFO - [ActivationsStore] Loaded split 926 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_926.safetensors
+2025-07-07 01:56:23,714 - INFO - MSE Loss: 341.4772
+2025-07-07 01:56:23,716 - INFO - L0 Loss: 34.2336
+2025-07-07 01:56:28,588 - INFO - MSE Loss: 352.4381
+2025-07-07 01:56:28,588 - INFO - L0 Loss: 35.1419
+2025-07-07 01:56:33,840 - INFO - MSE Loss: 342.1496
+2025-07-07 01:56:33,841 - INFO - L0 Loss: 34.7967
+2025-07-07 01:56:38,734 - INFO - MSE Loss: 343.3845
+2025-07-07 01:56:38,734 - INFO - L0 Loss: 34.7673
+2025-07-07 01:56:45,793 - INFO - MSE Loss: 347.1392
+2025-07-07 01:56:45,794 - INFO - L0 Loss: 34.2795
+2025-07-07 01:56:51,213 - INFO - MSE Loss: 342.9088
+2025-07-07 01:56:51,213 - INFO - L0 Loss: 34.4400
+2025-07-07 01:56:56,161 - INFO - MSE Loss: 345.5498
+2025-07-07 01:56:56,162 - INFO - L0 Loss: 35.0486
+2025-07-07 01:57:01,482 - INFO - MSE Loss: 353.7299
+2025-07-07 01:57:01,483 - INFO - L0 Loss: 34.9163
+2025-07-07 01:57:06,412 - INFO - MSE Loss: 342.0850
+2025-07-07 01:57:06,412 - INFO - L0 Loss: 35.0694
+2025-07-07 01:57:11,750 - INFO - MSE Loss: 360.9395
+2025-07-07 01:57:11,750 - INFO - L0 Loss: 34.7766
+2025-07-07 01:57:23,579 - INFO - MSE Loss: 356.1993
+2025-07-07 01:57:23,580 - INFO - L0 Loss: 34.6515
+2025-07-07 01:57:28,516 - INFO - MSE Loss: 336.7065
+2025-07-07 01:57:28,517 - INFO - L0 Loss: 34.6675
+2025-07-07 01:57:33,885 - INFO - MSE Loss: 352.7066
+2025-07-07 01:57:33,885 - INFO - L0 Loss: 34.6132
+2025-07-07 01:57:38,790 - INFO - MSE Loss: 376.6675
+2025-07-07 01:57:38,790 - INFO - L0 Loss: 35.5830
+2025-07-07 01:57:42,722 - INFO - [ActivationsStore] Loaded split 931 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_931.safetensors
+2025-07-07 01:58:40,750 - INFO - MSE Loss: 345.7986
+2025-07-07 01:58:40,751 - INFO - L0 Loss: 34.4648
+2025-07-07 01:58:45,628 - INFO - MSE Loss: 341.4934
+2025-07-07 01:58:45,629 - INFO - L0 Loss: 34.7789
+2025-07-07 01:58:51,048 - INFO - MSE Loss: 340.9420
+2025-07-07 01:58:51,049 - INFO - L0 Loss: 34.6268
+2025-07-07 01:58:55,963 - INFO - MSE Loss: 340.6164
+2025-07-07 01:58:55,964 - INFO - L0 Loss: 34.5979
+2025-07-07 01:59:00,777 - INFO - MSE Loss: 342.1918
+2025-07-07 01:59:00,778 - INFO - L0 Loss: 34.8134
+2025-07-07 01:59:06,117 - INFO - MSE Loss: 347.0157
+2025-07-07 01:59:06,117 - INFO - L0 Loss: 34.3804
+2025-07-07 01:59:09,582 - INFO - [ActivationsStore] Loaded split 934 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_934.safetensors
+2025-07-07 01:59:09,595 - INFO - [ActivationsStore] Loaded split 935 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_935.safetensors
+2025-07-07 01:59:09,595 - INFO - [ActivationsStore] Loaded split 936 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_936.safetensors
+2025-07-07 01:59:09,620 - INFO - [ActivationsStore] Loaded split 937 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_937.safetensors
+2025-07-07 01:59:09,639 - INFO - [ActivationsStore] Loaded split 932 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_932.safetensors
+2025-07-07 01:59:09,639 - INFO - [ActivationsStore] Loaded split 933 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_933.safetensors
+2025-07-07 02:00:24,648 - INFO - MSE Loss: 348.5472
+2025-07-07 02:00:24,649 - INFO - L0 Loss: 34.7998
+                                                                                                      2025-07-07 02:00:30,054 - INFO - MSE Loss: 341.5576
+2025-07-07 02:00:30,055 - INFO - L0 Loss: 34.1482
+2025-07-07 02:00:34,936 - INFO - MSE Loss: 358.6893
+2025-07-07 02:00:34,936 - INFO - L0 Loss: 35.2837
+2025-07-07 02:00:40,213 - INFO - MSE Loss: 333.5177
+2025-07-07 02:00:40,214 - INFO - L0 Loss: 33.9650
+2025-07-07 02:00:47,284 - INFO - MSE Loss: 342.4962
+2025-07-07 02:00:47,285 - INFO - L0 Loss: 34.5810
+2025-07-07 02:00:52,141 - INFO - MSE Loss: 344.6757
+2025-07-07 02:00:52,142 - INFO - L0 Loss: 34.3897
+2025-07-07 02:00:57,575 - INFO - MSE Loss: 349.2573
+2025-07-07 02:00:57,575 - INFO - L0 Loss: 34.5092
+2025-07-07 02:01:02,491 - INFO - MSE Loss: 344.9385
+2025-07-07 02:01:02,491 - INFO - L0 Loss: 34.2863
+2025-07-07 02:01:07,866 - INFO - MSE Loss: 356.0290
+2025-07-07 02:01:07,867 - INFO - L0 Loss: 35.1407
+2025-07-07 02:01:12,732 - INFO - MSE Loss: 345.0299
+2025-07-07 02:01:12,733 - INFO - L0 Loss: 35.0858
+2025-07-07 02:01:25,343 - INFO - MSE Loss: 361.5635
+2025-07-07 02:01:25,344 - INFO - L0 Loss: 34.5038
+2025-07-07 02:01:30,285 - INFO - MSE Loss: 342.9327
+2025-07-07 02:01:30,286 - INFO - L0 Loss: 34.7604
+2025-07-07 02:01:35,131 - INFO - MSE Loss: 349.4005
+2025-07-07 02:01:35,132 - INFO - L0 Loss: 34.4734
+2025-07-07 02:01:40,550 - INFO - MSE Loss: 348.1231
+2025-07-07 02:01:40,550 - INFO - L0 Loss: 34.6210
+2025-07-07 02:01:47,721 - INFO - MSE Loss: 337.6731
+2025-07-07 02:01:47,721 - INFO - L0 Loss: 33.6216
+2025-07-07 02:01:53,012 - INFO - MSE Loss: 348.0160
+2025-07-07 02:01:53,013 - INFO - L0 Loss: 34.0866
+2025-07-07 02:01:57,848 - INFO - MSE Loss: 337.6774
+2025-07-07 02:01:57,849 - INFO - L0 Loss: 34.0243
+2025-07-07 02:02:03,064 - INFO - MSE Loss: 353.5649
+2025-07-07 02:02:03,065 - INFO - L0 Loss: 34.6190
+2025-07-07 02:02:07,989 - INFO - MSE Loss: 336.6748
+2025-07-07 02:02:07,989 - INFO - L0 Loss: 33.7523
+2025-07-07 02:02:12,807 - INFO - MSE Loss: 333.0888
+2025-07-07 02:02:12,808 - INFO - L0 Loss: 33.4651
+2025-07-07 02:02:24,421 - INFO - MSE Loss: 359.0918
+2025-07-07 02:02:24,421 - INFO - L0 Loss: 34.4091
+2025-07-07 02:02:29,349 - INFO - MSE Loss: 335.6543
+2025-07-07 02:02:29,349 - INFO - L0 Loss: 33.8577
+2025-07-07 02:02:34,707 - INFO - MSE Loss: 347.4212
+2025-07-07 02:02:34,707 - INFO - L0 Loss: 33.8209
+2025-07-07 02:02:39,525 - INFO - MSE Loss: 346.4979
+2025-07-07 02:02:39,526 - INFO - L0 Loss: 33.4447
+2025-07-07 02:02:42,943 - INFO - [ActivationsStore] Loaded split 938 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_938.safetensors
+2025-07-07 02:03:44,189 - INFO - MSE Loss: 334.5112
+2025-07-07 02:03:44,190 - INFO - L0 Loss: 33.7005
+                                                                                                      2025-07-07 02:03:49,742 - INFO - MSE Loss: 345.8733
+2025-07-07 02:03:49,743 - INFO - L0 Loss: 34.2948
+2025-07-07 02:03:54,636 - INFO - MSE Loss: 371.4254
+2025-07-07 02:03:54,636 - INFO - L0 Loss: 34.9173
+2025-07-07 02:04:00,019 - INFO - MSE Loss: 362.4109
+2025-07-07 02:04:00,020 - INFO - L0 Loss: 33.9601
+2025-07-07 02:04:04,981 - INFO - MSE Loss: 350.9979
+2025-07-07 02:04:04,982 - INFO - L0 Loss: 33.8247
+2025-07-07 02:04:10,281 - INFO - MSE Loss: 354.2899
+2025-07-07 02:04:10,281 - INFO - L0 Loss: 34.0198
+2025-07-07 02:04:13,773 - INFO - [ActivationsStore] Loaded split 940 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_940.safetensors
+2025-07-07 02:04:13,773 - INFO - [ActivationsStore] Loaded split 939 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_939.safetensors
+2025-07-07 02:04:13,786 - INFO - [ActivationsStore] Loaded split 941 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_941.safetensors
+2025-07-07 02:04:13,795 - INFO - [ActivationsStore] Loaded split 943 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_943.safetensors
+2025-07-07 02:04:13,804 - INFO - [ActivationsStore] Loaded split 944 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_944.safetensors
+2025-07-07 02:04:13,848 - INFO - [ActivationsStore] Loaded split 942 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_942.safetensors
+2025-07-07 02:05:54,142 - INFO - MSE Loss: 341.7773
+2025-07-07 02:05:54,143 - INFO - L0 Loss: 33.4623
+2025-07-07 02:05:59,024 - INFO - MSE Loss: 350.4897
+2025-07-07 02:05:59,025 - INFO - L0 Loss: 33.9038
+2025-07-07 02:06:04,532 - INFO - MSE Loss: 338.5123
+2025-07-07 02:06:04,532 - INFO - L0 Loss: 33.5831
+2025-07-07 02:06:09,410 - INFO - MSE Loss: 337.4690
+2025-07-07 02:06:09,410 - INFO - L0 Loss: 33.3699
+2025-07-07 02:06:17,104 - INFO - MSE Loss: 333.9311
+2025-07-07 02:06:17,104 - INFO - L0 Loss: 33.7672
+2025-07-07 02:06:22,035 - INFO - MSE Loss: 350.5888
+2025-07-07 02:06:22,036 - INFO - L0 Loss: 34.4130
+                                                                                                      2025-07-07 02:06:27,302 - INFO - MSE Loss: 335.0912
+2025-07-07 02:06:27,303 - INFO - L0 Loss: 33.5849
+2025-07-07 02:06:32,195 - INFO - MSE Loss: 342.5941
+2025-07-07 02:06:32,195 - INFO - L0 Loss: 33.4572
+2025-07-07 02:06:37,046 - INFO - MSE Loss: 328.2908
+2025-07-07 02:06:37,047 - INFO - L0 Loss: 33.2403
+2025-07-07 02:06:42,485 - INFO - MSE Loss: 340.4775
+2025-07-07 02:06:42,486 - INFO - L0 Loss: 33.8713
+2025-07-07 02:06:53,187 - INFO - MSE Loss: 363.9339
+2025-07-07 02:06:53,188 - INFO - L0 Loss: 34.2090
+2025-07-07 02:06:58,698 - INFO - MSE Loss: 340.2242
+2025-07-07 02:06:58,699 - INFO - L0 Loss: 33.9058
+2025-07-07 02:07:03,688 - INFO - MSE Loss: 349.3548
+2025-07-07 02:07:03,688 - INFO - L0 Loss: 33.5707
+2025-07-07 02:07:08,899 - INFO - MSE Loss: 345.5212
+2025-07-07 02:07:08,899 - INFO - L0 Loss: 33.5482
+2025-07-07 02:07:12,442 - INFO - [ActivationsStore] Loaded split 945 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_945.safetensors
+2025-07-07 02:08:11,744 - INFO - MSE Loss: 331.6814
+2025-07-07 02:08:11,745 - INFO - L0 Loss: 33.5073
+2025-07-07 02:08:16,607 - INFO - MSE Loss: 354.6419
+2025-07-07 02:08:16,608 - INFO - L0 Loss: 33.5435
+2025-07-07 02:08:22,102 - INFO - MSE Loss: 338.8220
+2025-07-07 02:08:22,103 - INFO - L0 Loss: 33.5208
+                                                                                                      2025-07-07 02:08:26,976 - INFO - MSE Loss: 344.0535
+2025-07-07 02:08:26,977 - INFO - L0 Loss: 33.0874
+2025-07-07 02:08:32,361 - INFO - MSE Loss: 351.7861
+2025-07-07 02:08:32,361 - INFO - L0 Loss: 33.1780
+2025-07-07 02:08:37,349 - INFO - MSE Loss: 346.8169
+2025-07-07 02:08:37,350 - INFO - L0 Loss: 33.3063
+2025-07-07 02:08:40,845 - INFO - [ActivationsStore] Loaded split 949 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_949.safetensors
+2025-07-07 02:08:40,853 - INFO - [ActivationsStore] Loaded split 947 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_947.safetensors
+2025-07-07 02:08:40,868 - INFO - [ActivationsStore] Loaded split 946 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_946.safetensors
+2025-07-07 02:08:40,868 - INFO - [ActivationsStore] Loaded split 951 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_951.safetensors
+2025-07-07 02:08:40,876 - INFO - [ActivationsStore] Loaded split 950 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_946.safetensors
+2025-07-07 02:08:41,161 - INFO - [ActivationsStore] Loaded split 947 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_947.safetensors
+2025-07-07 02:10:22,945 - INFO - MSE Loss: 339.2723
+2025-07-07 02:10:22,946 - INFO - L0 Loss: 25.9413
+2025-07-07 02:10:27,750 - INFO - MSE Loss: 368.7949
+2025-07-07 02:10:27,750 - INFO - L0 Loss: 26.5150
+2025-07-07 02:10:33,140 - INFO - MSE Loss: 355.6694
+2025-07-07 02:10:33,141 - INFO - L0 Loss: 26.4038
+2025-07-07 02:10:38,044 - INFO - MSE Loss: 367.5139
+2025-07-07 02:10:38,044 - INFO - L0 Loss: 26.2352
+2025-07-07 02:10:45,518 - INFO - MSE Loss: 361.8524
+2025-07-07 02:10:45,518 - INFO - L0 Loss: 26.0573
+2025-07-07 02:10:50,354 - INFO - MSE Loss: 334.6907
+2025-07-07 02:10:50,354 - INFO - L0 Loss: 25.8075
+2025-07-07 02:10:55,255 - INFO - MSE Loss: 344.6507
+2025-07-07 02:10:55,256 - INFO - L0 Loss: 25.7681
+2025-07-07 02:11:00,576 - INFO - MSE Loss: 354.2852
+2025-07-07 02:11:00,577 - INFO - L0 Loss: 26.6765
+2025-07-07 02:11:05,403 - INFO - MSE Loss: 341.5093
+2025-07-07 02:11:05,404 - INFO - L0 Loss: 25.5480
+2025-07-07 02:11:10,799 - INFO - MSE Loss: 344.0066
+2025-07-07 02:11:10,799 - INFO - L0 Loss: 25.9801
+2025-07-07 02:11:24,808 - INFO - MSE Loss: 355.4524
+2025-07-07 02:11:24,808 - INFO - L0 Loss: 25.8756
+2025-07-07 02:11:30,004 - INFO - MSE Loss: 383.6210
+2025-07-07 02:11:30,005 - INFO - L0 Loss: 25.7652
+2025-07-07 02:11:34,945 - INFO - MSE Loss: 346.5800
+2025-07-07 02:11:34,946 - INFO - L0 Loss: 25.8032
+2025-07-07 02:11:39,832 - INFO - MSE Loss: 352.5776
+2025-07-07 02:11:39,833 - INFO - L0 Loss: 25.6453
+2025-07-07 02:11:43,797 - INFO - [ActivationsStore] Loaded split 952 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_952.safetensors
+2025-07-07 02:12:42,044 - INFO - MSE Loss: 350.6132
+2025-07-07 02:12:42,044 - INFO - L0 Loss: 25.8278
+2025-07-07 02:12:46,869 - INFO - MSE Loss: 341.4103
+2025-07-07 02:12:46,871 - INFO - L0 Loss: 25.9049
+2025-07-07 02:12:52,261 - INFO - MSE Loss: 343.6750
+2025-07-07 02:12:52,261 - INFO - L0 Loss: 25.5849
+2025-07-07 02:12:57,159 - INFO - MSE Loss: 368.1454
+2025-07-07 02:12:57,160 - INFO - L0 Loss: 26.2752
+2025-07-07 02:13:01,939 - INFO - MSE Loss: 338.0221
+2025-07-07 02:13:01,939 - INFO - L0 Loss: 25.9305
+2025-07-07 02:13:07,302 - INFO - MSE Loss: 342.1009
+2025-07-07 02:13:07,303 - INFO - L0 Loss: 25.6857
+2025-07-07 02:13:10,781 - INFO - [ActivationsStore] Loaded split 956 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_956.safetensors
+2025-07-07 02:13:10,781 - INFO - [ActivationsStore] Loaded split 953 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_953.safetensors
+2025-07-07 02:13:10,797 - INFO - [ActivationsStore] Loaded split 954 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_954.safetensors
+2025-07-07 02:13:10,804 - INFO - [ActivationsStore] Loaded split 957 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_957.safetensors
+2025-07-07 02:13:10,804 - INFO - [ActivationsStore] Loaded split 958 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_958.safetensors
+2025-07-07 02:13:10,833 - INFO - [ActivationsStore] Loaded split 955 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_955.safetensors
+2025-07-07 02:14:51,536 - INFO - MSE Loss: 348.2582
+2025-07-07 02:14:51,537 - INFO - L0 Loss: 25.7830
+2025-07-07 02:14:56,968 - INFO - MSE Loss: 345.6516
+2025-07-07 02:14:56,969 - INFO - L0 Loss: 25.2710
+2025-07-07 02:15:01,763 - INFO - MSE Loss: 347.4156
+2025-07-07 02:15:01,764 - INFO - L0 Loss: 25.2042
+2025-07-07 02:15:07,168 - INFO - MSE Loss: 336.0824
+2025-07-07 02:15:07,169 - INFO - L0 Loss: 24.7858
+2025-07-07 02:15:14,418 - INFO - MSE Loss: 351.9836
+2025-07-07 02:15:14,781 - INFO - L0 Loss: 32.4041
+2025-07-07 02:15:19,683 - INFO - MSE Loss: 361.2736
+2025-07-07 02:15:19,684 - INFO - L0 Loss: 33.3757
+2025-07-07 02:15:24,552 - INFO - MSE Loss: 358.6250
+2025-07-07 02:15:24,553 - INFO - L0 Loss: 33.5229
+2025-07-07 02:15:29,998 - INFO - MSE Loss: 362.1914
+2025-07-07 02:15:29,999 - INFO - L0 Loss: 32.8229
+2025-07-07 02:15:34,904 - INFO - MSE Loss: 347.3550
+2025-07-07 02:15:34,904 - INFO - L0 Loss: 32.7676
+2025-07-07 02:15:40,281 - INFO - MSE Loss: 355.6567
+2025-07-07 02:15:40,281 - INFO - L0 Loss: 33.0048
+2025-07-07 02:15:51,122 - INFO - MSE Loss: 351.4571
+2025-07-07 02:15:51,123 - INFO - L0 Loss: 32.9463
+2025-07-07 02:15:56,643 - INFO - MSE Loss: 349.7986
+2025-07-07 02:15:56,644 - INFO - L0 Loss: 33.6749
+2025-07-07 02:16:01,594 - INFO - MSE Loss: 336.1376
+2025-07-07 02:16:01,595 - INFO - L0 Loss: 32.9158
+2025-07-07 02:16:06,531 - INFO - MSE Loss: 357.5406
+2025-07-07 02:16:06,532 - INFO - L0 Loss: 32.9040
+2025-07-07 02:16:10,515 - INFO - [ActivationsStore] Loaded split 959 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_959.safetensors
+2025-07-07 02:17:12,160 - INFO - MSE Loss: 360.8281
+2025-07-07 02:17:12,161 - INFO - L0 Loss: 33.1086
+2025-07-07 02:17:17,118 - INFO - MSE Loss: 371.8393
+2025-07-07 02:17:17,119 - INFO - L0 Loss: 32.7594
+2025-07-07 02:17:22,624 - INFO - MSE Loss: 338.9976
+2025-07-07 02:17:22,624 - INFO - L0 Loss: 32.4523
+                                                                                                      2025-07-07 02:17:27,513 - INFO - MSE Loss: 359.4153
+2025-07-07 02:17:27,514 - INFO - L0 Loss: 32.9704
+2025-07-07 02:17:32,775 - INFO - MSE Loss: 372.9569
+2025-07-07 02:17:32,775 - INFO - L0 Loss: 33.4680
+2025-07-07 02:17:37,655 - INFO - MSE Loss: 354.8895
+2025-07-07 02:17:37,655 - INFO - L0 Loss: 32.6021
+2025-07-07 02:17:41,169 - INFO - [ActivationsStore] Loaded split 960 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_960.safetensors
+2025-07-07 02:17:41,182 - INFO - [ActivationsStore] Loaded split 961 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_961.safetensors
+2025-07-07 02:17:41,204 - INFO - [ActivationsStore] Loaded split 965 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_965.safetensors
+2025-07-07 02:17:41,220 - INFO - [ActivationsStore] Loaded split 962 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_962.safetensors
+2025-07-07 02:17:41,228 - INFO - [ActivationsStore] Loaded split 964 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_964.safetensors
+2025-07-07 02:17:41,249 - INFO - [ActivationsStore] Loaded split 963 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_963.safetensors
+2025-07-07 02:19:26,050 - INFO - MSE Loss: 350.1180
+2025-07-07 02:19:26,051 - INFO - L0 Loss: 32.8169
+2025-07-07 02:19:31,631 - INFO - MSE Loss: 364.4405
+2025-07-07 02:19:31,632 - INFO - L0 Loss: 32.7506
+2025-07-07 02:19:36,591 - INFO - MSE Loss: 348.6324
+2025-07-07 02:19:36,592 - INFO - L0 Loss: 32.5232
+2025-07-07 02:19:41,988 - INFO - MSE Loss: 348.6064
+2025-07-07 02:19:41,989 - INFO - L0 Loss: 32.2664
+2025-07-07 02:19:49,114 - INFO - MSE Loss: 351.3092
+2025-07-07 02:19:49,115 - INFO - L0 Loss: 33.1158
+2025-07-07 02:19:54,454 - INFO - MSE Loss: 347.6900
+2025-07-07 02:19:54,454 - INFO - L0 Loss: 32.9331
+2025-07-07 02:19:59,336 - INFO - MSE Loss: 336.1667
+2025-07-07 02:19:59,337 - INFO - L0 Loss: 31.9959
+2025-07-07 02:20:04,289 - INFO - MSE Loss: 357.9535
+2025-07-07 02:20:04,290 - INFO - L0 Loss: 32.9257
+2025-07-07 02:20:09,738 - INFO - MSE Loss: 358.5808
+2025-07-07 02:20:09,738 - INFO - L0 Loss: 33.7061
+2025-07-07 02:20:14,652 - INFO - MSE Loss: 344.8668
+2025-07-07 02:20:14,653 - INFO - L0 Loss: 32.1337
+2025-07-07 02:20:28,241 - INFO - MSE Loss: 335.6908
+2025-07-07 02:20:28,242 - INFO - L0 Loss: 32.6309
+2025-07-07 02:20:33,214 - INFO - MSE Loss: 339.1092
+2025-07-07 02:20:33,215 - INFO - L0 Loss: 32.2090
+2025-07-07 02:20:38,179 - INFO - MSE Loss: 343.9596
+2025-07-07 02:20:38,180 - INFO - L0 Loss: 32.2388
+2025-07-07 02:20:43,570 - INFO - MSE Loss: 344.2772
+2025-07-07 02:20:43,570 - INFO - L0 Loss: 32.4709
+2025-07-07 02:20:50,736 - INFO - MSE Loss: 355.8796
+2025-07-07 02:20:50,737 - INFO - L0 Loss: 32.4587
+2025-07-07 02:20:56,280 - INFO - MSE Loss: 384.4439
+2025-07-07 02:20:56,281 - INFO - L0 Loss: 32.6412
+                                                                                                      2025-07-07 02:21:01,172 - INFO - MSE Loss: 365.2933
+2025-07-07 02:21:01,173 - INFO - L0 Loss: 33.4342
+2025-07-07 02:21:06,483 - INFO - MSE Loss: 352.6503
+2025-07-07 02:21:06,483 - INFO - L0 Loss: 32.4894
+2025-07-07 02:21:11,362 - INFO - MSE Loss: 348.3936
+2025-07-07 02:21:11,363 - INFO - L0 Loss: 31.9955
+2025-07-07 02:21:16,302 - INFO - MSE Loss: 350.5976
+2025-07-07 02:21:16,302 - INFO - L0 Loss: 32.6324
+2025-07-07 02:21:27,959 - INFO - MSE Loss: 367.2401
+2025-07-07 02:21:27,959 - INFO - L0 Loss: 33.2434
+2025-07-07 02:21:32,874 - INFO - MSE Loss: 359.0845
+2025-07-07 02:21:32,874 - INFO - L0 Loss: 32.4465
+2025-07-07 02:21:38,361 - INFO - MSE Loss: 359.1407
+2025-07-07 02:21:38,361 - INFO - L0 Loss: 32.4646
+2025-07-07 02:21:43,299 - INFO - MSE Loss: 334.6997
+2025-07-07 02:21:43,300 - INFO - L0 Loss: 31.7020
+2025-07-07 02:21:46,762 - INFO - [ActivationsStore] Loaded split 966 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_966.safetensors
+2025-07-07 02:22:45,999 - INFO - MSE Loss: 348.6735
+2025-07-07 02:22:45,999 - INFO - L0 Loss: 32.0307
+2025-07-07 02:22:51,184 - INFO - MSE Loss: 366.0755
+2025-07-07 02:22:51,185 - INFO - L0 Loss: 33.1444
+2025-07-07 02:22:56,157 - INFO - MSE Loss: 349.0515
+2025-07-07 02:22:56,157 - INFO - L0 Loss: 31.9394
+2025-07-07 02:23:01,613 - INFO - MSE Loss: 351.1936
+2025-07-07 02:23:01,613 - INFO - L0 Loss: 31.8996
+2025-07-07 02:23:06,527 - INFO - MSE Loss: 354.7824
+2025-07-07 02:23:06,527 - INFO - L0 Loss: 32.4166
+2025-07-07 02:23:12,036 - INFO - MSE Loss: 356.7476
+2025-07-07 02:23:12,037 - INFO - L0 Loss: 31.8430
+2025-07-07 02:23:15,551 - INFO - [ActivationsStore] Loaded split 969 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_969.safetensors
+2025-07-07 02:23:15,557 - INFO - [ActivationsStore] Loaded split 970 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_970.safetensors
+2025-07-07 02:23:15,565 - INFO - [ActivationsStore] Loaded split 968 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_968.safetensors
+2025-07-07 02:23:15,577 - INFO - [ActivationsStore] Loaded split 972 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_972.safetensors
+2025-07-07 02:23:15,593 - INFO - [ActivationsStore] Loaded split 971 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_971.safetensors
+2025-07-07 02:23:15,609 - INFO - [ActivationsStore] Loaded split 967 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_967.safetensors
+2025-07-07 02:24:26,692 - INFO - MSE Loss: 349.5862
+2025-07-07 02:24:26,693 - INFO - L0 Loss: 32.1865
+2025-07-07 02:24:32,041 - INFO - MSE Loss: 340.8406
+2025-07-07 02:24:32,041 - INFO - L0 Loss: 31.8917
+2025-07-07 02:24:36,968 - INFO - MSE Loss: 351.4074
+2025-07-07 02:24:36,969 - INFO - L0 Loss: 32.0637
+2025-07-07 02:24:41,934 - INFO - MSE Loss: 349.2856
+2025-07-07 02:24:41,935 - INFO - L0 Loss: 31.5570
+2025-07-07 02:24:49,602 - INFO - MSE Loss: 349.5732
+2025-07-07 02:24:49,602 - INFO - L0 Loss: 31.5521
+2025-07-07 02:24:54,546 - INFO - MSE Loss: 345.0203
+2025-07-07 02:24:54,546 - INFO - L0 Loss: 32.0796
+2025-07-07 02:25:00,090 - INFO - MSE Loss: 366.8766
+2025-07-07 02:25:00,090 - INFO - L0 Loss: 32.5128
+2025-07-07 02:25:05,004 - INFO - MSE Loss: 346.8648
+2025-07-07 02:25:05,004 - INFO - L0 Loss: 31.8902
+2025-07-07 02:25:09,958 - INFO - MSE Loss: 350.8049
+2025-07-07 02:25:09,958 - INFO - L0 Loss: 32.0484
+2025-07-07 02:25:15,473 - INFO - MSE Loss: 385.7509
+2025-07-07 02:25:15,474 - INFO - L0 Loss: 34.6779
+2025-07-07 02:25:26,505 - INFO - MSE Loss: 350.2847
+2025-07-07 02:25:26,506 - INFO - L0 Loss: 31.4657
+2025-07-07 02:25:31,910 - INFO - MSE Loss: 344.0887
+2025-07-07 02:25:31,911 - INFO - L0 Loss: 31.4232
+2025-07-07 02:25:36,859 - INFO - MSE Loss: 342.8144
+2025-07-07 02:25:36,859 - INFO - L0 Loss: 31.6335
+2025-07-07 02:25:42,379 - INFO - MSE Loss: 346.6772
+2025-07-07 02:25:42,379 - INFO - L0 Loss: 31.7036
+2025-07-07 02:25:45,872 - INFO - [ActivationsStore] Loaded split 973 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_973.safetensors
+2025-07-07 02:26:46,624 - INFO - MSE Loss: 343.3503
+2025-07-07 02:26:46,624 - INFO - L0 Loss: 31.6075
+2025-07-07 02:26:51,562 - INFO - MSE Loss: 356.1392
+2025-07-07 02:26:51,563 - INFO - L0 Loss: 32.0919
+2025-07-07 02:26:57,104 - INFO - MSE Loss: 358.2697
+2025-07-07 02:26:57,105 - INFO - L0 Loss: 31.6935
+                                                                                                      2025-07-07 02:27:02,106 - INFO - MSE Loss: 352.0409
+2025-07-07 02:27:02,107 - INFO - L0 Loss: 32.1016
+2025-07-07 02:27:07,518 - INFO - MSE Loss: 360.4290
+2025-07-07 02:27:07,519 - INFO - L0 Loss: 32.3883
+2025-07-07 02:27:12,507 - INFO - MSE Loss: 352.3454
+2025-07-07 02:27:12,507 - INFO - L0 Loss: 31.8045
+2025-07-07 02:27:16,575 - INFO - [ActivationsStore] Loaded split 974 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_974.safetensors
+2025-07-07 02:27:16,582 - INFO - [ActivationsStore] Loaded split 976 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_976.safetensors
+2025-07-07 02:27:16,612 - INFO - [ActivationsStore] Loaded split 979 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_979.safetensors
+2025-07-07 02:27:16,632 - INFO - [ActivationsStore] Loaded split 977 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_977.safetensors
+2025-07-07 02:27:16,649 - INFO - [ActivationsStore] Loaded split 975 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_975.safetensors
+2025-07-07 02:27:16,666 - INFO - [ActivationsStore] Loaded split 978 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_978.safetensors
+2025-07-07 02:28:21,432 - INFO - MSE Loss: 349.5269
+2025-07-07 02:28:21,433 - INFO - L0 Loss: 31.6254
+2025-07-07 02:28:26,415 - INFO - MSE Loss: 337.6663
+2025-07-07 02:28:26,416 - INFO - L0 Loss: 30.9848
+2025-07-07 02:28:31,372 - INFO - MSE Loss: 363.8336
+2025-07-07 02:28:31,372 - INFO - L0 Loss: 31.8744
+2025-07-07 02:28:36,872 - INFO - MSE Loss: 364.5594
+2025-07-07 02:28:36,873 - INFO - L0 Loss: 32.0491
+2025-07-07 02:28:44,071 - INFO - MSE Loss: 359.2946
+2025-07-07 02:28:44,072 - INFO - L0 Loss: 31.9724
+2025-07-07 02:28:49,535 - INFO - MSE Loss: 387.8036
+2025-07-07 02:28:49,536 - INFO - L0 Loss: 31.8483
+2025-07-07 02:28:54,453 - INFO - MSE Loss: 357.6131
+2025-07-07 02:28:54,454 - INFO - L0 Loss: 31.9450
+2025-07-07 02:28:59,983 - INFO - MSE Loss: 353.0829
+2025-07-07 02:28:59,983 - INFO - L0 Loss: 31.5602
+2025-07-07 02:29:04,949 - INFO - MSE Loss: 354.1069
+2025-07-07 02:29:04,950 - INFO - L0 Loss: 31.7779
+2025-07-07 02:29:09,933 - INFO - MSE Loss: 358.3677
+2025-07-07 02:29:09,934 - INFO - L0 Loss: 31.9052
+2025-07-07 02:29:23,022 - INFO - MSE Loss: 338.7776
+2025-07-07 02:29:23,023 - INFO - L0 Loss: 31.3565
+2025-07-07 02:29:28,036 - INFO - MSE Loss: 369.0721
+2025-07-07 02:29:28,036 - INFO - L0 Loss: 32.1551
+2025-07-07 02:29:33,458 - INFO - MSE Loss: 378.5023
+2025-07-07 02:29:33,458 - INFO - L0 Loss: 23.5598
+2025-07-07 02:29:37,566 - INFO - MSE Loss: 347.6560
+2025-07-07 02:29:37,567 - INFO - L0 Loss: 23.5884
+2025-07-07 02:29:41,060 - INFO - [ActivationsStore] Loaded split 980 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_980.safetensors
+2025-07-07 02:30:41,577 - INFO - MSE Loss: 348.3566
+2025-07-07 02:30:41,578 - INFO - L0 Loss: 23.9007
+2025-07-07 02:30:46,512 - INFO - MSE Loss: 334.3234
+2025-07-07 02:30:46,513 - INFO - L0 Loss: 23.4661
+2025-07-07 02:30:51,956 - INFO - MSE Loss: 346.7683
+2025-07-07 02:30:51,957 - INFO - L0 Loss: 23.5107
+2025-07-07 02:30:56,796 - INFO - MSE Loss: 349.6157
+2025-07-07 02:30:56,797 - INFO - L0 Loss: 23.7668
+2025-07-07 02:31:02,228 - INFO - MSE Loss: 348.5595
+2025-07-07 02:31:02,228 - INFO - L0 Loss: 23.8914
+2025-07-07 02:31:07,153 - INFO - MSE Loss: 354.3624
+2025-07-07 02:31:07,154 - INFO - L0 Loss: 24.1740
+2025-07-07 02:31:11,205 - INFO - [ActivationsStore] Loaded split 986 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_986.safetensors
+2025-07-07 02:31:11,205 - INFO - [ActivationsStore] Loaded split 982 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_982.safetensors
+2025-07-07 02:31:11,220 - INFO - [ActivationsStore] Loaded split 983 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_983.safetensors
+2025-07-07 02:31:11,232 - INFO - [ActivationsStore] Loaded split 981 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_981.safetensors
+2025-07-07 02:31:11,245 - INFO - [ActivationsStore] Loaded split 984 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_984.safetensors
+2025-07-07 02:31:11,252 - INFO - [ActivationsStore] Loaded split 985 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_985.safetensors
+                                                                                                      2025-07-07 02:32:52,448 - INFO - MSE Loss: 436.7575
+2025-07-07 02:32:52,450 - INFO - L0 Loss: 24.2338
+2025-07-07 02:32:57,413 - INFO - MSE Loss: 361.8855
+2025-07-07 02:32:57,414 - INFO - L0 Loss: 23.8661
+2025-07-07 02:33:02,357 - INFO - MSE Loss: 355.2298
+2025-07-07 02:33:02,357 - INFO - L0 Loss: 23.8629
+2025-07-07 02:33:07,872 - INFO - MSE Loss: 344.5697
+2025-07-07 02:33:07,873 - INFO - L0 Loss: 23.4503
+2025-07-07 02:33:15,075 - INFO - MSE Loss: 349.1688
+2025-07-07 02:33:15,076 - INFO - L0 Loss: 24.0800
+2025-07-07 02:33:20,591 - INFO - MSE Loss: 387.6976
+2025-07-07 02:33:20,591 - INFO - L0 Loss: 24.2973
+2025-07-07 02:33:25,445 - INFO - MSE Loss: 393.8179
+2025-07-07 02:33:25,446 - INFO - L0 Loss: 23.6480
+2025-07-07 02:33:30,957 - INFO - MSE Loss: 363.0507
+2025-07-07 02:33:30,958 - INFO - L0 Loss: 23.9364
+2025-07-07 02:33:35,861 - INFO - MSE Loss: 364.8246
+2025-07-07 02:33:35,862 - INFO - L0 Loss: 23.7638
+2025-07-07 02:33:40,762 - INFO - MSE Loss: 356.2350
+2025-07-07 02:33:40,762 - INFO - L0 Loss: 23.5916
+2025-07-07 02:33:55,959 - INFO - MSE Loss: 339.6086
+2025-07-07 02:33:55,960 - INFO - L0 Loss: 23.2865
+2025-07-07 02:34:00,824 - INFO - MSE Loss: 352.8027
+2025-07-07 02:34:00,825 - INFO - L0 Loss: 23.7156
+2025-07-07 02:34:06,298 - INFO - MSE Loss: 354.9755
+2025-07-07 02:34:06,298 - INFO - L0 Loss: 23.7445
+2025-07-07 02:34:11,153 - INFO - MSE Loss: 354.1109
+2025-07-07 02:34:11,154 - INFO - L0 Loss: 23.5079
+2025-07-07 02:34:15,130 - INFO - [ActivationsStore] Loaded split 987 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_987.safetensors
+2025-07-07 02:35:17,620 - INFO - MSE Loss: 347.0726
+2025-07-07 02:35:17,620 - INFO - L0 Loss: 23.1793
+2025-07-07 02:35:22,624 - INFO - MSE Loss: 353.4129
+2025-07-07 02:35:22,625 - INFO - L0 Loss: 23.4423
+2025-07-07 02:35:27,492 - INFO - MSE Loss: 372.3768
+2025-07-07 02:35:27,492 - INFO - L0 Loss: 24.1788
+2025-07-07 02:35:28,153 - INFO - MSE Loss: 343.9146
+2025-07-07 02:35:28,154 - INFO - L0 Loss: 30.9123
+2025-07-07 02:35:33,103 - INFO - MSE Loss: 347.3854
+2025-07-07 02:35:33,103 - INFO - L0 Loss: 30.9355
+2025-07-07 02:35:38,588 - INFO - MSE Loss: 360.1635
+2025-07-07 02:35:38,589 - INFO - L0 Loss: 31.3917
+2025-07-07 02:35:43,611 - INFO - MSE Loss: 373.1927
+2025-07-07 02:35:43,615 - INFO - L0 Loss: 31.5677
+2025-07-07 02:35:47,713 - INFO - [ActivationsStore] Loaded split 991 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_991.safetensors
+2025-07-07 02:35:47,714 - INFO - [ActivationsStore] Loaded split 990 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_990.safetensors
+2025-07-07 02:35:47,726 - INFO - [ActivationsStore] Loaded split 988 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_988.safetensors
+2025-07-07 02:35:47,760 - INFO - [ActivationsStore] Loaded split 993 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_993.safetensors
+2025-07-07 02:35:47,782 - INFO - [ActivationsStore] Loaded split 992 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_992.safetensors
+2025-07-07 02:35:47,845 - INFO - [ActivationsStore] Loaded split 989 with 458752 samples from /fast/fdraye/data/featflow/activations_tiny_stories_33M/ctx_16/activations_split_989.safetensors
+2025-07-07 02:37:30,554 - INFO - MSE Loss: 356.3430
+2025-07-07 02:37:30,555 - INFO - L0 Loss: 30.9286
+2025-07-07 02:37:35,565 - INFO - MSE Loss: 364.4851
+2025-07-07 02:37:35,565 - INFO - L0 Loss: 30.9478
+wandb: uploading output.log
+wandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb: details/current_fl_coefficient ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb: details/current_l0_coefficient ▁▁▁▁▁▂▂▂▃▃▃▄▄▄▄▄▄▅▅▅▆▆▆▇▇▇██████████████
+wandb:  details/current_learning_rate ▁▄▄▆████████████████████████████████████
+wandb:      details/n_training_tokens ▁▁▁▁▁▁▂▂▂▃▃▃▃▃▃▄▄▄▄▄▄▄▅▅▅▅▅▅▅▅▆▆▇▇▇▇████
+wandb:               losses/dead_loss ▁▁▁▃▃▄▅▅▅▆▆▆▆▆▆▆▆▆▇▇████████████████████
+wandb:                 losses/l0_loss ▅▅▅▆▆▆▇▇▇▇███▇▆▅▅▄▄▄▄▄▃▃▃▃▃▃▃▃▂▂▂▂▁▁▁▁▁▁
+wandb:                losses/mse_loss █▂▁▁▁▁▁▁▁▁▁▁▁▁▁▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▃▂
+wandb:            losses/overall_loss █▁▁▂▂▂▃▃▄▄▄▄▄▄▄▅▄▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▆▆▆▆▆▆
+wandb:             losses/raw_l0_loss █▂▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:          metrics/dead_features ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▂▃▃▄▅▅▆▆▆▆▇▇█
+wandb:     metrics/explained_variance ▁▄▅███████▇▇▇▇▆▆▆▆▆▆▆▆▆▆▆▅▆▅▅▅▅▅▅▅▅▅▄▄▄▄
+wandb:                     metrics/l0 █▃▃▂▂▂▂▂▂▂▂▂▂▂▂▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:   metrics/next_token_per_pos_0 ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:   metrics/next_token_per_pos_1 ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:  metrics/next_token_per_pos_10 ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:  metrics/next_token_per_pos_11 ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:  metrics/next_token_per_pos_12 ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:  metrics/next_token_per_pos_13 ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:  metrics/next_token_per_pos_14 ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:  metrics/next_token_per_pos_15 ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:  metrics/next_token_per_pos_16 ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:  metrics/next_token_per_pos_17 ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:  metrics/next_token_per_pos_18 ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:  metrics/next_token_per_pos_19 ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:   metrics/next_token_per_pos_2 ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:  metrics/next_token_per_pos_20 ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:  metrics/next_token_per_pos_21 ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:  metrics/next_token_per_pos_22 ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:  metrics/next_token_per_pos_23 ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:  metrics/next_token_per_pos_24 ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:  metrics/next_token_per_pos_25 ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:  metrics/next_token_per_pos_26 ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:  metrics/next_token_per_pos_27 ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:  metrics/next_token_per_pos_28 ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:  metrics/next_token_per_pos_29 ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:   metrics/next_token_per_pos_3 ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:  metrics/next_token_per_pos_30 ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:  metrics/next_token_per_pos_31 ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:   metrics/next_token_per_pos_4 ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:   metrics/next_token_per_pos_5 ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:   metrics/next_token_per_pos_6 ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:   metrics/next_token_per_pos_7 ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:   metrics/next_token_per_pos_8 ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:   metrics/next_token_per_pos_9 ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb: 
+wandb: Run summary:
+wandb: details/current_fl_coefficient 0
+wandb: details/current_l0_coefficient 1.5
+wandb:  details/current_learning_rate 0.0002
+wandb:      details/n_training_tokens 450422784
+wandb:               losses/dead_loss 19.93074
+wandb:             losses/hybrid_loss -inf
+wandb:                 losses/l0_loss 24.37214
+wandb:     losses/l0_loss_replacement -inf
+wandb:                losses/mse_loss 391.80048
+wandb:            losses/overall_loss 416.17261
+wandb:             losses/raw_l0_loss 16.2481
+wandb:          metrics/dead_features 16326.5
+wandb:     metrics/explained_variance 0.80595
+wandb:                     metrics/l0 4.06494
+wandb:   metrics/next_token_per_pos_0 0
+wandb:   metrics/next_token_per_pos_1 0
+wandb:  metrics/next_token_per_pos_10 0
+wandb:  metrics/next_token_per_pos_11 0
+wandb:  metrics/next_token_per_pos_12 0
+wandb:  metrics/next_token_per_pos_13 0
+wandb:  metrics/next_token_per_pos_14 0
+wandb:  metrics/next_token_per_pos_15 0
+wandb:  metrics/next_token_per_pos_16 0
+wandb:  metrics/next_token_per_pos_17 0
+wandb:  metrics/next_token_per_pos_18 0
+wandb:  metrics/next_token_per_pos_19 0
+wandb:   metrics/next_token_per_pos_2 0
+wandb:  metrics/next_token_per_pos_20 0
+wandb:  metrics/next_token_per_pos_21 0
+wandb:  metrics/next_token_per_pos_22 0
+wandb:  metrics/next_token_per_pos_23 0
+wandb:  metrics/next_token_per_pos_24 0
+wandb:  metrics/next_token_per_pos_25 0
+wandb:  metrics/next_token_per_pos_26 0
+wandb:  metrics/next_token_per_pos_27 0
+wandb:  metrics/next_token_per_pos_28 0
+wandb:  metrics/next_token_per_pos_29 0
+wandb:   metrics/next_token_per_pos_3 0
+wandb:  metrics/next_token_per_pos_30 0
+wandb:  metrics/next_token_per_pos_31 0
+wandb:   metrics/next_token_per_pos_4 0
+wandb:   metrics/next_token_per_pos_5 0
+wandb:   metrics/next_token_per_pos_6 0
+wandb:   metrics/next_token_per_pos_7 0
+wandb:   metrics/next_token_per_pos_8 0
+wandb:   metrics/next_token_per_pos_9 0
+wandb: 
+wandb: 🚀 View run grateful-sea-159 at: https://wandb.ai/florent-draye-max-planck-society/tiny-stories-clt/runs/649vubja
+wandb: ⭐️ View project at: https://wandb.ai/florent-draye-max-planck-society/tiny-stories-clt
+wandb: Synced 5 W&B file(s), 12568 media file(s), 25136 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20250706_162539-649vubja/logs
++ echo 'run_on_tiny_stories.py completed'

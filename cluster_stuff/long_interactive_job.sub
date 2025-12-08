@@ -1,0 +1,12 @@
+universe = vanilla
+executable = /bin/bash
+arguments = "-c ""while true; do echo 'Job alive at $$(date)'; sleep 1200; done"""
+request_memory = 1000GB
+request_cpus = 20
+request_gpus = 4
+requirements = (CUDACapability == 8.0)
++MaxJobRetirementTime = 604800
+log = long_interactive_job.log
+output = long_interactive_job.out
+error = long_interactive_job.err
+queue

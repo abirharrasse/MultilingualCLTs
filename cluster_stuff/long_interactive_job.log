@@ -1,0 +1,9 @@
+000 (16358973.000.000) 2025-08-11 22:45:06 Job submitted from host: <10.15.2.1:9618?PrivAddr=%3c172.22.0.101:9618%3fsock%3dschedd_2825_4b22%3e&PrivNet=internal.cluster.is.localnet&addrs=10.15.2.1-9618&alias=sched.cluster.is.localnet&noUDP&sock=schedd_2825_4b22>
+...
+012 (16358973.000.000) 2025-08-12 01:19:36 Job was held.
+	Cannot expand $$ expression (date).
+	Code 0 Subcode 0
+...
+009 (16358973.000.000) 2025-08-12 11:22:16 Job was aborted.
+	via condor_rm (by user fdraye)
+...

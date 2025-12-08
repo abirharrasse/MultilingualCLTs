@@ -1,0 +1,21 @@
+universe = vanilla
+
+executable = /lustre/home/fdraye/projects/featflow/example/autointerp/gpt2_multilingual/run_autointerp_multi.sh
+initialdir = /lustre/home/fdraye/projects/featflow/example/autointerp/gpt2_multilingual
+
+# Pass the HTCondor process ID
+arguments = $(Process)
+
+# Create separate output files 
+output = logs/results_$(Process).txt
+error  = logs/error_$(Process).txt
+log    = logs/job_$(Process).log
+
+request_cpus = 20
+request_memory = 1400GB
+request_gpus = 1
+
+requirements = (CUDACapability == 8.0)
+
+# Queue 96 jobs (12 layers × 8 jobs each)
+queue 12

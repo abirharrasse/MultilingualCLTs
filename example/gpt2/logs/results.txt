@@ -1,0 +1,48 @@
+Home set to: /lustre/home/fdraye
+In directory: /lustre/home/fdraye/projects/featflow
+Estimated norm scaling factor in:tensor([6.1351, 5.5615, 4.2347, 4.1826, 4.3154, 4.1254, 4.4098, 4.6176, 4.8192,
+        4.9021, 4.9424, 5.3318])
+Estimated norm scaling factor out:tensor([0.6885, 0.8427, 0.2321, 1.1928, 1.2609, 1.2807, 1.2181, 1.0490, 0.9165,
+        0.6960, 0.3059, 0.2924])
+g194:2495209:2495209 [0] NCCL INFO Bootstrap: Using enp41s0np0:172.22.2.194<0>
+g194:2495209:2495209 [0] NCCL INFO cudaDriverVersion 12030
+g194:2495209:2495209 [0] NCCL INFO NCCL version 2.26.2+cuda12.2
+g194:2495209:2495209 [0] NCCL INFO Comm config Blocking set to 1
+g194:2495209:2495505 [0] NCCL INFO NET/Plugin: Could not find: libnccl-net.so. Using internal net plugin.
+g194:2495209:2495505 [0] NCCL INFO NET/IB : Using [0]mlx5_0:1/RoCE [RO]; OOB enp41s0np0:172.22.2.194<0>
+g194:2495209:2495505 [0] NCCL INFO PROFILER/Plugin: Could not find: libnccl-profiler.so. 
+g194:2495209:2495505 [0] NCCL INFO Using network IB
+g194:2495209:2495505 [0] NCCL INFO ncclCommInitRankConfig comm 0x564f93c541b0 rank 0 nranks 2 cudaDev 0 nvmlDev 0 busId ac000 commId 0x32b313fe5f88dcfd - Init START
+g194:2495209:2495505 [0] NCCL INFO RAS client listening socket at 127.0.0.1<28028>
+g194:2495209:2495505 [0] NCCL INFO Bootstrap timings total 0.023527 (create 0.000025, send 0.000110, recv 0.000353, ring 0.022739, delay 0.000000)
+g194:2495209:2495505 [0] NCCL INFO Setting affinity for GPU 0 to 01ff,ffff0000,00000000
+g194:2495209:2495505 [0] NCCL INFO comm 0x564f93c541b0 rank 0 nRanks 2 nNodes 1 localRanks 2 localRank 0 MNNVL 0
+g194:2495209:2495505 [0] NCCL INFO Channel 00/08 : 0 1
+g194:2495209:2495505 [0] NCCL INFO Channel 01/08 : 0 1
+g194:2495209:2495505 [0] NCCL INFO Channel 02/08 : 0 1
+g194:2495209:2495505 [0] NCCL INFO Channel 03/08 : 0 1
+g194:2495209:2495505 [0] NCCL INFO Channel 04/08 : 0 1
+g194:2495209:2495505 [0] NCCL INFO Channel 05/08 : 0 1
+g194:2495209:2495505 [0] NCCL INFO Channel 06/08 : 0 1
+g194:2495209:2495505 [0] NCCL INFO Channel 07/08 : 0 1
+g194:2495209:2495505 [0] NCCL INFO Trees [0] 1/-1/-1->0->-1 [1] 1/-1/-1->0->-1 [2] -1/-1/-1->0->1 [3] -1/-1/-1->0->1 [4] 1/-1/-1->0->-1 [5] 1/-1/-1->0->-1 [6] -1/-1/-1->0->1 [7] -1/-1/-1->0->1
+g194:2495209:2495505 [0] NCCL INFO P2P Chunksize set to 524288
+g194:2495209:2495505 [0] NCCL INFO Check P2P Type intraNodeP2pSupport 1 directMode 0
+g194:2495209:2495512 [0] NCCL INFO [Proxy Service] Device 0 CPU core 53
+g194:2495209:2495514 [0] NCCL INFO [Proxy Service UDS] Device 0 CPU core 57
+g194:2495209:2495505 [0] NCCL INFO threadThresholds 8/8/64 | 16/8/64 | 512 | 512
+g194:2495209:2495505 [0] NCCL INFO 8 coll channels, 8 collnet channels, 0 nvls channels, 8 p2p channels, 8 p2p channels per peer
+g194:2495209:2495505 [0] NCCL INFO CC Off, workFifoBytes 1048576
+g194:2495209:2495505 [0] NCCL INFO TUNER/Plugin: Could not find: libnccl-tuner.so. Using internal tuner plugin.
+g194:2495209:2495505 [0] NCCL INFO ncclCommInitRankConfig comm 0x564f93c541b0 rank 0 nranks 2 cudaDev 0 nvmlDev 0 busId ac000 commId 0x32b313fe5f88dcfd - Init COMPLETE
+g194:2495209:2495505 [0] NCCL INFO Init timings - ncclCommInitRankConfig: rank 0 nranks 2 total 0.71 (kernels 0.38, alloc 0.12, bootstrap 0.02, allgathers 0.00, topo 0.19, graphs 0.00, connections 0.00, rest 0.00)
+g194:2495209:2495516 [0] NCCL INFO Channel 00/0 : 0[0] -> 1[1] via P2P/CUMEM
+g194:2495209:2495516 [0] NCCL INFO Channel 01/0 : 0[0] -> 1[1] via P2P/CUMEM
+g194:2495209:2495516 [0] NCCL INFO Channel 02/0 : 0[0] -> 1[1] via P2P/CUMEM
+g194:2495209:2495516 [0] NCCL INFO Channel 03/0 : 0[0] -> 1[1] via P2P/CUMEM
+g194:2495209:2495516 [0] NCCL INFO Channel 04/0 : 0[0] -> 1[1] via P2P/CUMEM
+g194:2495209:2495516 [0] NCCL INFO Channel 05/0 : 0[0] -> 1[1] via P2P/CUMEM
+g194:2495209:2495516 [0] NCCL INFO Channel 06/0 : 0[0] -> 1[1] via P2P/CUMEM
+g194:2495209:2495516 [0] NCCL INFO Channel 07/0 : 0[0] -> 1[1] via P2P/CUMEM
+g194:2495209:2495516 [0] NCCL INFO Connected all rings, use ring PXN 0 GDR 1
+run_on_gpt2.py completed

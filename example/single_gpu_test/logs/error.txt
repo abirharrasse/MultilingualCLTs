@@ -1,0 +1,39 @@
++ source /home/fdraye/.bashrc
+++ case $- in
+++ return
++ export POETRY_HOME=/.local/bin
++ POETRY_HOME=/.local/bin
++ export HOME=/lustre/home/fdraye
++ HOME=/lustre/home/fdraye
++ export PATH=/lustre/home/fdraye/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
++ PATH=/lustre/home/fdraye/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
++ echo 'Home set to:' /lustre/home/fdraye
++ export WANDB_API_KEY=097e21df11c8e16d3452a3e5747add10ec3ed5e0
++ WANDB_API_KEY=097e21df11c8e16d3452a3e5747add10ec3ed5e0
++ export HUGGINGFACE_TOKEN=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
++ HUGGINGFACE_TOKEN=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
++ cd /lustre/home/fdraye/projects/featflow
+++ pwd
++ echo 'In directory: /lustre/home/fdraye/projects/featflow'
++ VENV_PATH=/home/fdraye/.cache/pypoetry/virtualenvs/featflow-66hVYwpV-py3.11
++ /home/fdraye/.cache/pypoetry/virtualenvs/featflow-66hVYwpV-py3.11/bin/python example/single_gpu_test/run_activations.py
+2025-07-06 10:58:23,583 - INFO - PyTorch version 2.7.0 available.
+2025-07-06 10:58:35,133 - INFO - -------- CLT training run -------
+2025-07-06 10:58:35,133 - INFO - d_latent        : 24576
+2025-07-06 10:58:35,133 - INFO - total tokens    : 2.048e+06
+2025-07-06 10:58:35,134 - INFO - batch (tokens)  : 2048
+2025-07-06 10:58:35,134 - INFO - total steps     : 1000
+2025-07-06 10:58:35,134 - INFO - n_tokens_per_buffer (millions): 0.008192
+2025-07-06 10:58:35,134 - INFO - checkpoint dir  : checkpoints/gpt2/srrkme1l
+2025-07-06 10:58:35,134 - INFO - wandb project   : tiny-stories-clt  (id=srrkme1l)
+2025-07-06 10:58:35,134 - INFO - ---------------------------------
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Estimating norm scaling factor:   0%|          | 0/25 [00:00<?, ?it/s]Estimating norm scaling factor:   4%|▍         | 1/25 [00:01<00:29,  1.22s/it]Estimating norm scaling factor:   8%|▊         | 2/25 [00:01<00:20,  1.15it/s]Estimating norm scaling factor:  16%|█▌        | 4/25 [00:02<00:11,  1.86it/s]Estimating norm scaling factor:  24%|██▍       | 6/25 [00:03<00:08,  2.37it/s]Estimating norm scaling factor:  32%|███▏      | 8/25 [00:03<00:06,  2.69it/s]Estimating norm scaling factor:  40%|████      | 10/25 [00:04<00:05,  2.94it/s]Estimating norm scaling factor:  48%|████▊     | 12/25 [00:04<00:04,  3.15it/s]Estimating norm scaling factor:  56%|█████▌    | 14/25 [00:05<00:03,  3.31it/s]Estimating norm scaling factor:  60%|██████    | 15/25 [00:05<00:02,  3.52it/s]Estimating norm scaling factor:  64%|██████▍   | 16/25 [00:06<00:02,  3.03it/s]Estimating norm scaling factor:  72%|███████▏  | 18/25 [00:06<00:02,  3.22it/s]Estimating norm scaling factor:  80%|████████  | 20/25 [00:07<00:01,  3.38it/s]Estimating norm scaling factor:  88%|████████▊ | 22/25 [00:07<00:00,  3.37it/s]Estimating norm scaling factor:  96%|█████████▌| 24/25 [00:08<00:00,  3.34it/s]Estimating norm scaling factor: 100%|██████████| 25/25 [00:08<00:00,  2.97it/s]
++ echo 'run_activations.py completed'

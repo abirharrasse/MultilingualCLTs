@@ -1,0 +1,16 @@
+universe = vanilla
+
+executable = /lustre/home/fdraye/projects/featflow/example/gpt2_multilingual/run_on_gpt2_multi.sh
+initialdir = /lustre/home/fdraye/projects/featflow/example/gpt2_multilingual
+
+output = logs/results_test_2.txt
+error  = logs/error_test_2.txt
+log    = logs/job.log
+
+request_cpus = 40
+request_memory = 500GB
+request_gpus = 8
+
+requirements = (CUDACapability == 8.0)
+
+queue

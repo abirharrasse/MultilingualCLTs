@@ -1,0 +1,21 @@
+universe = vanilla
+
+executable = /lustre/home/fdraye/projects/featflow/example/autointerp/tiny_stories/run_autointerp.sh
+initialdir = /lustre/home/fdraye/projects/featflow/example/autointerp/tiny_stories
+
+# Pass the HTCondor process ID
+arguments = $(Process)
+
+# Create separate output files 
+output = logs/results_$(Process).txt
+error  = logs/error_$(Process).txt
+log    = logs/job_$(Process).log
+
+request_cpus = 4
+request_memory = 400GB
+request_gpus = 1
+
+requirements = (CUDACapability == 9.0)
+
+# Queue 96 jobs (12 layers × 8 jobs each)
+queue 96

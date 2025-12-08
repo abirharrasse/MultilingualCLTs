@@ -1,0 +1,90 @@
++ source /home/fdraye/.bashrc
+++ case $- in
+++ return
++ export POETRY_HOME=/.local/bin
++ POETRY_HOME=/.local/bin
++ export HOME=/lustre/home/fdraye
++ HOME=/lustre/home/fdraye
++ export PATH=/lustre/home/fdraye/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
++ PATH=/lustre/home/fdraye/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
++ echo 'Home set to:' /lustre/home/fdraye
++ export WANDB_API_KEY=097e21df11c8e16d3452a3e5747add10ec3ed5e0
++ WANDB_API_KEY=097e21df11c8e16d3452a3e5747add10ec3ed5e0
++ export HUGGINGFACE_TOKEN=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
++ HUGGINGFACE_TOKEN=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
++ cd /lustre/home/fdraye/projects/featflow
+++ pwd
++ echo 'In directory: /lustre/home/fdraye/projects/featflow'
++ VENV_PATH=/home/fdraye/.cache/pypoetry/virtualenvs/featflow-66hVYwpV-py3.11
++ /home/fdraye/.cache/pypoetry/virtualenvs/featflow-66hVYwpV-py3.11/bin/python example/gpt2/run_on_gpt2.py
+2025-07-20 16:28:20,505 - INFO - PyTorch version 2.7.0 available.
+2025-07-20 16:28:28,321 - INFO - -------- CLT training run -------
+2025-07-20 16:28:28,321 - INFO - d_latent        : 24576
+2025-07-20 16:28:28,323 - INFO - total tokens    : 1.280e+05
+2025-07-20 16:28:28,323 - INFO - batch (tokens)  : 2560
+2025-07-20 16:28:28,323 - INFO - total steps     : 50
+2025-07-20 16:28:28,324 - INFO - n_tokens_per_buffer (millions): 0.01024
+2025-07-20 16:28:28,324 - INFO - checkpoint dir  : checkpoints/gpt2/oreler6x
+2025-07-20 16:28:28,325 - INFO - wandb project   : gpt2-clt  (id=oreler6x)
+2025-07-20 16:28:28,325 - INFO - ---------------------------------
+2025-07-20 16:28:34,978 - INFO - PyTorch version 2.7.0 available.
+2025-07-20 16:28:34,987 - INFO - PyTorch version 2.7.0 available.
+2025-07-20 16:28:42,069 - INFO - [ActivationsStore] Loaded split 0 with 262144 samples from /fast/fdraye/data/featflow/activations_gpt2/ctx_16/activations_split_0.safetensors
+2025-07-20 16:28:42,069 - INFO - [ActivationsStore] Loaded split 1 with 262144 samples from /fast/fdraye/data/featflow/activations_gpt2/ctx_16/activations_split_1.safetensors
+Estimating norm scaling factor:   0%|          | 0/1 [00:00<?, ?it/s]Estimating norm scaling factor: 100%|██████████| 1/1 [00:02<00:00,  2.40s/it]Estimating norm scaling factor: 100%|██████████| 1/1 [00:02<00:00,  2.40s/it]
+wandb: Currently logged in as: florent-draye (florent-draye-max-planck-society) to https://api.wandb.ai. Use `wandb login --relogin` to force relogin
+wandb: Tracking run with wandb version 0.19.11
+wandb: Run data is saved locally in /lustre/home/fdraye/projects/featflow/wandb/run-20250720_162859-oreler6x
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run firm-sunset-85
+wandb: ⭐️ View project at https://wandb.ai/florent-draye-max-planck-society/gpt2-clt
+wandb: 🚀 View run at https://wandb.ai/florent-draye-max-planck-society/gpt2-clt/runs/oreler6x
+2025-07-20 16:29:26,436 - INFO - MSE Loss: 43355.3828
+2025-07-20 16:29:26,437 - INFO - L0 Loss: 2086.3999
+2025-07-20 16:29:31,933 - INFO - MSE Loss: 28649.9062
+2025-07-20 16:29:31,933 - INFO - L0 Loss: 1325.8583
+2025-07-20 16:29:37,062 - INFO - MSE Loss: 17030.2207
+2025-07-20 16:29:37,062 - INFO - L0 Loss: 2545.3513
+2025-07-20 16:29:42,172 - INFO - MSE Loss: 9699.6562
+2025-07-20 16:29:42,172 - INFO - L0 Loss: 2675.8384
+2025-07-20 16:29:47,274 - INFO - MSE Loss: 5153.5610
+2025-07-20 16:29:47,275 - INFO - L0 Loss: 1974.4390
+/home/fdraye/.cache/pypoetry/virtualenvs/featflow-66hVYwpV-py3.11/lib/python3.11/site-packages/torch/distributed/distributed_c10d.py:859: UserWarning: `_get_pg_default_device` will be deprecated, it only stays for backward-compatiblity reason. If you need to find a device for object collectives, please use `_get_object_coll_device`. If you need to query the device types supported by group, please use `_device_capability(group)`. 
+  warnings.warn(
+/home/fdraye/.cache/pypoetry/virtualenvs/featflow-66hVYwpV-py3.11/lib/python3.11/site-packages/torch/distributed/fsdp/_state_dict_utils.py:722: FutureWarning: Please use DTensor instead and we are deprecating ShardedTensor.
+  local_shape = tensor.shape
+/home/fdraye/.cache/pypoetry/virtualenvs/featflow-66hVYwpV-py3.11/lib/python3.11/site-packages/torch/distributed/fsdp/_state_dict_utils.py:739: FutureWarning: Please use DTensor instead and we are deprecating ShardedTensor.
+  tensor.shape,
+/home/fdraye/.cache/pypoetry/virtualenvs/featflow-66hVYwpV-py3.11/lib/python3.11/site-packages/torch/distributed/fsdp/_state_dict_utils.py:741: FutureWarning: Please use DTensor instead and we are deprecating ShardedTensor.
+  tensor.dtype,
+/home/fdraye/.cache/pypoetry/virtualenvs/featflow-66hVYwpV-py3.11/lib/python3.11/site-packages/torch/distributed/checkpoint/state_dict.py:535: FutureWarning: Please use DTensor instead and we are deprecating ShardedTensor.
+  if torch.is_tensor(p) and p.is_meta:
+/home/fdraye/.cache/pypoetry/virtualenvs/featflow-66hVYwpV-py3.11/lib/python3.11/site-packages/safetensors/torch.py:472: FutureWarning: Please use DTensor instead and we are deprecating ShardedTensor.
+  if v.layout != torch.strided:
+/home/fdraye/.cache/pypoetry/virtualenvs/featflow-66hVYwpV-py3.11/lib/python3.11/site-packages/safetensors/torch.py:72: FutureWarning: Please use DTensor instead and we are deprecating ShardedTensor.
+  if v.device != torch.device("meta") and storage_ptr(v) != 0 and storage_size(v) != 0:
+/home/fdraye/.cache/pypoetry/virtualenvs/featflow-66hVYwpV-py3.11/lib/python3.11/site-packages/safetensors/torch.py:13: FutureWarning: Please use DTensor instead and we are deprecating ShardedTensor.
+  return tensor.untyped_storage().data_ptr()
+/home/fdraye/.cache/pypoetry/virtualenvs/featflow-66hVYwpV-py3.11/lib/python3.11/site-packages/torch/overrides.py:1743: FutureWarning: Please use DTensor instead and we are deprecating ShardedTensor.
+  result = torch_func_method(public_api, types, args, kwargs)
+[rank0]:[E720 16:44:42.165545286 ProcessGroupNCCL.cpp:1743] [PG ID 0 PG GUID 0(default_pg) Rank 0] ProcessGroupNCCL's watchdog got stuck for 480 seconds without making progress in monitoring enqueued collectives. This typically indicates a NCCL/CUDA API (e.g., CudaEventDestroy) hang blocking the watchdog, and could be triggered by another thread holding the GIL inside a CUDA api (for example, CudaEventDestroy), or other deadlock-prone behaviors.If you suspect the watchdog is not actually stuck and a longer timeout would help, you can either increase the timeout (TORCH_NCCL_HEARTBEAT_TIMEOUT_SEC) to a larger value or disable the heartbeat monitor (TORCH_NCCL_ENABLE_MONITORING=0).If either of aforementioned helps, feel free to file an issue to PyTorch about the short timeout or false positive abort; otherwise, please attempt to debug the hang. 
+[rank0]:[E720 16:44:42.168408631 ProcessGroupNCCL.cpp:1533] [PG ID 0 PG GUID 0(default_pg) Rank 0] ProcessGroupNCCL preparing to dump debug info. Include stack trace: 1
+[rank0]:[F720 16:52:42.179053162 ProcessGroupNCCL.cpp:1554] [PG ID 0 PG GUID 0(default_pg) Rank 0] [PG ID 0 PG GUID 0(default_pg) Rank 0] Terminating the process after attempting to dump debug info, due to ProcessGroupNCCL watchdog hang.
+W0720 16:52:43.564000 2495055 /lustre/home/fdraye/.cache/pypoetry/virtualenvs/featflow-66hVYwpV-py3.11/lib/python3.11/site-packages/torch/multiprocessing/spawn.py:169] Terminating process 2495210 via signal SIGTERM
+Traceback (most recent call last):
+  File "/lustre/home/fdraye/projects/featflow/example/gpt2/run_on_gpt2.py", line 110, in <module>
+    main()
+  File "/lustre/home/fdraye/projects/featflow/example/gpt2/run_on_gpt2.py", line 106, in main
+    mp.spawn(_ddp_worker, args=(world_size, cfg), nprocs=world_size, join=True)
+  File "/home/fdraye/.cache/pypoetry/virtualenvs/featflow-66hVYwpV-py3.11/lib/python3.11/site-packages/torch/multiprocessing/spawn.py", line 340, in spawn
+    return start_processes(fn, args, nprocs, join, daemon, start_method="spawn")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/fdraye/.cache/pypoetry/virtualenvs/featflow-66hVYwpV-py3.11/lib/python3.11/site-packages/torch/multiprocessing/spawn.py", line 296, in start_processes
+    while not context.join():
+              ^^^^^^^^^^^^^^
+  File "/home/fdraye/.cache/pypoetry/virtualenvs/featflow-66hVYwpV-py3.11/lib/python3.11/site-packages/torch/multiprocessing/spawn.py", line 196, in join
+    raise ProcessExitedException(
+torch.multiprocessing.spawn.ProcessExitedException: process 0 terminated with signal SIGABRT
+/lustre/home/fdraye/.pyenv/versions/3.11.0/lib/python3.11/multiprocessing/resource_tracker.py:224: UserWarning: resource_tracker: There appear to be 1 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '
++ echo 'run_on_gpt2.py completed'

@@ -1,0 +1,293 @@
++ source /home/abir19/.bashrc
+++ '[' -f /etc/bashrc ']'
+++ . /etc/bashrc
++++ '[' -z '' ']'
++++ BASHRCSOURCED=Y
++++ '[' '' ']'
++++ shopt -q login_shell
+++++ umask
++++ '[' 0027 -eq 0 ']'
++++ SHELL=/bin/bash
++++ for i in /etc/profile.d/*.sh
++++ '[' -r /etc/profile.d/colorgrep.sh ']'
++++ '[' '' ']'
++++ . /etc/profile.d/colorgrep.sh
+++++ /usr/libexec/grepconf.sh -c
+++++ alias 'grep=grep --color=auto'
+++++ alias 'egrep=egrep --color=auto'
+++++ alias 'fgrep=fgrep --color=auto'
++++ for i in /etc/profile.d/*.sh
++++ '[' -r /etc/profile.d/colorls.sh ']'
++++ '[' '' ']'
++++ . /etc/profile.d/colorls.sh
+++++ '[' '!' -t 0 ']'
+++++ return
++++ for i in /etc/profile.d/*.sh
++++ '[' -r /etc/profile.d/colorxzgrep.sh ']'
++++ '[' '' ']'
++++ . /etc/profile.d/colorxzgrep.sh
+++++ /usr/libexec/grepconf.sh -c
+++++ alias 'xzgrep=xzgrep --color=auto'
+++++ alias 'xzegrep=xzegrep --color=auto'
+++++ alias 'xzfgrep=xzfgrep --color=auto'
++++ for i in /etc/profile.d/*.sh
++++ '[' -r /etc/profile.d/colorzgrep.sh ']'
++++ '[' '' ']'
++++ . /etc/profile.d/colorzgrep.sh
+++++ '[' -f /usr/libexec/grepconf.sh ']'
+++++ /usr/libexec/grepconf.sh -c
+++++ alias 'zgrep=zgrep --color=auto'
+++++ alias 'zfgrep=zfgrep --color=auto'
+++++ alias 'zegrep=zegrep --color=auto'
++++ for i in /etc/profile.d/*.sh
++++ '[' -r /etc/profile.d/debuginfod.sh ']'
++++ '[' '' ']'
++++ . /etc/profile.d/debuginfod.sh
+++++ prefix=/usr
+++++ '[' -z '%{dist_debuginfod_url} ' ']'
+++++ '[' -z /etc/keys/ima: ']'
+++++ unset prefix
++++ for i in /etc/profile.d/*.sh
++++ '[' -r /etc/profile.d/flatpak.sh ']'
++++ '[' '' ']'
++++ . /etc/profile.d/flatpak.sh
+++++ command -v flatpak
++++++ new_dirs=
++++++ read -r install_path
++++++ unset G_MESSAGES_DEBUG
++++++ echo /home/abir19/.local/share/flatpak
++++++ GIO_USE_VFS=local
++++++ flatpak --installations
++++++ share_path=/home/abir19/.local/share/flatpak/exports/share
++++++ case ":$XDG_DATA_DIRS:" in
++++++ :
++++++ read -r install_path
++++++ share_path=/var/lib/flatpak/exports/share
++++++ case ":$XDG_DATA_DIRS:" in
++++++ :
++++++ read -r install_path
++++++ echo ''
+++++ new_dirs=
+++++ export XDG_DATA_DIRS
+++++ XDG_DATA_DIRS=/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v3/Core/mii/1.1.2/share:/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v3/Core/aocl-blascore/5.1/share:/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v3/Core/flexiblascore/3.3.1/share:/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v4/Compiler/gcc12/openmpi/4.1.5/share:/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v4/Compiler/gcccore/pmix/4.2.4/share:/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v4/Compiler/gcccore/libfabric/1.18.0/share:/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v4/Compiler/gcccore/ucx/1.14.1/share:/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v4/Compiler/gcccore/hwloc/2.9.1/share:/cvmfs/soft.computecanada.ca/gentoo/2023/x86-64-v3/usr/share:/home/abir19/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share
++++ for i in /etc/profile.d/*.sh
++++ '[' -r /etc/profile.d/gawk.sh ']'
++++ '[' '' ']'
++++ . /etc/profile.d/gawk.sh
++++ for i in /etc/profile.d/*.sh
++++ '[' -r /etc/profile.d/lang.sh ']'
++++ '[' '' ']'
++++ . /etc/profile.d/lang.sh
+++++ unset LANG_backup
++++++ /usr/bin/locale
+++++ '[' -n '' ']'
+++++ LANG_backup=C.UTF-8
+++++ for config in /etc/locale.conf "${HOME}/.i18n"
+++++ '[' -f /etc/locale.conf ']'
+++++ '[' -x /usr/bin/sed ']'
++++++ /usr/bin/sed -r -e 's/^[[:blank:]]*([[:upper:]_]+)=([[:print:][:digit:]\._-]+|"[[:print:][:digit:]\._-]+")/export \1=\2/;t;d' /etc/locale.conf
+++++ eval export 'LANG="C.UTF-8"'
++++++ export LANG=C.UTF-8
++++++ LANG=C.UTF-8
+++++ for config in /etc/locale.conf "${HOME}/.i18n"
+++++ '[' -f /home/abir19/.i18n ']'
+++++ '[' -n C.UTF-8 ']'
+++++ LANG=C.UTF-8
+++++ unset LANG_backup config
+++++ '[' -n '' ']'
+++++ '[' -n C.UTF-8 ']'
+++++ '[' xterm-256color = linux ']'
++++ for i in /etc/profile.d/*.sh
++++ '[' -r /etc/profile.d/less.sh ']'
++++ '[' '' ']'
++++ . /etc/profile.d/less.sh
+++++ '[' -z '|lesspipe %s' ']'
++++ for i in /etc/profile.d/*.sh
++++ '[' -r /etc/profile.d/puppet-agent.sh ']'
++++ '[' '' ']'
++++ . /etc/profile.d/puppet-agent.sh
+++++ '[' -z /home/abir19/multilingual_clts/.venv/bin:/home/abir19/multilingual_clts/.venv/bin:/opt/software/bin:/opt/software/slurm/bin:/home/abir19/.vscode-server/cli/servers/Stable-6f17636121051a53c88d3e605c491d22af2ba755/server/bin/remote-cli:/opt/software/bin:/opt/software/slurm/bin:/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v3/Core/mii/1.1.2/bin:/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v3/Core/flexiblascore/3.3.1/bin:/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v4/Compiler/gcc12/openmpi/4.1.5/bin:/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v4/Compiler/gcccore/ucc/1.2.0/bin:/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v4/Compiler/gcccore/pmix/4.2.4/bin:/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v4/Compiler/gcccore/libfabric/1.18.0/bin:/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v4/Compiler/gcccore/ucx/1.14.1/bin:/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v4/Compiler/gcccore/hwloc/2.9.1/sbin:/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v4/Compiler/gcccore/hwloc/2.9.1/bin:/cvmfs/soft.computecanada.ca/gentoo/2023/x86-64-v3/usr/x86_64-pc-linux-gnu/gcc-bin/12:/cvmfs/soft.computecanada.ca/easybuild/bin:/cvmfs/soft.computecanada.ca/custom/bin:/cvmfs/soft.computecanada.ca/gentoo/2023/x86-64-v3/usr/bin:/cvmfs/soft.computecanada.ca/custom/bin/computecanada:/opt/software/bin:/opt/software/slurm/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/puppetlabs/bin:/home/abir19/.local/bin:/home/abir19/bin:/home/abir19/.local/bin:/home/abir19/bin:/home/abir19/.vscode-server/extensions/ms-python.debugpy-2025.10.0/bundled/scripts/noConfigScripts:/home/abir19/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand ']'
+++++ grep -q /opt/puppetlabs/bin
+++++ echo /home/abir19/multilingual_clts/.venv/bin:/home/abir19/multilingual_clts/.venv/bin:/opt/software/bin:/opt/software/slurm/bin:/home/abir19/.vscode-server/cli/servers/Stable-6f17636121051a53c88d3e605c491d22af2ba755/server/bin/remote-cli:/opt/software/bin:/opt/software/slurm/bin:/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v3/Core/mii/1.1.2/bin:/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v3/Core/flexiblascore/3.3.1/bin:/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v4/Compiler/gcc12/openmpi/4.1.5/bin:/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v4/Compiler/gcccore/ucc/1.2.0/bin:/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v4/Compiler/gcccore/pmix/4.2.4/bin:/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v4/Compiler/gcccore/libfabric/1.18.0/bin:/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v4/Compiler/gcccore/ucx/1.14.1/bin:/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v4/Compiler/gcccore/hwloc/2.9.1/sbin:/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v4/Compiler/gcccore/hwloc/2.9.1/bin:/cvmfs/soft.computecanada.ca/gentoo/2023/x86-64-v3/usr/x86_64-pc-linux-gnu/gcc-bin/12:/cvmfs/soft.computecanada.ca/easybuild/bin:/cvmfs/soft.computecanada.ca/custom/bin:/cvmfs/soft.computecanada.ca/gentoo/2023/x86-64-v3/usr/bin:/cvmfs/soft.computecanada.ca/custom/bin/computecanada:/opt/software/bin:/opt/software/slurm/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/puppetlabs/bin:/home/abir19/.local/bin:/home/abir19/bin:/home/abir19/.local/bin:/home/abir19/bin:/home/abir19/.vscode-server/extensions/ms-python.debugpy-2025.10.0/bundled/scripts/noConfigScripts:/home/abir19/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand
+++++ grep -q /opt/puppetlabs/puppet/share/man
+++++ echo /cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v3/Core/flexiblascore/3.3.1/share/man:/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v4/Compiler/gcc12/openmpi/4.1.5/share/man:/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v4/Compiler/gcccore/pmix/4.2.4/share/man:/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v4/Compiler/gcccore/libfabric/1.18.0/share/man:/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v4/Compiler/gcccore/hwloc/2.9.1/share/man:/cvmfs/soft.computecanada.ca/gentoo/2023/x86-64-v3/usr/share/gcc-data/x86_64-pc-linux-gnu/12/man:/cvmfs/soft.computecanada.ca/gentoo/2023/x86-64-v3/usr/share/binutils-data/x86_64-pc-linux-gnu/2.40/man:/cvmfs/soft.computecanada.ca/gentoo/2023/x86-64-v3/usr/share/man:/cvmfs/soft.computecanada.ca/custom/software/lmod/lmod/share/man::/opt/puppetlabs/puppet/share/man
++++ for i in /etc/profile.d/*.sh
++++ '[' -r /etc/profile.d/which2.sh ']'
++++ '[' '' ']'
++++ . /etc/profile.d/which2.sh
+++++ case "$(basename $(readlink /proc/$$/exe))" in
+++++++ readlink /proc/2968718/exe
++++++ basename /usr/bin/bash
+++++ which_declare='declare -f'
+++++ which_opt=-f
+++++ export which_declare
+++++ export -f which
++++ for i in /etc/profile.d/*.sh
++++ '[' -r /etc/profile.d/z-00-computecanada.sh ']'
++++ '[' '' ']'
++++ . /etc/profile.d/z-00-computecanada.sh
+++++ [[ 3147028 -ge 3000000 ]]
+++++ [[ 3147028 -le 5999999 ]]
+++++ [[ -r /cvmfs/soft.computecanada.ca/config/profile/bash.sh ]]
+++++ . /cvmfs/soft.computecanada.ca/config/profile/bash.sh
++++++ [[ -z '' ]]
++++++ SKIP_CC_CVMFS=0
++++++ [[ -z '' ]]
++++++ FORCE_CC_CVMFS=0
++++++ [[ -f /home/abir19/.skip_cc_cvmfs ]]
++++++ [[ -f /home/abir19/.force_cc_cvmfs ]]
++++++ [[ 3147028 -ge 1000 ]]
++++++ [[ 0 -ne 1 ]]
++++++ for file in /cvmfs/soft.computecanada.ca/config/profile.d/*.sh
++++++ [[ -r /cvmfs/soft.computecanada.ca/config/profile.d/vte.sh ]]
++++++ source /cvmfs/soft.computecanada.ca/config/profile.d/vte.sh
+++++++ '[' -n '5.1.8(1)-release' -o -n '' ']'
+++++++ [[ hxB == *i* ]]
+++++++ return 0
++++++ for file in /cvmfs/soft.computecanada.ca/config/profile.d/*.sh
++++++ [[ -r /cvmfs/soft.computecanada.ca/config/profile.d/z-000-init.sh ]]
++++++ source /cvmfs/soft.computecanada.ca/config/profile.d/z-000-init.sh
+++++++ [[ -z fir ]]
+++++++ [[ -z fir ]]
+++++++ [[ -d /cvmfs/restricted.computecanada.ca/easybuild ]]
+++++++ export CC_RESTRICTED=true
+++++++ CC_RESTRICTED=true
+++++++ umask 0027
++++++ for file in /cvmfs/soft.computecanada.ca/config/profile.d/*.sh
++++++ [[ -r /cvmfs/soft.computecanada.ca/config/profile.d/z-15-override.sh ]]
++++++ source /cvmfs/soft.computecanada.ca/config/profile.d/z-15-override.sh
+++++++ for d in /opt/software/slurm/bin /opt/software/bin /opt/slurm/bin
+++++++ [[ -d /opt/software/slurm/bin ]]
+++++++ export PATH=/opt/software/slurm/bin:/home/abir19/multilingual_clts/.venv/bin:/home/abir19/multilingual_clts/.venv/bin:/opt/software/bin:/opt/software/slurm/bin:/home/abir19/.vscode-server/cli/servers/Stable-6f17636121051a53c88d3e605c491d22af2ba755/server/bin/remote-cli:/opt/software/bin:/opt/software/slurm/bin:/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v3/Core/mii/1.1.2/bin:/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v3/Core/flexiblascore/3.3.1/bin:/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v4/Compiler/gcc12/openmpi/4.1.5/bin:/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v4/Compiler/gcccore/ucc/1.2.0/bin:/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v4/Compiler/gcccore/pmix/4.2.4/bin:/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v4/Compiler/gcccore/libfabric/1.18.0/bin:/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v4/Compiler/gcccore/ucx/1.14.1/bin:/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v4/Compiler/gcccore/hwloc/2.9.1/sbin:/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v4/Compiler/gcccore/hwloc/2.9.1/bin:/cvmfs/soft.computecanada.ca/gentoo/2023/x86-64-v3/usr/x86_64-pc-linux-gnu/gcc-bin/12:/cvmfs/soft.computecanada.ca/easybuild/bin:/cvmfs/soft.computecanada.ca/custom/bin:/cvmfs/soft.computecanada.ca/gentoo/2023/x86-64-v3/usr/bin:/cvmfs/soft.computecanada.ca/custom/bin/computecanada:/opt/software/bin:/opt/software/slurm/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/puppetlabs/bin:/home/abir19/.local/bin:/home/abir19/bin:/home/abir19/.local/bin:/home/abir19/bin:/home/abir19/.vscode-server/extensions/ms-python.debugpy-2025.10.0/bundled/scripts/noConfigScripts:/home/abir19/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand
+++++++ PATH=/opt/software/slurm/bin:/home/abir19/multilingual_clts/.venv/bin:/home/abir19/multilingual_clts/.venv/bin:/opt/software/bin:/opt/software/slurm/bin:/home/abir19/.vscode-server/cli/servers/Stable-6f17636121051a53c88d3e605c491d22af2ba755/server/bin/remote-cli:/opt/software/bin:/opt/software/slurm/bin:/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v3/Core/mii/1.1.2/bin:/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v3/Core/flexiblascore/3.3.1/bin:/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v4/Compiler/gcc12/openmpi/4.1.5/bin:/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v4/Compiler/gcccore/ucc/1.2.0/bin:/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v4/Compiler/gcccore/pmix/4.2.4/bin:/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v4/Compiler/gcccore/libfabric/1.18.0/bin:/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v4/Compiler/gcccore/ucx/1.14.1/bin:/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v4/Compiler/gcccore/hwloc/2.9.1/sbin:/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v4/Compiler/gcccore/hwloc/2.9.1/bin:/cvmfs/soft.computecanada.ca/gentoo/2023/x86-64-v3/usr/x86_64-pc-linux-gnu/gcc-bin/12:/cvmfs/soft.computecanada.ca/easybuild/bin:/cvmfs/soft.computecanada.ca/custom/bin:/cvmfs/soft.computecanada.ca/gentoo/2023/x86-64-v3/usr/bin:/cvmfs/soft.computecanada.ca/custom/bin/computecanada:/opt/software/bin:/opt/software/slurm/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/puppetlabs/bin:/home/abir19/.local/bin:/home/abir19/bin:/home/abir19/.local/bin:/home/abir19/bin:/home/abir19/.vscode-server/extensions/ms-python.debugpy-2025.10.0/bundled/scripts/noConfigScripts:/home/abir19/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand
+++++++ for d in /opt/software/slurm/bin /opt/software/bin /opt/slurm/bin
+++++++ [[ -d /opt/software/bin ]]
+++++++ export PATH=/opt/software/bin:/opt/software/slurm/bin:/home/abir19/multilingual_clts/.venv/bin:/home/abir19/multilingual_clts/.venv/bin:/opt/software/bin:/opt/software/slurm/bin:/home/abir19/.vscode-server/cli/servers/Stable-6f17636121051a53c88d3e605c491d22af2ba755/server/bin/remote-cli:/opt/software/bin:/opt/software/slurm/bin:/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v3/Core/mii/1.1.2/bin:/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v3/Core/flexiblascore/3.3.1/bin:/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v4/Compiler/gcc12/openmpi/4.1.5/bin:/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v4/Compiler/gcccore/ucc/1.2.0/bin:/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v4/Compiler/gcccore/pmix/4.2.4/bin:/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v4/Compiler/gcccore/libfabric/1.18.0/bin:/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v4/Compiler/gcccore/ucx/1.14.1/bin:/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v4/Compiler/gcccore/hwloc/2.9.1/sbin:/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v4/Compiler/gcccore/hwloc/2.9.1/bin:/cvmfs/soft.computecanada.ca/gentoo/2023/x86-64-v3/usr/x86_64-pc-linux-gnu/gcc-bin/12:/cvmfs/soft.computecanada.ca/easybuild/bin:/cvmfs/soft.computecanada.ca/custom/bin:/cvmfs/soft.computecanada.ca/gentoo/2023/x86-64-v3/usr/bin:/cvmfs/soft.computecanada.ca/custom/bin/computecanada:/opt/software/bin:/opt/software/slurm/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/puppetlabs/bin:/home/abir19/.local/bin:/home/abir19/bin:/home/abir19/.local/bin:/home/abir19/bin:/home/abir19/.vscode-server/extensions/ms-python.debugpy-2025.10.0/bundled/scripts/noConfigScripts:/home/abir19/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand
+++++++ PATH=/opt/software/bin:/opt/software/slurm/bin:/home/abir19/multilingual_clts/.venv/bin:/home/abir19/multilingual_clts/.venv/bin:/opt/software/bin:/opt/software/slurm/bin:/home/abir19/.vscode-server/cli/servers/Stable-6f17636121051a53c88d3e605c491d22af2ba755/server/bin/remote-cli:/opt/software/bin:/opt/software/slurm/bin:/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v3/Core/mii/1.1.2/bin:/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v3/Core/flexiblascore/3.3.1/bin:/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v4/Compiler/gcc12/openmpi/4.1.5/bin:/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v4/Compiler/gcccore/ucc/1.2.0/bin:/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v4/Compiler/gcccore/pmix/4.2.4/bin:/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v4/Compiler/gcccore/libfabric/1.18.0/bin:/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v4/Compiler/gcccore/ucx/1.14.1/bin:/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v4/Compiler/gcccore/hwloc/2.9.1/sbin:/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v4/Compiler/gcccore/hwloc/2.9.1/bin:/cvmfs/soft.computecanada.ca/gentoo/2023/x86-64-v3/usr/x86_64-pc-linux-gnu/gcc-bin/12:/cvmfs/soft.computecanada.ca/easybuild/bin:/cvmfs/soft.computecanada.ca/custom/bin:/cvmfs/soft.computecanada.ca/gentoo/2023/x86-64-v3/usr/bin:/cvmfs/soft.computecanada.ca/custom/bin/computecanada:/opt/software/bin:/opt/software/slurm/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/puppetlabs/bin:/home/abir19/.local/bin:/home/abir19/bin:/home/abir19/.local/bin:/home/abir19/bin:/home/abir19/.vscode-server/extensions/ms-python.debugpy-2025.10.0/bundled/scripts/noConfigScripts:/home/abir19/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand
+++++++ for d in /opt/software/slurm/bin /opt/software/bin /opt/slurm/bin
+++++++ [[ -d /opt/slurm/bin ]]
+++++++ [[ -n '' ]]
+++++++ [[ -n pmix ]]
+++++++ [[ -z pmix ]]
++++++ for file in /cvmfs/soft.computecanada.ca/config/profile.d/*.sh
++++++ [[ -r /cvmfs/soft.computecanada.ca/config/profile.d/z-20-lmod.sh ]]
++++++ source /cvmfs/soft.computecanada.ca/config/profile.d/z-20-lmod.sh
+++++++ export MODULESHOME=/cvmfs/soft.computecanada.ca/custom/software/lmod/lmod
+++++++ MODULESHOME=/cvmfs/soft.computecanada.ca/custom/software/lmod/lmod
+++++++ source /cvmfs/soft.computecanada.ca/custom/software/lmod/lmod/init/profile
++++++++ '[' -z '' ']'
++++++++ LMOD_ALLOW_ROOT_USE=yes
++++++++ '[' -n '' ']'
++++++++ '[' yes '!=' yes ']'
++++++++ '[' -z /cvmfs/soft.computecanada.ca/easybuild/modules ']'
++++++++ findExec READLINK_CMD /usr/bin/readlink readlink
++++++++ Nm=READLINK_CMD
++++++++ confPath=/usr/bin/readlink
++++++++ execNm=readlink
++++++++ eval READLINK_CMD=/usr/bin/readlink
+++++++++ READLINK_CMD=/usr/bin/readlink
++++++++ '[' '!' -x /usr/bin/readlink ']'
++++++++ unset Nm confPath execNm
++++++++ findExec PS_CMD /bin/ps ps
++++++++ Nm=PS_CMD
++++++++ confPath=/bin/ps
++++++++ execNm=ps
++++++++ eval PS_CMD=/bin/ps
+++++++++ PS_CMD=/bin/ps
++++++++ '[' '!' -x /bin/ps ']'
++++++++ unset Nm confPath execNm
++++++++ findExec EXPR_CMD /usr/bin/expr expr
++++++++ Nm=EXPR_CMD
++++++++ confPath=/usr/bin/expr
++++++++ execNm=expr
++++++++ eval EXPR_CMD=/usr/bin/expr
+++++++++ EXPR_CMD=/usr/bin/expr
++++++++ '[' '!' -x /usr/bin/expr ']'
++++++++ unset Nm confPath execNm
++++++++ findExec BASENAME_CMD /bin/basename basename
++++++++ Nm=BASENAME_CMD
++++++++ confPath=/bin/basename
++++++++ execNm=basename
++++++++ eval BASENAME_CMD=/bin/basename
+++++++++ BASENAME_CMD=/bin/basename
++++++++ '[' '!' -x /bin/basename ']'
++++++++ unset Nm confPath execNm
++++++++ unset -f findExec
++++++++ '[' -f /proc/2968718/exe ']'
+++++++++ /usr/bin/readlink /proc/2968718/exe
++++++++ my_shell=/usr/bin/bash
+++++++++ /usr/bin/expr /usr/bin/bash : '-*\(.*\)'
++++++++ my_shell=/usr/bin/bash
+++++++++ /bin/basename /usr/bin/bash
++++++++ my_shell=bash
++++++++ case ${my_shell} in
++++++++ '[' -f /cvmfs/soft.computecanada.ca/custom/software/lmod/lmod/init/bash ']'
++++++++ . /cvmfs/soft.computecanada.ca/custom/software/lmod/lmod/init/bash
+++++++++ '[' -z '' ']'
+++++++++ case "$-" in
+++++++++ __lmod_vx=x
+++++++++ '[' -n x ']'
+++++++++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for this output (/cvmfs/soft.computecanada.ca/custom/software/lmod/lmod/init/bash)
+Shell debugging restarted
+++++++++ unset __lmod_vx
++++++++ unset my_shell PS_CMD EXPR_CMD BASENAME_CMD MODULEPATH_INIT LMOD_ALLOW_ROOT_USE READLINK_CMD
+++++++ export LMOD_PACKAGE_PATH=/cvmfs/soft.computecanada.ca/config/lmod/
+++++++ LMOD_PACKAGE_PATH=/cvmfs/soft.computecanada.ca/config/lmod/
+++++++ export LMOD_ADMIN_FILE=/cvmfs/soft.computecanada.ca/config/lmod/admin.list
+++++++ LMOD_ADMIN_FILE=/cvmfs/soft.computecanada.ca/config/lmod/admin.list
+++++++ export LMOD_AVAIL_STYLE=grouped:system
+++++++ LMOD_AVAIL_STYLE=grouped:system
+++++++ export LMOD_AVAIL_EXTENSIONS=no
+++++++ LMOD_AVAIL_EXTENSIONS=no
+++++++ export LMOD_SHORT_TIME=3600
+++++++ LMOD_SHORT_TIME=3600
+++++++ [[ -z yes ]]
+++++++ [[ -z 1 ]]
+++++++ module refresh
+++++++ '[' -z '' ']'
+++++++ case "$-" in
+++++++ __lmod_sh_dbg=x
+++++++ '[' -n x ']'
+++++++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for Lmod's output
+Shell debugging restarted
+++++++ unset __lmod_sh_dbg
+++++++ return 0
+++++++ [[ -d /opt/software/modulefiles ]]
+++++++ module -q use --priority 10 /opt/software/modulefiles
+++++++ '[' -z '' ']'
+++++++ case "$-" in
+++++++ __lmod_sh_dbg=x
+++++++ '[' -n x ']'
+++++++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for Lmod's output
+Shell debugging restarted
+++++++ unset __lmod_sh_dbg
+++++++ return 0
+++++++ [[ -d /home/abir19/modulefiles ]]
++++++ for file in /cvmfs/soft.computecanada.ca/config/profile.d/*.sh
++++++ [[ -r /cvmfs/soft.computecanada.ca/config/profile.d/z-30-easybuild.sh ]]
++++++ source /cvmfs/soft.computecanada.ca/config/profile.d/z-30-easybuild.sh
++++ unset i
++++ unset -f pathmunge
+/home/abir19/.bashrc: line 12: unexpected EOF while looking for matching `"'
+/home/abir19/.bashrc: line 13: syntax error: unexpected end of file
++ export POETRY_HOME=/home/abir19/.local/bin
++ POETRY_HOME=/home/abir19/.local/bin
++ export HOME=/home/abir19
++ HOME=/home/abir19
++ export PATH=/home/abir19/.local/bin:/opt/software/bin:/opt/software/slurm/bin:/home/abir19/multilingual_clts/.venv/bin:/home/abir19/multilingual_clts/.venv/bin:/opt/software/bin:/opt/software/slurm/bin:/home/abir19/.vscode-server/cli/servers/Stable-6f17636121051a53c88d3e605c491d22af2ba755/server/bin/remote-cli:/opt/software/bin:/opt/software/slurm/bin:/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v3/Core/mii/1.1.2/bin:/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v3/Core/flexiblascore/3.3.1/bin:/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v4/Compiler/gcc12/openmpi/4.1.5/bin:/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v4/Compiler/gcccore/ucc/1.2.0/bin:/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v4/Compiler/gcccore/pmix/4.2.4/bin:/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v4/Compiler/gcccore/libfabric/1.18.0/bin:/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v4/Compiler/gcccore/ucx/1.14.1/bin:/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v4/Compiler/gcccore/hwloc/2.9.1/sbin:/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v4/Compiler/gcccore/hwloc/2.9.1/bin:/cvmfs/soft.computecanada.ca/gentoo/2023/x86-64-v3/usr/x86_64-pc-linux-gnu/gcc-bin/12:/cvmfs/soft.computecanada.ca/easybuild/bin:/cvmfs/soft.computecanada.ca/custom/bin:/cvmfs/soft.computecanada.ca/gentoo/2023/x86-64-v3/usr/bin:/cvmfs/soft.computecanada.ca/custom/bin/computecanada:/opt/software/bin:/opt/software/slurm/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/puppetlabs/bin:/home/abir19/.local/bin:/home/abir19/bin:/home/abir19/.local/bin:/home/abir19/bin:/home/abir19/.vscode-server/extensions/ms-python.debugpy-2025.10.0/bundled/scripts/noConfigScripts:/home/abir19/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand
++ PATH=/home/abir19/.local/bin:/opt/software/bin:/opt/software/slurm/bin:/home/abir19/multilingual_clts/.venv/bin:/home/abir19/multilingual_clts/.venv/bin:/opt/software/bin:/opt/software/slurm/bin:/home/abir19/.vscode-server/cli/servers/Stable-6f17636121051a53c88d3e605c491d22af2ba755/server/bin/remote-cli:/opt/software/bin:/opt/software/slurm/bin:/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v3/Core/mii/1.1.2/bin:/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v3/Core/flexiblascore/3.3.1/bin:/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v4/Compiler/gcc12/openmpi/4.1.5/bin:/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v4/Compiler/gcccore/ucc/1.2.0/bin:/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v4/Compiler/gcccore/pmix/4.2.4/bin:/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v4/Compiler/gcccore/libfabric/1.18.0/bin:/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v4/Compiler/gcccore/ucx/1.14.1/bin:/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v4/Compiler/gcccore/hwloc/2.9.1/sbin:/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v4/Compiler/gcccore/hwloc/2.9.1/bin:/cvmfs/soft.computecanada.ca/gentoo/2023/x86-64-v3/usr/x86_64-pc-linux-gnu/gcc-bin/12:/cvmfs/soft.computecanada.ca/easybuild/bin:/cvmfs/soft.computecanada.ca/custom/bin:/cvmfs/soft.computecanada.ca/gentoo/2023/x86-64-v3/usr/bin:/cvmfs/soft.computecanada.ca/custom/bin/computecanada:/opt/software/bin:/opt/software/slurm/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/puppetlabs/bin:/home/abir19/.local/bin:/home/abir19/bin:/home/abir19/.local/bin:/home/abir19/bin:/home/abir19/.vscode-server/extensions/ms-python.debugpy-2025.10.0/bundled/scripts/noConfigScripts:/home/abir19/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand
++ export WANDB_API_KEY=097e21df11c8e16d3452a3e5747add10ec3ed5e0
++ WANDB_API_KEY=097e21df11c8e16d3452a3e5747add10ec3ed5e0
++ export HUGGINGFACE_TOKEN=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
++ HUGGINGFACE_TOKEN=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
++ echo 'Home set to:' /home/abir19
++ cd /home/abir19/FeatFlow
+++ pwd
++ echo 'In directory: /home/abir19/FeatFlow'
++ VENV_PATH=/home/abir19/.cache/pypoetry/virtualenvs/featflow-66hVYwpV-py3.11
++ /home/abir19/.cache/pypoetry/virtualenvs/featflow-66hVYwpV-py3.11/bin/python src/featflow/frontend/run_cluster/run_cluster_intervention.py /home/abir19/FeatFlow/src/featflow/frontend/run_cluster/cluster_intervention_args.json
+/localscratch/spool/slurmd/job4094779/slurm_script: line 28: /home/abir19/.cache/pypoetry/virtualenvs/featflow-66hVYwpV-py3.11/bin/python: No such file or directory
++ echo 'run_cluster_intervention.py completed'

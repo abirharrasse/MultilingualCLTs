@@ -1,0 +1,911 @@
+{
+  "version": "2.0",
+  "timestamp": "2025-09-15T22:43:44.651Z",
+  "clusters": {
+    "e9f48909-f9b6-4d97-af98-9771c5352f28": {
+      "name": "Cluster 1",
+      "color": "#34d399",
+      "nodes": [
+        {
+          "node_index": 2,
+          "layer": 0,
+          "pos": 1,
+          "feature_idx": 2877,
+          "description": "Unknown",
+          "x": -365.5619631901841,
+          "y": -275
+        },
+        {
+          "node_index": 11,
+          "layer": 0,
+          "pos": 1,
+          "feature_idx": 16872,
+          "description": "Unknown",
+          "x": -272.2269938650307,
+          "y": -275
+        },
+        {
+          "node_index": 12,
+          "layer": 0,
+          "pos": 1,
+          "feature_idx": 17511,
+          "description": "Unknown",
+          "x": -261.8564417177914,
+          "y": -275
+        },
+        {
+          "node_index": 13,
+          "layer": 0,
+          "pos": 1,
+          "feature_idx": 17884,
+          "description": "Unknown",
+          "x": -251.4858895705522,
+          "y": -275
+        },
+        {
+          "node_index": 15,
+          "layer": 0,
+          "pos": 1,
+          "feature_idx": 21149,
+          "description": "Unknown",
+          "x": -230.74478527607366,
+          "y": -275
+        }
+      ],
+      "description": "der/die/the"
+    },
+    "0240a554-88b9-42ab-af0d-944ec0cf8d60": {
+      "name": "Cluster 2",
+      "color": "#60a5fa",
+      "nodes": [
+        {
+          "node_index": 17,
+          "layer": 0,
+          "pos": 2,
+          "feature_idx": 2281,
+          "description": "Unknown",
+          "x": -199.63312883435586,
+          "y": -275
+        }
+      ],
+      "description": "inverse"
+    },
+    "2178e8ed-904b-4132-96e9-b69c13f4b7f1": {
+      "name": "Cluster 3",
+      "color": "#f472b6",
+      "nodes": [
+        {
+          "node_index": 19,
+          "layer": 0,
+          "pos": 2,
+          "feature_idx": 13471,
+          "description": "Unknown",
+          "x": -178.89202453987733,
+          "y": -275
+        }
+      ],
+      "description": "resemble"
+    },
+    "16b25e90-3117-486e-8e1d-e3b8d0752b26": {
+      "name": "Cluster 4",
+      "color": "#a78bfa",
+      "nodes": [
+        {
+          "node_index": 24,
+          "layer": 0,
+          "pos": 3,
+          "feature_idx": 293,
+          "description": "Unknown",
+          "x": -116.66871165644176,
+          "y": -275
+        },
+        {
+          "node_index": 26,
+          "layer": 0,
+          "pos": 3,
+          "feature_idx": 5754,
+          "description": "Unknown",
+          "x": -95.92760736196323,
+          "y": -275
+        },
+        {
+          "node_index": 29,
+          "layer": 0,
+          "pos": 3,
+          "feature_idx": 11898,
+          "description": "Unknown",
+          "x": -64.81595092024543,
+          "y": -275
+        }
+      ],
+      "description": "of"
+    },
+    "b8bc2acf-d269-4c3f-92f3-c980ee8319d2": {
+      "name": "Cluster 5",
+      "color": "#f87171",
+      "nodes": [
+        {
+          "node_index": 32,
+          "layer": 0,
+          "pos": 4,
+          "feature_idx": 6664,
+          "description": "Unknown",
+          "x": -23.333742331288363,
+          "y": -275
+        },
+        {
+          "node_index": 31,
+          "layer": 0,
+          "pos": 4,
+          "feature_idx": 2194,
+          "description": "Unknown",
+          "x": -33.70429447852763,
+          "y": -275
+        },
+        {
+          "node_index": 34,
+          "layer": 0,
+          "pos": 4,
+          "feature_idx": 7356,
+          "description": "Arabic word",
+          "x": -2.592638036809838,
+          "y": -275
+        },
+        {
+          "node_index": 36,
+          "layer": 0,
+          "pos": 4,
+          "feature_idx": 12588,
+          "description": "Unknown",
+          "x": 18.148466257668694,
+          "y": -275
+        },
+        {
+          "node_index": 37,
+          "layer": 0,
+          "pos": 4,
+          "feature_idx": 22621,
+          "description": "Quoted text",
+          "x": 28.519018404907953,
+          "y": -275
+        },
+        {
+          "node_index": 84,
+          "layer": 2,
+          "pos": 4,
+          "feature_idx": 4556,
+          "description": "",
+          "x": 2.592638036809795,
+          "y": -175
+        },
+        {
+          "node_index": 92,
+          "layer": 3,
+          "pos": 4,
+          "feature_idx": 2315,
+          "description": "Unknown",
+          "x": 2.592638036809795,
+          "y": -125
+        }
+      ],
+      "description": "\""
+    },
+    "04eff5c4-5379-4f02-9d42-222679cc47c6": {
+      "name": "Cluster 6",
+      "color": "#fb923c",
+      "nodes": [
+        {
+          "node_index": 46,
+          "layer": 0,
+          "pos": 5,
+          "feature_idx": 12812,
+          "description": "Unknown",
+          "x": 132.2245398773006,
+          "y": -275
+        },
+        {
+          "node_index": 49,
+          "layer": 0,
+          "pos": 5,
+          "feature_idx": 23652,
+          "description": "Unknown",
+          "x": 163.3361963190184,
+          "y": -275
+        }
+      ],
+      "description": "man"
+    },
+    "97fae898-af9b-48a0-8819-ebe3e7f7038e": {
+      "name": "Cluster 7",
+      "color": "#22d3ee",
+      "nodes": [
+        {
+          "node_index": 74,
+          "layer": 1,
+          "pos": 5,
+          "feature_idx": 7655,
+          "description": "Unknown",
+          "x": 101.1128834355828,
+          "y": -225
+        }
+      ],
+      "description": "women arab"
+    },
+    "86d2bfb9-8109-4129-9a1e-08e30b4533b2": {
+      "name": "Cluster 8",
+      "color": "#38bdf8",
+      "nodes": [
+        {
+          "node_index": 76,
+          "layer": 1,
+          "pos": 5,
+          "feature_idx": 21675,
+          "description": "Unknown",
+          "x": 121.85398773006133,
+          "y": -225
+        },
+        {
+          "node_index": 93,
+          "layer": 3,
+          "pos": 5,
+          "feature_idx": 5378,
+          "description": "Unknown",
+          "x": 111.48343558282207,
+          "y": -125
+        },
+        {
+          "node_index": 95,
+          "layer": 4,
+          "pos": 5,
+          "feature_idx": 18398,
+          "description": "Unknown",
+          "x": 111.48343558282207,
+          "y": -75
+        }
+      ],
+      "description": "man multiling"
+    },
+    "50c17561-c4cc-40c8-8920-5c3be55d05d9": {
+      "name": "Cluster 9",
+      "color": "#f472b6",
+      "nodes": [
+        {
+          "node_index": 97,
+          "layer": 5,
+          "pos": 5,
+          "feature_idx": 15779,
+          "description": "Unknown",
+          "x": 106.29815950920243,
+          "y": -25
+        },
+        {
+          "node_index": 98,
+          "layer": 5,
+          "pos": 5,
+          "feature_idx": 17231,
+          "description": "Unknown",
+          "x": 116.6687116564417,
+          "y": -25
+        },
+        {
+          "node_index": 101,
+          "layer": 6,
+          "pos": 5,
+          "feature_idx": 9548,
+          "description": "Unknown",
+          "x": 101.1128834355828,
+          "y": 25
+        }
+      ],
+      "description": "men&women"
+    },
+    "3ecc3fc6-96d7-4973-8226-e65c765fda10": {
+      "name": "Cluster 10",
+      "color": "#34d399",
+      "nodes": [
+        {
+          "node_index": 51,
+          "layer": 0,
+          "pos": 6,
+          "feature_idx": 7182,
+          "description": "Unknown",
+          "x": 194.44785276073617,
+          "y": -275
+        },
+        {
+          "node_index": 50,
+          "layer": 0,
+          "pos": 6,
+          "feature_idx": 6766,
+          "description": "Unknown",
+          "x": 184.0773006134969,
+          "y": -275
+        },
+        {
+          "node_index": 52,
+          "layer": 0,
+          "pos": 6,
+          "feature_idx": 12695,
+          "description": "Unknown",
+          "x": 204.81840490797543,
+          "y": -275
+        },
+        {
+          "node_index": 53,
+          "layer": 0,
+          "pos": 6,
+          "feature_idx": 23382,
+          "description": "Quotation marks",
+          "x": 215.1889570552147,
+          "y": -275
+        }
+      ],
+      "description": "2nd \""
+    },
+    "c1c4cc69-97c2-4776-8aea-32426a68a53f": {
+      "name": "Cluster 11",
+      "color": "#60a5fa",
+      "nodes": [
+        {
+          "node_index": 55,
+          "layer": 0,
+          "pos": 7,
+          "feature_idx": 7503,
+          "description": "Unknown",
+          "x": 246.3006134969325,
+          "y": -275
+        },
+        {
+          "node_index": 56,
+          "layer": 0,
+          "pos": 7,
+          "feature_idx": 9310,
+          "description": "Unknown",
+          "x": 256.67116564417177,
+          "y": -275
+        },
+        {
+          "node_index": 57,
+          "layer": 0,
+          "pos": 7,
+          "feature_idx": 13069,
+          "description": "Unknown",
+          "x": 267.04171779141103,
+          "y": -275
+        },
+        {
+          "node_index": 58,
+          "layer": 0,
+          "pos": 7,
+          "feature_idx": 14209,
+          "description": "Unknown",
+          "x": 277.4122699386503,
+          "y": -275
+        }
+      ],
+      "description": "etre/is/was"
+    },
+    "c51ab2b2-6a0b-46f9-807e-5db3d9e0e13e": {
+      "name": "Cluster 12",
+      "color": "#f472b6",
+      "nodes": [
+        {
+          "node_index": 59,
+          "layer": 0,
+          "pos": 8,
+          "feature_idx": 2194,
+          "description": "Unknown",
+          "x": 318.89447852760736,
+          "y": -275
+        },
+        {
+          "node_index": 61,
+          "layer": 0,
+          "pos": 8,
+          "feature_idx": 7182,
+          "description": "Unknown",
+          "x": 339.6355828220859,
+          "y": -275
+        },
+        {
+          "node_index": 63,
+          "layer": 0,
+          "pos": 8,
+          "feature_idx": 12588,
+          "description": "Unknown",
+          "x": 360.3766871165644,
+          "y": -275
+        },
+        {
+          "node_index": 64,
+          "layer": 0,
+          "pos": 8,
+          "feature_idx": 22621,
+          "description": "Quoted text",
+          "x": 370.7472392638037,
+          "y": -275
+        },
+        {
+          "node_index": 65,
+          "layer": 0,
+          "pos": 8,
+          "feature_idx": 23382,
+          "description": "Quotation marks",
+          "x": 381.11779141104296,
+          "y": -275
+        },
+        {
+          "node_index": 66,
+          "layer": 0,
+          "pos": 8,
+          "feature_idx": 24300,
+          "description": "Unknown",
+          "x": 391.4883435582822,
+          "y": -275
+        },
+        {
+          "node_index": 79,
+          "layer": 1,
+          "pos": 8,
+          "feature_idx": 7602,
+          "description": "Quote marks",
+          "x": 344.8208588957055,
+          "y": -225
+        },
+        {
+          "node_index": 81,
+          "layer": 1,
+          "pos": 8,
+          "feature_idx": 9617,
+          "description": "Unknown",
+          "x": 365.56196319018403,
+          "y": -225
+        },
+        {
+          "node_index": 82,
+          "layer": 1,
+          "pos": 8,
+          "feature_idx": 12653,
+          "description": "Opening quotation",
+          "x": 375.9325153374233,
+          "y": -225
+        },
+        {
+          "node_index": 83,
+          "layer": 1,
+          "pos": 8,
+          "feature_idx": 22318,
+          "description": "Unknown",
+          "x": 386.30306748466256,
+          "y": -225
+        },
+        {
+          "node_index": 86,
+          "layer": 2,
+          "pos": 8,
+          "feature_idx": 4556,
+          "description": "",
+          "x": 334.45030674846623,
+          "y": -175
+        },
+        {
+          "node_index": 87,
+          "layer": 2,
+          "pos": 8,
+          "feature_idx": 12267,
+          "description": "",
+          "x": 344.8208588957055,
+          "y": -175
+        },
+        {
+          "node_index": 88,
+          "layer": 2,
+          "pos": 8,
+          "feature_idx": 14920,
+          "description": "",
+          "x": 355.19141104294476,
+          "y": -175
+        },
+        {
+          "node_index": 90,
+          "layer": 2,
+          "pos": 8,
+          "feature_idx": 23984,
+          "description": "",
+          "x": 375.9325153374233,
+          "y": -175
+        },
+        {
+          "node_index": 94,
+          "layer": 3,
+          "pos": 8,
+          "feature_idx": 2315,
+          "description": "Unknown",
+          "x": 355.19141104294476,
+          "y": -125
+        },
+        {
+          "node_index": 96,
+          "layer": 4,
+          "pos": 8,
+          "feature_idx": 12489,
+          "description": "Unknown",
+          "x": 355.19141104294476,
+          "y": -75
+        },
+        {
+          "node_index": 99,
+          "layer": 5,
+          "pos": 8,
+          "feature_idx": 9143,
+          "description": "Unknown",
+          "x": 350.00613496932516,
+          "y": -25
+        },
+        {
+          "node_index": 100,
+          "layer": 5,
+          "pos": 8,
+          "feature_idx": 12347,
+          "description": "Unknown",
+          "x": 360.3766871165644,
+          "y": -25
+        },
+        {
+          "node_index": 105,
+          "layer": 6,
+          "pos": 8,
+          "feature_idx": 6764,
+          "description": "Unknown",
+          "x": 355.19141104294476,
+          "y": 25
+        },
+        {
+          "node_index": 106,
+          "layer": 6,
+          "pos": 8,
+          "feature_idx": 19059,
+          "description": "Unknown",
+          "x": 365.56196319018403,
+          "y": 25
+        },
+        {
+          "node_index": 122,
+          "layer": 10,
+          "pos": 8,
+          "feature_idx": 609,
+          "description": "Unknown",
+          "x": 298.15337423312883,
+          "y": 225
+        },
+        {
+          "node_index": 123,
+          "layer": 10,
+          "pos": 8,
+          "feature_idx": 1374,
+          "description": "Unknown",
+          "x": 308.5239263803681,
+          "y": 225
+        },
+        {
+          "node_index": 128,
+          "layer": 10,
+          "pos": 8,
+          "feature_idx": 13410,
+          "description": "Unknown",
+          "x": 360.3766871165644,
+          "y": 225
+        },
+        {
+          "node_index": 129,
+          "layer": 10,
+          "pos": 8,
+          "feature_idx": 16869,
+          "description": "Unknown",
+          "x": 370.7472392638037,
+          "y": 225
+        },
+        {
+          "node_index": 130,
+          "layer": 10,
+          "pos": 8,
+          "feature_idx": 18971,
+          "description": "Unknown",
+          "x": 381.11779141104296,
+          "y": 225
+        },
+        {
+          "node_index": 131,
+          "layer": 10,
+          "pos": 8,
+          "feature_idx": 19349,
+          "description": "Unknown",
+          "x": 391.4883435582822,
+          "y": 225
+        },
+        {
+          "node_index": 132,
+          "layer": 10,
+          "pos": 8,
+          "feature_idx": 21278,
+          "description": "Unknown",
+          "x": 401.8588957055215,
+          "y": 225
+        },
+        {
+          "node_index": 136,
+          "layer": 11,
+          "pos": 8,
+          "feature_idx": 22762,
+          "description": "Unknown",
+          "x": 365.56196319018403,
+          "y": 275
+        }
+      ],
+      "description": "last \""
+    },
+    "63f2f873-379c-4251-aadd-d508070c9063": {
+      "name": "Cluster 13",
+      "color": "#a78bfa",
+      "nodes": [
+        {
+          "node_index": 109,
+          "layer": 7,
+          "pos": 8,
+          "feature_idx": 6787,
+          "description": "Unknown",
+          "x": 344.8208588957055,
+          "y": 75
+        },
+        {
+          "node_index": 107,
+          "layer": 7,
+          "pos": 8,
+          "feature_idx": 3743,
+          "description": "Unknown",
+          "x": 324.07975460122697,
+          "y": 75
+        },
+        {
+          "node_index": 112,
+          "layer": 7,
+          "pos": 8,
+          "feature_idx": 11703,
+          "description": "Unknown",
+          "x": 375.9325153374233,
+          "y": 75
+        },
+        {
+          "node_index": 117,
+          "layer": 8,
+          "pos": 8,
+          "feature_idx": 17917,
+          "description": "Unknown",
+          "x": 370.7472392638037,
+          "y": 125
+        },
+        {
+          "node_index": 121,
+          "layer": 9,
+          "pos": 8,
+          "feature_idx": 23637,
+          "description": "Unknown",
+          "x": 370.7472392638037,
+          "y": 175
+        },
+        {
+          "node_index": 133,
+          "layer": 10,
+          "pos": 8,
+          "feature_idx": 22340,
+          "description": "Unknown",
+          "x": 412.22944785276076,
+          "y": 225
+        }
+      ],
+      "description": "man&woman"
+    },
+    "5357edb4-d801-4888-abbf-84060d816734": {
+      "name": "Cluster 14",
+      "color": "#f87171",
+      "nodes": [
+        {
+          "node_index": 124,
+          "layer": 10,
+          "pos": 8,
+          "feature_idx": 5778,
+          "description": "Prepositional phrases",
+          "x": 318.89447852760736,
+          "y": 225
+        },
+        {
+          "node_index": 125,
+          "layer": 10,
+          "pos": 8,
+          "feature_idx": 7912,
+          "description": "Unknown",
+          "x": 329.2650306748466,
+          "y": 225
+        },
+        {
+          "node_index": 135,
+          "layer": 11,
+          "pos": 8,
+          "feature_idx": 4879,
+          "description": "Unknown",
+          "x": 355.19141104294476,
+          "y": 275
+        }
+      ],
+      "description": "englisih"
+    },
+    "5460f079-20d4-4c3c-9dc5-15f94f23d0d3": {
+      "name": "Cluster 15",
+      "color": "#fb923c",
+      "nodes": [
+        {
+          "node_index": 127,
+          "layer": 10,
+          "pos": 8,
+          "feature_idx": 11977,
+          "description": "Unknown",
+          "x": 350.00613496932516,
+          "y": 225
+        }
+      ],
+      "description": "final woman"
+    }
+  },
+  "text_annotations": {},
+  "selected_feature": null,
+  "selected_clusters": [
+    "c51ab2b2-6a0b-46f9-807e-5db3d9e0e13e"
+  ],
+  "annotation_mode": {
+    "active": false
+  },
+  "cluster_positions": {
+    "e9f48909-f9b6-4d97-af98-9771c5352f28": {
+      "x": -522,
+      "y": 0
+    },
+    "e9f48909-f9b6-4d97-af98-9771c5352f28_label": {
+      "x": -522,
+      "y": 27.5
+    },
+    "0240a554-88b9-42ab-af0d-944ec0cf8d60": {
+      "x": -438.9838289506021,
+      "y": 1.50051609732121
+    },
+    "0240a554-88b9-42ab-af0d-944ec0cf8d60_label": {
+      "x": -438.9838289506021,
+      "y": 29.00051609732121
+    },
+    "2178e8ed-904b-4132-96e9-b69c13f4b7f1": {
+      "x": -384.96937822560824,
+      "y": 3.0010321946424163
+    },
+    "2178e8ed-904b-4132-96e9-b69c13f4b7f1_label": {
+      "x": -384.96937822560824,
+      "y": 30.501032194642416
+    },
+    "16b25e90-3117-486e-8e1d-e3b8d0752b26": {
+      "x": -319.5652311666237,
+      "y": -2.216883561608972
+    },
+    "16b25e90-3117-486e-8e1d-e3b8d0752b26_label": {
+      "x": -319.5652311666237,
+      "y": 25.283116438391026
+    },
+    "b8bc2acf-d269-4c3f-92f3-c980ee8319d2": {
+      "x": -245.28666090921382,
+      "y": -4.977835327068279
+    },
+    "b8bc2acf-d269-4c3f-92f3-c980ee8319d2_label": {
+      "x": -245.28666090921382,
+      "y": 22.522164672931723
+    },
+    "04eff5c4-5379-4f02-9d42-222679cc47c6": {
+      "x": -144.43412929163728,
+      "y": 4.554484233999293
+    },
+    "04eff5c4-5379-4f02-9d42-222679cc47c6_label": {
+      "x": -144.43412929163728,
+      "y": 32.05448423399929
+    },
+    "97fae898-af9b-48a0-8819-ebe3e7f7038e": {
+      "x": -92.23931647204472,
+      "y": -13.574909927006054
+    },
+    "97fae898-af9b-48a0-8819-ebe3e7f7038e_label": {
+      "x": -92.23931647204472,
+      "y": 13.925090072993946
+    },
+    "86d2bfb9-8109-4129-9a1e-08e30b4533b2": {
+      "x": -165.51315999497413,
+      "y": -47.12171000125646
+    },
+    "86d2bfb9-8109-4129-9a1e-08e30b4533b2_label": {
+      "x": -165.51315999497413,
+      "y": -19.62171000125646
+    },
+    "50c17561-c4cc-40c8-8920-5c3be55d05d9": {
+      "x": -86.24812256616244,
+      "y": -71.61781965839553
+    },
+    "50c17561-c4cc-40c8-8920-5c3be55d05d9_label": {
+      "x": -86.24812256616244,
+      "y": -44.11781965839553
+    },
+    "3ecc3fc6-96d7-4973-8226-e65c765fda10": {
+      "x": 21.87292514197634,
+      "y": -30.49980698995128
+    },
+    "3ecc3fc6-96d7-4973-8226-e65c765fda10_label": {
+      "x": 21.87292514197634,
+      "y": -2.9998069899512814
+    },
+    "c1c4cc69-97c2-4776-8aea-32426a68a53f": {
+      "x": 101.83801424409148,
+      "y": -22.952963842227867
+    },
+    "c1c4cc69-97c2-4776-8aea-32426a68a53f_label": {
+      "x": 101.83801424409148,
+      "y": 4.547036157772133
+    },
+    "c51ab2b2-6a0b-46f9-807e-5db3d9e0e13e": {
+      "x": 206.00483032992622,
+      "y": -53.382817529836736
+    },
+    "c51ab2b2-6a0b-46f9-807e-5db3d9e0e13e_label": {
+      "x": 206.00483032992622,
+      "y": -25.882817529836736
+    },
+    "63f2f873-379c-4251-aadd-d508070c9063": {
+      "x": 282.70709647879323,
+      "y": -13.9545209816661
+    },
+    "63f2f873-379c-4251-aadd-d508070c9063_label": {
+      "x": 282.70709647879323,
+      "y": 13.5454790183339
+    },
+    "5357edb4-d801-4888-abbf-84060d816734": {
+      "x": 301.9982727039683,
+      "y": -82.74517374408754
+    },
+    "5357edb4-d801-4888-abbf-84060d816734_label": {
+      "x": 301.9982727039683,
+      "y": -55.24517374408754
+    },
+    "5460f079-20d4-4c3c-9dc5-15f94f23d0d3": {
+      "x": 394.6406207619174,
+      "y": -66.06576429282347
+    },
+    "5460f079-20d4-4c3c-9dc5-15f94f23d0d3_label": {
+      "x": 394.6406207619174,
+      "y": -38.565764292823474
+    }
+  },
+  "manual_edges": [],
+  "link_mode": {
+    "active": false,
+    "first_cluster": null
+  },
+  "delete_mode": {
+    "active": false
+  },
+  "tsne_toggle": {
+    "active": false
+  },
+  "embedding_data": {},
+  "active_tab": {
+    "tab": "manual"
+  },
+  "tsne_clusters": {},
+  "intervention_mode": {
+    "active": false,
+    "selected_cluster": null
+  },
+  "intervention_results": null,
+  "manual_features": []
+}

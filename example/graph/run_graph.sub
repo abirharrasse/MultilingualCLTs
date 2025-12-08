@@ -1,0 +1,16 @@
+universe = vanilla
+
+executable = /home/aharrasse/FeatFlow/example/graph/run_graph.sh
+initialdir = /lustre/home/aharrasse/FeatFlow/example/graph
+
+output = logs/results.txt
+error  = logs/error.txt
+log    = logs/job.log
+
+request_cpus = 4
+request_memory = 100GB
+request_gpus = 1
+
+requirements = (CUDACapability == 8.0)
+
+queue

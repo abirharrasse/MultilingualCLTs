@@ -1,0 +1,27 @@
+src/featflow/frontend/
+├── __init__.py
+├── app.py                 # Main app entry point
+├── config/
+│   ├── __init__.py
+│   └── settings.py        # Configuration management
+├── data/
+│   ├── __init__.py
+│   ├── loaders.py         # Data loading utilities
+│   └── models.py          # Data models/classes
+├── visualization/
+│   ├── __init__.py
+│   ├── graph/
+│   │   ├── __init__.py
+│   │   ├── layout.py      # Graph layout calculations
+│   │   ├── nodes.py       # Node creation and styling
+│   │   ├── edges.py       # Edge creation and styling
+│   │   └── renderer.py    # Plotly figure creation
+│   └── components/
+│       ├── __init__.py
+│       ├── feature_display.py
+│       └── graph_component.py
+├── callbacks/
+│   ├── __init__.py
+│   └── graph_callbacks.py
+└── assets/
+    └── max_planck_logo.jpg

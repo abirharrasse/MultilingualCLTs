@@ -1,0 +1,5 @@
+Home set to: /lustre/home/fdraye
+In directory: /lustre/home/fdraye/projects/featflow
+run_on_tiny_stories.py completed
+Initialized b_enc with target activation rate 0.100000
+run_on_tiny_stories.py completed

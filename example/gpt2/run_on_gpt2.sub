@@ -1,0 +1,16 @@
+universe = vanilla
+
+executable = /lustre/home/fdraye/projects/featflow/example/gpt2/run_on_gpt2.sh
+initialdir = /lustre/home/fdraye/projects/featflow/example/gpt2
+
+output = logs/results.txt
+error  = logs/error.txt
+log    = logs/job.log
+
+request_cpus = 40
+request_memory = 400GB
+request_gpus = 2
+
+requirements = (CUDACapability == 9.0)
+
+queue
