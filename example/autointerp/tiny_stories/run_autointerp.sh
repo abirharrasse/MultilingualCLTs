@@ -18,8 +18,8 @@ export PYTORCH_CUDA_ALLOC_CONF=max_split_size_mb:128
 echo "Home set to:" $HOME
 
 # Set WANDB_API_KEY to allow wandb to authenticate
-export WANDB_API_KEY="097e21df11c8e16d3452a3e5747add10ec3ed5e0"
-export HUGGINGFACE_TOKEN="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"
+export WANDB_API_KEY=""
+export HUGGINGFACE_TOKEN=""
 
 cd /lustre/home/fdraye/projects/featflow
 echo "In directory: $(pwd)"

@@ -13,8 +13,8 @@ export MASTER_PORT=$((29500 + $SLURM_PROCID))
 echo "Home set to:" $HOME
 
 # Set WANDB_API_KEY to allow wandb to authenticate
-export WANDB_API_KEY="097e21df11c8e16d3452a3e5747add10ec3ed5e0"
-export HUGGINGFACE_TOKEN="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"
+export WANDB_API_KEY=""
+export HUGGINGFACE_TOKEN=""
 
 cd /lustre/home/fdraye/projects/featflow
 echo "In directory: $(pwd)"

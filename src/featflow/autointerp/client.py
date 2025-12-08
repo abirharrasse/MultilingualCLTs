@@ -33,7 +33,7 @@ def run_client(prompts: list[Path], out_dir: Path, vllm_model: str, vllm_max_tok
     # Optimized configuration
     llm_config = {
         "model": vllm_model,
-        "hf_token": "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",
+        "hf_token": "",
         "gpu_memory_utilization": 0.85,  # Can go higher if not sharing GPU
         "max_model_len": 3500,
         "disable_custom_all_reduce": True,
