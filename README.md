@@ -3,8 +3,6 @@
 
 
 
-![MultilingualCLT Feature Tracing Visualization](assets/gemini_clts.png)
-
 
 This repository contains the official code for implementing and experimenting with Multilingual Cross-Layer Transcoders (CLTs), the associated Automated Interpretability (AutoInterp) pipeline, designed to study feature composition and communication across transformer layers in multilingual LLMs and the multilingual interface to display these CLTs.
 
