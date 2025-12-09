@@ -26,7 +26,7 @@ See more:
 These files define the fundamental mechanistic interpretability tools:
 
 * `src/featflow/clt.py`: Defines the core **Cross-Layer Transcoder (CLT)** model architecture.
-* `src/featflow/clt_training_runner.py` and `.training/`: Contain the configuration and logic for training the CLT models.
+* `src/featflow/clt_training_runner.py` and `src/featflow/training/`: Contain the configuration and logic for training the CLT models.
 * `src/featflow/causal_graph/`: Defines the **Attribution Graph** structure, which models feature interaction and flow across layers.
 
 ### 2. Training Pipelines and Examples
