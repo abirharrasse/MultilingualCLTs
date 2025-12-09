@@ -52,7 +52,7 @@ These scripts are used for deep analysis, feature manipulation, and generating s
     * **Execution:** `cd` into the folder, adjust the paths in `src/featflow/frontend/config/settings.py` (pointing to CLT, AutoInterp, and Graph files), and launch using `poetry run python launch.py`.
 
 
-## 🚀 TODO: Ongoing Work
+## TODO: Ongoing Work
 
 To further advance this line of research and improve the tools, we plan on pursuing the following improvements:
 
