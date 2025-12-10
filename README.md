@@ -39,7 +39,7 @@ These files define the fundamental mechanistic interpretability tools:
 
 These scripts are used for deep analysis, feature manipulation, and generating specific experimental data:
 
-* `stitching.py`: Contains logic for **intervening** on the Attribution Graph (e.g., feature suppression/substitution) for causal studies.
+* `src/featflow/attribution/features_stitching.py`: Contains logic for **intervening** on the Attribution Graph (e.g., feature suppression/substitution) for causal studies.
 * `src/featflow/attribution/alignment_clusters.py`: Implements the feature alignment analysis with English vs Original Language.
 * `example/graph/run_aggreg_graph.py`: An example script to generate an **aggregated graph** structure by aggreggating attribution across many prompts.
 * `example/graph_langvec`: A focused example to generate an Attribution Graph targeting the **language vector** rather than the full logit space, isolating language-specific decoding features.
